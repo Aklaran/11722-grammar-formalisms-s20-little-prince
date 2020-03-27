@@ -1,0 +1,228 @@
+# n1
+# text = เมื่อตอนฉันอายุได้ ๖ ขวบ ฉันได้เห็นรูปภาพจับใจรูปหนึ่งในหนังสือเกี่ยวกับป่าดงดิบชื่อว่า "ประวัติชีวิตธรรมชาติ"
+# text_en = When I was 6 years old I saw an impressive picture in a book about the rainforest called "True Stories about Life from Nature"
+1	เมื่อ	when	SCONJ	_	_	10	mark	_	_
+2	ตอน	at.time	noun	_	_	4	obl	_	_
+3	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
+4	อายุ	have.age	NOUN	_	_	10	advcl	_	_
+5	ได้	PST	AUX	_	_	4	aux	_	_
+6	๖	six	NUM	_	_	4	obj	_	_
+7	ขวบ	year.CLF	NOUN	_	_	6	nummod	_	_
+8	ฉัน	1SG	PRON	_	_	10	nsubj	_	_
+9	ได้	PST	AUX	_	_	8	aux	_	_
+10	เห็น	see	VERB	_	_	0	root	_	_
+11	รูปภาพ	picture	NOUN	_	_	10	obj	_	_
+12	จับใจ	impress.ADJ	NOUN	_	_	11	amod	_	_
+13	รูป	picture.CLF	NOUN	_	_	14	clf	_	_
+14	หนึ่ง	INDF	NUM	_	_	11	det	_	_
+15	ใน	in	ADP	_	_	16	case	_	_
+16	หนังสือ	book	NOUN	_	_	11	nmod	_	_
+17	เกี่ยวกับ	about	ADP	_	_	18	case	_	_
+18	ป่าดงดิบ	rainforest	NOUN	_	_	16	mod	_	_
+19	ชื่อว่า	name-QUOT	NOUN	_	_	16	acl	_	_
+20	"	_	PUNCT	_	_	21	punct	_	_
+21	ประวัติ	story	NOUN	_	_	19	obj	_	_
+22	ชีวิต	life	NOUN	_	_	21	flat	_	_
+23	ธรรมชาติ	nature	NOUN	_	_	22	flat	_	_
+24	"	_	PUNCT	_	_	21	punct	_	_
+
+# n2
+# text = รูปนั้นเป็นรูปงูเหลือมกำลังกลืนสัตว์ป่า
+# text_en = <TRANSLATE>
+1	รูป	picture.CLF	NOUN	_	_	4	nsubj	_	_
+2	นั้น	DEM	DET	_	_	1	det	_	_
+3	เป็น	COP	VERB	_	_	4	cop	_	_
+4	รูป	picture	NOUN	_	_	0	root	_	_
+5	งูเหลือม	boa.constrictor	NOUN	_	_	4	nmod	_	_
+6	กำลัง	PRS.PTCP	AUX	_	_	7	aux	_	_
+7	กลืน	swallow	VERB	_	_	5	acl	_	_
+8	สัตว์ป่า	wild.animal	NOUN	_	_	7	obj	_	_
+
+# n3
+# text = นี่คือรูปลอกของภาพนั้น
+# text_en = <TRANSLATE>
+1	นี่	DEM	PRON	_	_	3	nsubj	_	_
+2	คือ	COP	VERB	_	_	3	cop	_	_
+3	รูปลอก	sticker	NOUN	_	_	_	_	_	_
+4	ของ	POSS	ADP	_	_	5	case	_	_
+5	ภาพ	image	NOUN	_	_	3	nmod	_	_
+6	นั้น	DEM	DET	_	_	5	det	_	_
+
+# n4
+# text = ในหนังสือเขาบรรยายไว้ว่า "งูเหลือมกลืนเหยื่อของมันเข้าไปทั้งหมดโดยไม่เคี้ยวเลย
+# text_en = In the book it explained, "The boa swallows its prey whole without chewing at all.
+1	ใน	in	ADP	_	_	2	case	_	_
+2	หนังสือ	book	NOUN	_	_	4	obl	_	_
+3	เขา	3SG	PRON	_	_	4	 nsubj	_	_
+4	บรรยาย	explain	VERB	_	_	0	root	_	_
+5	ไว้	keep(?)	AUX	_	_	4	aux	_	_
+6	ว่า	QUOT	SCONJ	_	_	9	mark	_	_
+7	"	_	PUNCT	_	_	9	punct	_	_
+8	งูเหลือม	boa	NOUN	_	_	9	nsubj	_	_
+9	กลืน	swallow	VERB	_	_	4	ccomp	_	_
+10	เหยื่อ	prey	NOUN	_	_	9	obj	_	_
+11	ของ	of	ADP	_	_	12	case	_	_
+12	มัน	it	PRON	_	_	10	nmod	_	_
+13	เข้าไป	enter	VERB	_	_	9	xcomp	_	_
+14	ทั้งหมด	whole	ADV	_	_	13	advmod	_	_
+15	โดย	by	SCONJ	_	_	17	mark	_	_
+16	ไม่	NEG	PART	_	_	17	advmod	_	_
+17	เคี้ยว	chew	VERB	_	_	9	advcl	_	_
+18	เลย	at.all	ADV	_	_	17	advmod	_	_
+
+# n5
+# text = ถัดจากนั้น มันก็ไม่สามารถเคลื่อนไหวได้ และนอนย่อยอาหารอยู่ตลอดเวลา ๖ เดือน"
+# text_en = After than, it cannot move and sleeps while digesting for six months."
+1	ถัด	next	ADV	_	_	7	advmod	_	_
+2	จากนั้น	after.that	ADV	_	_	7	advmod	_	_
+3	มัน	3SG	PRON	_	_	7	nsubj	_	_
+4	ก็	then	ADV	_	_	7	advmod	_	_
+5	ไม่	NEG	PART	_	_	7	advmod	_	_
+6	สามารถ	able.to	AUX	_	_	7	aux	_	_
+7	เคลื่อนไหว	move	VERB	_	_	0	root	_	_
+8	ได้	able.to	AUX	_	_	7	aux	_	_
+9	และ	and	CCONJ	_	_	10	cc	_	_
+10	นอน	sleep	VERB	_	_	7	conj	_	_
+11	ย่อย	digest	VERB	_	_	10	xcomp	_	_
+12	อาหาร	food	NOUN	_	_	11	subj	_	_
+13	อยู่	PROG	AUX	_	_	10	aux	_	_
+14	ตลอด	throughout	ADP	_	_	17	case	_	_
+15	เวลา	time	NOUN	_	_	14	fixed	_	_
+16	๖	six	NUM	_	_	17	nummod	_	_
+17	เดือน	month	NOUN	_	_	10	obl	_	_
+18	"	_	PUNCT	_	_	7	punct	_	_
+
+# n6
+# text = ฉันติดใจเรื่องการผจญภัยในป่าทึบมาก
+# text_en = I was very enthralled by the story of adventure in the thick jungle.
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	ติดใจ	enthralled.by	VERB	_	_	0	root	_	_
+3	เรื่อง	story	NOUN	_	_	2	obj	_	_
+4	การผจญภัย	adventure	NOUN	_	_	3	nmod	_	_
+5	ใน	in	ADP	_	_	6	case	_	_
+6	ป่าทึบ	thick.forest	NOUN	_	_	4	nmod	_	_
+7	มาก	very	ADV	_	_	2	advmod	_	_
+
+# n7
+# text = จึงได้หัดวาดภาพด้วยดินสอสีจนสำเร็จ
+# text_en = So I practiced drawing with a colored pencil until I succeeded.
+1	จึง	so/then	AUX	_	_	3	cc	_	_
+2	ได้	PST	AUX	_	_	3	aux	_	_
+3	หัด	train	VERB	_	_	0	root	_	_
+4	วาดภาพ	to draw	VERB	_	_	3	obj/(ccomp/xcomp/advcl?)	_	_
+5	ด้วย	with	ADP	_	_	6	case	_	_
+6	ดินสอ	pencil	NOUN	_	_	4	obl	_	_
+7	สี	_	NOUN	_	_	6	amod	_	_
+8	จน	_	SCONJ	_	_	9	mark	_	_
+9	สำเร็จ	_	VERB	_	_	3	advcl	_	_
+
+# n8
+# text = นี่คือรูปภาพรูปแรกของฉัน
+# text_en = This is my first picture.
+1	นี่	this	PRON	_	_	3	nsubj	_	_
+2	คือ	COP	VERB	_	_	3	cop	_	_
+3	รูปภาพ	picture	NOUN	_	_	0	root	_	_
+4	รูป	CLF	NOUN	_	_	5	clf	_	_
+5	แรก	first	ADJ	_	_	3	amod	_	_
+6	ของ	POSS	ADP	_	_	7	case	_	_
+7	ฉัน	1SG	PRON	_	_	3	nmod	_	_
+
+# n9
+# text = ฉันอวดผลงานชิ้นเยี่ยมนี้แก่ผู้ใหญ่ และถามเขาว่ารูปของฉันทำให้เขากลัวไหม
+# text_en = I showed my excellent work to the adults and asked them if my picture made them scared.
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	อวด	show off	VERB	_	_	0	root	_	_
+3	ผลงาน	work product	NOUN	_	_	2	obj	_	_
+4	ชิ้น	CLF	NOUN	_	_	5	clf	_	_
+5	เยี่ยม	excellent	NOUN	_	_	3	amod	_	_
+6	นี้	this	DET	_	_	3	det	_	_
+7	แก่	to	ADP	_	_	8	case	_	_
+8	ผู้ใหญ่	adults	NOUN	_	_	2	obl/(iobj?)	_	_
+9	และ	and	CCONJ	_	_	10	cc	_	_
+10	ถาม	ask	VERB	_	_	2	conj	_	_
+11	เขา	3SG/PL	PRON	_	_	10	obj	_	_
+12	ว่า	QUOT	SCONJ	_	_	16	mark	_	_
+13	รูป	image	NOUN	_	_	16	nsubj	_	_
+14	ของ	POSS	ADP	_	_	15	case	_	_
+15	ฉัน	1SG	PRON	_	_	13	nmod	_	_
+16	ทำให้	cause to be	VERB	_	_	10	ccomp/(xcomp?)	_	_
+17	เขา	3SG/PL	PRON	_	_	18	nsubj	_	_
+18	กลัว	fear	VERB	_	_	16	ccomp	_	_
+19	ไหม	Q	PART	_	_	16	?	_	_
+
+# n10
+# text = พวกเขาก็ตอบว่า "ทำไมหมวกทำให้คนกลัวเล่า"
+# text_en = <TRANSLATE>
+1	พวกเขา	_	PROPN	_	_	_	_	_	_
+2	ก็	_	SCONJ	_	_	_	_	_	_
+3	ตอบ	_	VERB	_	_	_	_	_	_
+4	ว่า	_	SCONJ	_	_	_	_	_	_
+5	"	_	PUNCT	_	_	_	_	_	_
+6	ทำไม	_	NOUN	_	_	_	_	_	_
+7	หมวก	_	VERB	_	_	_	_	_	_
+8	ทำให้	_	VERB	_	_	_	_	_	_
+9	คน	_	NOUN	_	_	_	_	_	_
+10	กลัว	_	NOUN	_	_	_	_	_	_
+11	เล่า	_	NOUN	_	_	_	_	_	_
+12	"	_	PUNCT	_	_	_	_	_	_
+
+# n11
+# text = รูปภาพของฉันไม่ได้เป็นรูปหมวก
+# text_en = <TRANSLATE>
+1	รูปภาพ	_	NOUN	_	_	_	_	_	_
+2	ของ	_	ADP	_	_	_	_	_	_
+3	ฉัน	_	PRON	_	_	_	_	_	_
+4	ไม่	_	PART	_	_	_	_	_	_
+5	ได้	_	AUX	_	_	_	_	_	_
+6	เป็น	_	VERB	_	_	_	_	_	_
+7	รูป	_	NOUN	_	_	_	_	_	_
+8	หมวก	_	NOUN	_	_	_	_	_	_
+
+# n12
+# text = แต่เป็นรูปงูเหลือมที่กำลังนอนย่อยช้างที่มันกลืนเข้าไป
+# text_en = <TRANSLATE>
+1	แต่	_	CCONJ	_	_	_	_	_	_
+2	เป็น	_	VERB	_	_	_	_	_	_
+3	รูป	_	NOUN	_	_	_	_	_	_
+4	งูเหลือม	_	NOUN	_	_	_	_	_	_
+5	ที่	_	SCONJ	_	_	_	_	_	_
+6	กำลัง	_	AUX	_	_	_	_	_	_
+7	นอน	_	ADJ	_	_	_	_	_	_
+8	ย่อย	_	VERB	_	_	_	_	_	_
+9	ช้าง	_	PRON	_	_	_	_	_	_
+10	ที่	_	SCONJ	_	_	_	_	_	_
+11	มัน	_	PRON	_	_	_	_	_	_
+12	กลืน	_	VERB	_	_	_	_	_	_
+13	เข้าไป	_	AUX	_	_	_	_	_	_
+
+# n13
+# text = ฉันจึงต้องวาดรูปภายในงูเหลือมเพื่อให้พวกผู้ใหญ่เข้าใจ เพราะพวกนี้ต้องการคำอธิบายเสมอ 
+# text_en = <TRANSLATE>
+1	ฉัน	_	PRON	_	_	_	_	_	_
+2	จึง	_	AUX	_	_	_	_	_	_
+3	ต้อง	_	AUX	_	_	_	_	_	_
+4	วาดรูป	_	VERB	_	_	_	_	_	_
+5	ภายใน	_	ADP	_	_	_	_	_	_
+6	งูเหลือม	_	NOUN	_	_	_	_	_	_
+7	เพื่อให้	_	SCONJ	_	_	_	_	_	_
+8	พวก	_	NOUN	_	_	_	_	_	_
+9	ผู้ใหญ่	_	NOUN	_	_	_	_	_	_
+10	เข้าใจ	_	VERB	_	_	_	_	_	_
+11	เพราะ	_	SCONJ	_	_	_	_	_	_
+12	พวก	_	NOUN	_	_	_	_	_	_
+13	นี้	_	DET	_	_	_	_	_	_
+14	ต้องการ	_	VERB	_	_	_	_	_	_
+15	คำอธิบาย	_	NOUN	_	_	_	_	_	_
+16	เสมอ	_	ADV	_	_	_	_	_	_
+
+# n14
+# text = รูปวาดที่ ๒ ของฉันจึงเป็นดังนี้
+# text_en = <TRANSLATE>
+1	รูปวาด	_	NOUN	_	_	_	_	_	_
+2	ที่	_	SCONJ	_	_	_	_	_	_
+3	๒	_	NOUN	_	_	_	_	_	_
+4	ของ	_	ADP	_	_	_	_	_	_
+5	ฉัน	_	PRON	_	_	_	_	_	_
+6	จึง	_	AUX	_	_	_	_	_	_
+7	เป็น	_	VERB	_	_	_	_	_	_
+8	ดังนี้	_	SCONJ	_	_	_	_	_	_
