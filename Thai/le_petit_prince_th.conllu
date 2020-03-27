@@ -6,7 +6,7 @@
 3	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
 4	อายุ	have.age	NOUN	_	_	10	advcl	_	_
 5	ได้	PST	AUX	_	_	4	aux	_	_
-6	๖	six	NUM	_	_	4	obj	_	_
+6	๖	six	NUM	_	_	4	obj	_	_ FOOBAR
 7	ขวบ	year.CLF	NOUN	_	_	6	nummod	_	_
 8	ฉัน	1SG	PRON	_	_	10	nsubj	_	_
 9	ได้	PST	AUX	_	_	8	aux	_	_
