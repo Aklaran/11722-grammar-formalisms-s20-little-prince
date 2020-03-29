@@ -6,8 +6,8 @@
 3	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
 4	อายุ	have.age	NOUN	_	_	10	advcl	_	_
 5	ได้	PST	AUX	_	_	4	aux	_	_
-6	๖	six	NUM	_	_	4	obj	_	_ FOOBAR
-7	ขวบ	year.CLF	NOUN	_	_	6	nummod	_	_
+6	๖	six	NUM	_	_	7	nummod	_	_
+7	ขวบ	year.CLF	NOUN	_	_	4	clf	_	_
 8	ฉัน	1SG	PRON	_	_	10	nsubj	_	_
 9	ได้	PST	AUX	_	_	8	aux	_	_
 10	เห็น	see	VERB	_	_	0	root	_	_
@@ -83,7 +83,7 @@
 8	ได้	able.to	AUX	_	_	7	aux	_	_
 9	และ	and	CCONJ	_	_	10	cc	_	_
 10	นอน	sleep	VERB	_	_	7	conj	_	_
-11	ย่อย	digest	VERB	_	_	10	xcomp	_	_
+11	ย่อย	digest	VERB	_	_	10	compound:svc	_	_
 12	อาหาร	food	NOUN	_	_	11	subj	_	_
 13	อยู่	PROG	AUX	_	_	10	aux	_	_
 14	ตลอด	throughout	ADP	_	_	17	case	_	_
@@ -152,77 +152,187 @@
 
 # n10
 # text = พวกเขาก็ตอบว่า "ทำไมหมวกทำให้คนกลัวเล่า"
-# text_en = <TRANSLATE>
-1	พวกเขา	_	PROPN	_	_	_	_	_	_
-2	ก็	_	SCONJ	_	_	_	_	_	_
-3	ตอบ	_	VERB	_	_	_	_	_	_
-4	ว่า	_	SCONJ	_	_	_	_	_	_
-5	"	_	PUNCT	_	_	_	_	_	_
-6	ทำไม	_	NOUN	_	_	_	_	_	_
-7	หมวก	_	VERB	_	_	_	_	_	_
-8	ทำให้	_	VERB	_	_	_	_	_	_
-9	คน	_	NOUN	_	_	_	_	_	_
-10	กลัว	_	NOUN	_	_	_	_	_	_
-11	เล่า	_	NOUN	_	_	_	_	_	_
-12	"	_	PUNCT	_	_	_	_	_	_
+# text_en = They then answered, "Why would a hat scare someone?"
+1	พวกเขา	They	PRON	_	_	3	nsubj	_	_
+2	ก็	then	ADV	_	_	3	advmod	_	_
+3	ตอบ	answer	VERB	_	_	0	root	_	_
+4	ว่า	QUOT	SCONJ	_	_	8	mark	_	_
+5	"	_	PUNCT	_	_	8	punct	_	_
+6	ทำไม	why	ADV	_	_	8	advmod	_	_
+7	หมวก	hat	NOUN	_	_	8	nsubj	_	_
+8	ทำให้	cause	VERB	_	_	3	ccomp	_	_
+9	คน	person	NOUN	_	_	10	nsubj	_	_
+10	กลัว	fear	VERB	_	_	8	xcomp	_	_
+11	เล่า	(emphasis)	PART	_	_	8	discourse	_	_
+12	"	_	PUNCT	_	_	8	punct	_	_
 
 # n11
 # text = รูปภาพของฉันไม่ได้เป็นรูปหมวก
 # text_en = <TRANSLATE>
-1	รูปภาพ	_	NOUN	_	_	_	_	_	_
-2	ของ	_	ADP	_	_	_	_	_	_
-3	ฉัน	_	PRON	_	_	_	_	_	_
-4	ไม่	_	PART	_	_	_	_	_	_
-5	ได้	_	AUX	_	_	_	_	_	_
-6	เป็น	_	VERB	_	_	_	_	_	_
-7	รูป	_	NOUN	_	_	_	_	_	_
-8	หมวก	_	NOUN	_	_	_	_	_	_
+1	รูปภาพ	picture	NOUN	_	_	7	nsubj	_	_
+2	ของ	of	ADP	_	_	3	case	_	_
+3	ฉัน	1SG	PRON	_	_	1	nmod	_	_
+4	ไม่	not	PART	_	_	5	advmod	_	_
+5	ได้	PST	AUX	_	_	7	aux	_	_
+6	เป็น	COP	VERB	_	_	7	cop	_	_
+7	รูป	picture	NOUN	_	_	0	root	_	_
+8	หมวก	hat	NOUN	_	_	7	nmod	_	_
 
 # n12
 # text = แต่เป็นรูปงูเหลือมที่กำลังนอนย่อยช้างที่มันกลืนเข้าไป
 # text_en = <TRANSLATE>
-1	แต่	_	CCONJ	_	_	_	_	_	_
-2	เป็น	_	VERB	_	_	_	_	_	_
-3	รูป	_	NOUN	_	_	_	_	_	_
-4	งูเหลือม	_	NOUN	_	_	_	_	_	_
-5	ที่	_	SCONJ	_	_	_	_	_	_
-6	กำลัง	_	AUX	_	_	_	_	_	_
-7	นอน	_	ADJ	_	_	_	_	_	_
-8	ย่อย	_	VERB	_	_	_	_	_	_
-9	ช้าง	_	PRON	_	_	_	_	_	_
-10	ที่	_	SCONJ	_	_	_	_	_	_
-11	มัน	_	PRON	_	_	_	_	_	_
-12	กลืน	_	VERB	_	_	_	_	_	_
-13	เข้าไป	_	AUX	_	_	_	_	_	_
+1	แต่	but	CCONJ	_	_	3	cc	_	_
+2	เป็น	COP	AUX	_	_	3	cop	_	_
+3	รูป	picture	NOUN	_	_	0	root	_	_
+4	งูเหลือม	boa	NOUN	_	_	3	obj	_	_
+5	ที่	that	SCONJ	_	_	7	mark	_	_
+6	กำลัง	PRS.PTCP	AUX	_	_	7	aux	_	_
+7	นอน	sleep	VERB	_	_	4	acl	_	_
+8	ย่อย	digest	VERB	_	_	7	compound:svc	_	_
+9	ช้าง	elephant	NOUN	_	_	7	obj	_	_
+10	ที่	that	SCONJ	_	_	12	mark	_	_
+11	มัน	3SG	PRON	_	_	12	nsubj	_	_
+12	กลืน	swallow	VERB	_	_	9	acl	_	_
+13	เข้า	enter	VERB	_	_	12	advmod	_	_
+14	ไป	go	VERB	_	_	13	compound:prt	_	_
 
 # n13
-# text = ฉันจึงต้องวาดรูปภายในงูเหลือมเพื่อให้พวกผู้ใหญ่เข้าใจ เพราะพวกนี้ต้องการคำอธิบายเสมอ 
+# text = ฉันจึงต้องวาดรูปภายในงูเหลือมเพื่อให้พวกผู้ใหญ่เข้าใจ เพราะพวกนี้ต้องการคำอธิบายเสมอ
 # text_en = <TRANSLATE>
-1	ฉัน	_	PRON	_	_	_	_	_	_
-2	จึง	_	AUX	_	_	_	_	_	_
-3	ต้อง	_	AUX	_	_	_	_	_	_
-4	วาดรูป	_	VERB	_	_	_	_	_	_
-5	ภายใน	_	ADP	_	_	_	_	_	_
-6	งูเหลือม	_	NOUN	_	_	_	_	_	_
-7	เพื่อให้	_	SCONJ	_	_	_	_	_	_
-8	พวก	_	NOUN	_	_	_	_	_	_
-9	ผู้ใหญ่	_	NOUN	_	_	_	_	_	_
-10	เข้าใจ	_	VERB	_	_	_	_	_	_
-11	เพราะ	_	SCONJ	_	_	_	_	_	_
-12	พวก	_	NOUN	_	_	_	_	_	_
-13	นี้	_	DET	_	_	_	_	_	_
-14	ต้องการ	_	VERB	_	_	_	_	_	_
-15	คำอธิบาย	_	NOUN	_	_	_	_	_	_
-16	เสมอ	_	ADV	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+2	จึง	thus	ADV	_	_	3	advmod	_	_
+3	ต้อง	need.to	VERB	_	_	0	root	_	_
+4	วาด	draw	VERB	_	_	3	xcomp	_	_
+5	รูป	picture	NOUN	_	_	4	obj	_	_
+6	ภายใน	inside	ADP	_	_	7	case	_	_
+7	งูเหลือม	boa	NOUN	_	_	5	nmod	_	_
+8	เพื่อให้	such.that	SCONJ	_	_	11	mark	_	_
+9	พวก	PL	NOUN	_	_	10	det	_	_
+10	ผู้ใหญ่	adult	NOUN	_	_	11	nsubj	_	_
+11	เข้าใจ	understand	VERB	_	_	4	ccomp	_	_
+12	เพราะ	because	SCONJ	_	_	15	mark	_	_
+13	พวก	group	NOUN	_	_	15	nsubj	_	_
+14	นี้	this	DET	_	_	13	det	_	_
+15	ต้องการ	need	VERB	_	_	11	root	_	_
+16	คำอธิบาย	explanation	NOUN	_	_	15	obj	_	_
+17	เสมอ	always	ADV	_	_	15	advmod	_	_
 
 # n14
 # text = รูปวาดที่ ๒ ของฉันจึงเป็นดังนี้
 # text_en = <TRANSLATE>
-1	รูปวาด	_	NOUN	_	_	_	_	_	_
+1	รูปวาด	_	NOUN	_	_	8	nsubj	_	_
+2	ที่	_	SCONJ	_	_	3	case	_	_
+3	๒	_	NOUN	_	_	1	amod	_	_
+4	ของ	_	ADP	_	_	5	case	_	_
+5	ฉัน	_	PRON	_	_	1	nmod	_	_
+6	จึง	_	ADV	_	_	8	advmod	_	_
+7	เป็น	_	AUX	_	_	8	cop	_	_
+8	ดังนี้	_	SCONJ	_	_	0	root	_	_
+
+# n15
+# text = พวกผู้ใหญ่ได้แนะนำว่าฉันควรจะเลิกยุ่งกับการวาดภาพงูเหลือมชนิดที่เห็นด้านนอกหรือด้านในเสีย และหันมาสนใจเรียนวิชาภูมิศาสตร์ ประวัติศาสตร์ คณิตศาสตร์ และไวยากรณ์แทน
+# text_en = <TRANSLATE>
+1	พวกผู้ใหญ่	PL-adult	NOUN	_	_	3	nsubj	_	_
+2	ได้	PST	AUX	_	_	3	aux	_	_
+3	แนะนำ	advise	VERB	_	_	0	root	_	_
+4	ว่า	that	SCONJ	_	_	7	mark	_	_
+5	ฉัน	1SG	PRON	_	_	7	nsubj	_	_
+6	ควรจะ	should-FUT	AUX	_	_	7	aux	_	_
+7	เลิก	quit	VERB	_	_	3	ccomp	_	_
+8	ยุ่ง	bother	VERB	_	_	7	xcomp	_	_
+9	กับ	with	ADP	_	_	10	case	_	_
+10	การวาดภาพ	NMLZ-draw	NOUN	_	_	8	obl	_	_
+11	งูเหลือม	boa	NOUN	_	_	10	nmod	_	_
+12	ชนิด	style	NOUN	_	_	10	clf	_	_
+13	ที่	which	SCONJ	_	_	14	mark	_	_
+14	เห็น	see	VERB	_	_	12	acl	_	_
+15	ด้าน	viewpoint	NOUN	_	_	14	obj	_	_
+16	นอก	outside	NOUN	_	_	15	amod	_	_
+17	หรือ	or	CCONJ	_	_	18	cc	_	_
+18	ด้าน	viewpoint	NOUN	_	_	15	conj	_	_
+19	ใน	inside	NOUN	_	_	18	amod	_	_
+20	เสีย	completely.PERF	PART	_	_	7	advmod	_	_
+21	และ	and	CCONJ	_	_	22	cc	_	_
+22	หัน	turn	VERB	_	_	7	conj	_	_
+23	มา	come.ALL	VERB	_	_	22	compound:prt	_	_
+24	สนใจ	interested_in	VERB	_	_	22	xcomp	_	_
+25	เรียน	learn	VERB	_	_	24	xcomp	_	_
+26	วิชา	study_of	NOUN	_	_	25	obj	_	_
+27	ภูมิศาสตร์	geography	NOUN	_	_	26	conj	_	_
+28	ประวัติศาสตร์	history	NOUN	_	_	26	conj	_	_
+29	คณิตศาสตร์	mathematics	NOUN	_	_	26	conj	_	_
+30	และ	and	CCONJ	_	_	31	cc	_	_
+31	ไวยากรณ์	grammar	NOUN	_	_	26	conj	_	_
+32	แทน	instead	ADV	_	_	22	advmod	_	_
+
+# n16
+# text = ดังนั้น ฉันจึงได้ละทิ้งอาชีพวาดภาพอันสูงส่งนี้เสียตั้งแต่อายุ ๖ ขวบ
+# text_en = <TRANSLATE>
+1	ดัง	consequence_of	CCONJ	_	_	6	cc	_	_
+2	นั้น	that	DET	_	_	1	fixed	_	_
+3	ฉัน	1SG	PRON	_	_	6	nsubj	_	_
+4	จึง	thus	ADV	_	_	6	advmod	_	_
+5	ได้	PST	AUX	_	_	6	aux	_	_
+6	ละทิ้ง	abandon	VERB	_	_	0	root	_	_
+7	อาชีพ	career	NOUN	_	_	6	obj	_	_
+8	วาดภาพ	draw	VERB	_	_	7	acl	_	_
+9	อัน	CLF	NOUN	_	_	7	clf	_	_
+10	สูงส่ง	noble.majestic	NUM	_	_	7	amod	_	_
+11	นี้	this	DET	_	_	7	det	_	_
+12	เสีย	completely.PERF	VERB	_	_	6	advmod	_	_
+13	ตั้ง	from	VERB	_	_	15	case	_	_
+14	แต่	since	ADP	_	_	13	fixed	_	_
+15	อายุ	age	NOUN	_	_	6	obl	_	_
+16	๖	six	NOUN	_	_	17	nummod	_	_
+17	ขวบ	years	NOUN	_	_	15	clf	_	_
+
+# n17
+# text = เพราะว่าฉันรู้สึกหมดกำลังใจที่ภาพวาดรูปแรกและรูปที่สองไม่ได้รับผลสำเร็จ
+# text_en = <TRANSLATE>
+1	เพราะว่า	_	SCONJ	_	_	_	_	_	_
+2	ฉัน	_	PRON	_	_	_	_	_	_
+3	รู้สึก	_	VERB	_	_	_	_	_	_
+4	หมดกำลังใจ	_	NOUN	_	_	_	_	_	_
+5	ที่	_	SCONJ	_	_	_	_	_	_
+6	ภาพ	_	NOUN	_	_	_	_	_	_
+7	วาดรูป	_	NOUN	_	_	_	_	_	_
+8	แรก	_	ADJ	_	_	_	_	_	_
+9	และ	_	CCONJ	_	_	_	_	_	_
+10	รูป	_	NOUN	_	_	_	_	_	_
+11	ที่สอง	_	ADJ	_	_	_	_	_	_
+12	ไม่	_	PART	_	_	_	_	_	_
+13	ได้รับ	_	VERB	_	_	_	_	_	_
+14	ผลสำเร็จ	_	NOUN	_	_	_	_	_	_
+
+# n18
+# text = พวกผู้ใหญ่ไม่เคยเข้าใจอะไรเลย
+# text_en = <TRANSLATE>
+1	พวก	_	NOUN	_	_	_	_	_	_
+2	ผู้ใหญ่	_	NOUN	_	_	_	_	_	_
+3	ไม่	_	PART	_	_	_	_	_	_
+4	เคย	_	AUX	_	_	_	_	_	_
+5	เข้าใจ	_	VERB	_	_	_	_	_	_
+6	อะไร	_	PRON	_	_	_	_	_	_
+7	เลย	_	ADV	_	_	_	_	_	_
+
+# n19
+# text = เป็นเรื่องที่น่าเหนื่อยหน่ายอย่างยิ่งที่พวกเราเด็กๆ จะต้องอธิบายให้พวกเขาเข้าใจอยู่ตลอดเวลา
+# text_en = <TRANSLATE>
+1	เป็นเรื่อง	_	NOUN	_	_	_	_	_	_
 2	ที่	_	SCONJ	_	_	_	_	_	_
-3	๒	_	NOUN	_	_	_	_	_	_
-4	ของ	_	ADP	_	_	_	_	_	_
-5	ฉัน	_	PRON	_	_	_	_	_	_
-6	จึง	_	AUX	_	_	_	_	_	_
-7	เป็น	_	VERB	_	_	_	_	_	_
-8	ดังนี้	_	SCONJ	_	_	_	_	_	_
+3	น่า	_	AUX	_	_	_	_	_	_
+4	เหนื่อยหน่าย	_	VERB	_	_	_	_	_	_
+5	อย่างยิ่ง	_	NOUN	_	_	_	_	_	_
+6	ที่	_	SCONJ	_	_	_	_	_	_
+7	พวกเรา	_	VERB	_	_	_	_	_	_
+8	เด็ก	_	NOUN	_	_	_	_	_	_
+9	ๆ	_	NOUN	_	_	_	_	_	_
+10	จะ	_	AUX	_	_	_	_	_	_
+11	ต้อง	_	AUX	_	_	_	_	_	_
+12	อธิบาย	_	VERB	_	_	_	_	_	_
+13	ให้	_	SCONJ	_	_	_	_	_	_
+14	พวกเขา	_	NOUN	_	_	_	_	_	_
+15	เข้าใจ	_	VERB	_	_	_	_	_	_
+16	อยู่	_	AUX	_	_	_	_	_	_
+17	ตลอดเวลา	_	ADV	_	_	_	_	_	_
+
