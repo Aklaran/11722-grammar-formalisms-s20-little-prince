@@ -506,6 +506,178 @@
 
 #我在大人们中间生活过很长时间。
 # 我 在 大人 们 中间 生活 过 很 长 时间 。
+1	我	我	PRON	_	_	6	nsubj	_	_
+2	在	在	ADP	_	_	4	case	_	_
+3	大人	大人	NOUN	_	_	4	compound	_	_
+4	们	们	PART	_	_	6	advmod	_	_
+5	中间	中间	ADP	_	_	4	acl	_	_
+6	生活	生活	VERB	_	_	0	root	_	_
+7	过	过	PART	_	_	6	case	_	_
+8	很	很	ADV	_	_	9	advmod	_	_
+9	长	长	ADJ	_	_	10	amod	_	_
+10	时间	时间	NOUN	_	_	6	advmod	_	_
+11	。	。	PUNCT	_	_	6	punct	_	_
+
 
 #我仔细地观察过他们，但这并没有使我对他们的看法有多大的改变。
 # 我 仔细 地 观察 过 他们 ， 但 这 并 没有 使 我 对 他们 的 看法 有 多大 的 改变 。
+1	我	我	PART	_	_	4	nsubj	_	_
+2	仔细	仔细	ADJ	_	_	4	advmod	_	_
+3	地	地	PART	_	_	2	mark	_	_
+4	观察	观察	VERB	_	_	0	root	_	_
+5	过	过	PART	_	_	4	case	_	_
+6	他们	他们	PRON	_	_	4	obj	_	_
+7	，	，	PUNCT	_	_	4	punct	_	_
+8	但	但	CONJ	_	_	12	cc	_	_
+9	这	这	DET	_	_	12	nsubj	_	_
+10	并	并	ADV	_	_	11	advmod	_	_
+11	没有	没有	ADV	_	_	12	advmod	_	_
+12	使	使	VERB	_	_	4	conj	_	_
+13	我	我	PRON	_	_	12	obj	_	_
+14	对	对	ADP	_	_	15	case	_	_
+15	他们	他们	PRON	_	_	17	nmod	_	_
+16	的	的	PART	_	_	15	case	_	_
+17	看法	看法	NOUN	_	_	18	obl	_	_
+18	有	有	VERB	_	_	12	xcomp	_	_
+19	多大	多大	ADJ	_	_	21	amod	_	_
+20	的	的	PART	_	_	19	mark	_	_
+21	改变	改变	NOUN	_	_	18	obj	_	_
+22	。	。	PUNCT	_	_	12	punct	_	_
+
+
+#当我遇到一个头脑看来稍微清楚的大人时，我就拿出一直保存着的我那第一号作品来测试测试他 。
+#当 我 遇到 一 个 头脑 看来 稍微 清楚 的 大人 时 ， 我 就 拿出 一直 保存 着 的 我 那 第一 号 作品 来 测试测试 他 。
+1	当	当	ADP	_	_	3	case	_	_
+2	我	我	PRON	_	_	3	nsubj	_	_
+3	遇到	遇到	VERB	_	_	16	advcl	_	_
+4	一	一	NUM	_	_	5	nummod	_	_
+5	个	个	NOUN	_	_	11	clf	_	_
+6	头脑	头脑	NOUN	_	_	7	nsubj	_	_
+7	看来	看来	VERB	_	_	11	acl	_	_
+8	稍微	稍微	ADV	_	_	9	advmod	_	_
+9	清楚	清楚	ADJ	_	_	7	xcomp	_	_
+10	的	的	PART	_	_	7	mark	_	_
+11	大人	大人	NOUN	_	_	3	obj	_	_
+12	时	时	ADP	_	_	3	mark	_	_
+13	，	，	PUNCT	_	_	3	punct	_	_
+14	我	我	PRON	_	_	16	nsubj	_	_
+15	就	就	ADV	_	_	16	advmod	_	_
+16	拿出	拿出	VERB	_	_	0	root	_	_
+17	一直	一直	ADV	_	_	18	advmod	_	_
+18	保存	保存	VERB	_	_	25	acl	_	_
+19	着	着	PART	_	_	18	case	_	_
+20	的	的	PART	_	_	18	mark	_	_
+21	我	我	PRON	_	_	25	nmod	_	_
+22	那	那	CONJ	_	_	25	det	_	_
+23	第一	第一	NUM	_	_	24	nummod	_	_
+24	号	号	NOUN	_	_	25	clf	_	_
+25	作品	作品	NOUN	_	_	16	obj	_	_
+26	来	来	AUX	_	_	27	mark	_	_
+27	测试测试	测试测试	VERB	_	_	16	advcl	_	_
+28	他	他	PRON	_	_	27	obj	_	_
+29	。	。	PUNCT	_	_	16	punct	_	_
+
+
+#我想知道他是否真的有理解能力。
+#我 想 知道 他 是否 真的 有 理解 能力 。
+1	我	我	PRON	_	_	3	nsubj	_	_
+2	想	想	AUX	_	_	3	aux	_	_
+3	知道	知道	VERB	_	_	0	root	_	_
+4	他	他	PRON	_	_	7	nsubj	_	_
+5	是否	是否	ADV	_	_	7	advmod	_	_
+6	真的	真的	ADV	_	_	7	advmod	_	_
+7	有	有	VERB	_	_	3	ccomp	_	_
+8	理解	理解	NOUN	_	_	9	nmod	_	_
+9	能力	能力	NOUN	_	_	7	obj	_	_
+10	。	。	PUNCT	_	_	3	punct	_	_
+
+
+#可是，得到的回答总是：“这是顶帽子。”
+#可是 ， 得到 的 回答 总 是 ： “ 这 是 顶 帽子 。 ”
+1	可是	可是	ADV	_	_	13	advmod	_	_
+2	，	，	PUNCT	_	_	1	punct	_	_
+3	得到	得到	VERB	_	_	5	acl	_	_
+4	的	的	PART	_	_	3	mark	_	_
+5	回答	回答	NOUN	_	_	13	nsubj	_	_
+6	总	总	ADV	_	_	13	advmod	_	_
+7	是	是	AUX	_	_	13	aux	_	_
+8	：	：	PUNCT	_	_	5	punct	_	_
+9	“	“	PUNCT	_	_	13	punct	_	_
+10	这	这	DET	_	_	13	nsubj	_	_
+11	是	是	AUX	_	_	13	aux	_	_
+12	顶	顶	NOUN	_	_	13	clf	_	_
+13	帽子	帽子	NOUN	_	_	0	root	_	_
+14	。	。	PUNCT	_	_	13	punct	_	_
+15	”	”	PUNCT	_	_	13	punct	_	_
+
+
+#我就不和他谈巨蟒呀，原始森林呀，或者星星之类的事。
+#我 就 不 和 他 谈 巨蟒 呀 ， 原始 森林 呀 ， 或者 星星 之类 的 事 。
+1	我	我	PRON	_	_	6	nsubj	_	_
+2	就	就	ADV	_	_	6	advmod	_	_
+3	不	不	ADV	_	_	6	advmod	_	_
+4	和	和	ADP	_	_	5	case	_	_
+5	他	他	PRON	_	_	6	obl	_	_
+6	谈	谈	VERB	_	_	0	root	_	_
+7	巨蟒	巨蟒	NOUN	_	_	18	nmod	_	_
+8	呀	呀	PART	_	_	7	discourse	_	_
+9	，	，	PUNCT	_	_	7	punct	_	_
+10	原始	原始	NOUN	_	_	11	nmod	_	_
+11	森林	森林	NOUN	_	_	7	conj	_	_
+12	呀	呀	PART	_	_	11	discourse	_	_
+13	，	，	PUNCT	_	_	11	punct	_	_
+14	或者	或者	CONJ	_	_	15	cc	_	_
+15	星星	星星	NOUN	_	_	11	conj	_	_
+16	之类	之类	ADJ	_	_	15	acl	_	_
+17	的	的	PART	_	_	16	mark	_	_
+18	事	事	NOUN	_	_	6	obj	_	_
+19	。	。	PUNCT	_	_	6	punct	_	_
+
+
+#我只得迁就他的水平，和他们谈些桥牌呀，高尔夫球呀，政治呀，领带呀这些。
+#我 只得 迁就 他 的 水平 ， 和 他们 谈 些 桥牌 呀 ， 高尔夫球 呀 ， 政治 呀 ， 领带 呀 这些 。
+1	我	我	PRON	_	_	3	nsubj	_	_
+2	只得	只得	ADV	_	_	3	advmod	_	_
+3	迁就	迁就	VERB	_	_	0	root	_	_
+4	他	他	PRON	_	_	6	nmod	_	_
+5	的	的	PART	_	_	4	case	_	_
+6	水平	水平	NOUN	_	_	3	obj	_	_
+7	，	，	PUNCT	_	_	3	punct	_	_
+8	和	和	ADP	_	_	9	case	_	_
+9	他们	他们	PRON	_	_	10	obl	_	_
+10	谈	谈	VERB	_	_	3	parataxis	_	_
+11	些	些	DET	_	_	12	det	_	_
+12	桥牌	桥牌	NOUN	_	_	10	obj	_	_
+13	呀	呀	PART	_	_	12	discourse	_	_
+14	，	，	PUNCT	_	_	12	punct	_	_
+15	高尔夫球	高尔夫球	NOUN	_	_	12	conj	_	_
+16	呀	呀	PART	_	_	15	discourse	_	_
+17	，	，	PUNCT	_	_	15	punct	_	_
+18	政治	政治	NOUN	_	_	12	conj	_	_
+19	呀	呀	PART	_	_	18	discourse	_	_
+20	，	，	PUNCT	_	_	18	punct	_	_
+21	领带	领带	NOUN	_	_	12	conj	_	_
+22	呀	呀	PART	_	_	21	discourse	_	_
+23	这些	这些	DET	_	_	21	appos	_	_
+24	。	。	PUNCT	_	_	10	punct	_	_
+
+
+#于是大人们就十分高兴能认识我这样一个通情达理的人。
+#于是 大人 们 就 十分 高兴 能 认识 我 这样 一 个 通情达理 的 人 。
+1	于是	于是	ADV	_	_	6	advmod	_	_
+2	大人	大人	NOUN	_	_	3	compound	_	_
+3	们	们	PART	_	_	6	nsubj	_	_
+4	就	就	ADV	_	_	6	advmod	_	_
+5	十分	十分	ADV	_	_	6	advmod	_	_
+6	高兴	高兴	ADJ	_	_	0	root	_	_
+7	能	能	AUX	_	_	8	aux	_	_
+8	认识	认识	VERB	_	_	6	ccomp	_	_
+9	我	我	PRON	_	_	10	nmod	_	_
+10	这样	这样	ADJ	_	_	15	acl	_	_
+11	一	一	NUM	_	_	12	nummod	_	_
+12	个	个	NOUN	_	_	15	clf	_	_
+13	通情达理	通情达理	ADJ	_	_	15	amod	_	_
+14	的	的	PART	_	_	13	mark	_	_
+15	人	人	NOUN	_	_	8	obj	_	_
+16	。	。	PUNCT	_	_	6	punct	_	_
+
