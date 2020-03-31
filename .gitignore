@@ -1,1 +1,7 @@
+# MacOS
 .DS_Store
+
+# VSC LaTeX compiler
+.aux
+.log
+.synctex.gz
