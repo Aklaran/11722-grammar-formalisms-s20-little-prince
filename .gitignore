@@ -2,6 +2,6 @@
 .DS_Store
 
 # VSC LaTeX compiler
-.aux
-.log
-.synctex.gz
+*.aux
+*.log
+*.synctex.gz
