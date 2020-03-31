@@ -84,7 +84,7 @@
 9	และ	and	CCONJ	_	_	10	cc	_	_
 10	นอน	sleep	VERB	_	_	7	conj	_	_
 11	ย่อย	digest	VERB	_	_	10	compound:svc	_	_
-12	อาหาร	food	NOUN	_	_	11	subj	_	_
+12	อาหาร	food	NOUN	_	_	11	obj	_	_
 13	อยู่	PROG	AUX	_	_	10	aux	_	_
 14	ตลอด	throughout	ADP	_	_	17	case	_	_
 15	เวลา	time	NOUN	_	_	14	fixed	_	_
@@ -243,7 +243,7 @@
 9	กับ	with	ADP	_	_	10	case	_	_
 10	การวาดภาพ	NMLZ-draw	NOUN	_	_	8	obl	_	_
 11	งูเหลือม	boa	NOUN	_	_	10	nmod	_	_
-12	ชนิด	style	NOUN	_	_	10	clf	_	_
+12	ชนิด	style	NOUN	_	_	10	obl	_	_
 13	ที่	which	SCONJ	_	_	14	mark	_	_
 14	เห็น	see	VERB	_	_	12	acl	_	_
 15	ด้าน	viewpoint	NOUN	_	_	14	obj	_	_
@@ -251,10 +251,10 @@
 17	หรือ	or	CCONJ	_	_	18	cc	_	_
 18	ด้าน	viewpoint	NOUN	_	_	15	conj	_	_
 19	ใน	inside	NOUN	_	_	18	amod	_	_
-20	เสีย	completely.PERF	PART	_	_	7	advmod	_	_
+20	เสีย	completely.PERF	VERB	_	_	7	advmod/aux	_	_
 21	และ	and	CCONJ	_	_	22	cc	_	_
 22	หัน	turn	VERB	_	_	7	conj	_	_
-23	มา	come.ALL	VERB	_	_	22	compound:prt	_	_
+23	มา	come.ALL	VERB	_	_	22	compound:svc	_	_
 24	สนใจ	interested_in	VERB	_	_	22	xcomp	_	_
 25	เรียน	learn	VERB	_	_	24	xcomp	_	_
 26	วิชา	study_of	NOUN	_	_	25	obj	_	_
@@ -268,7 +268,7 @@
 # n16
 # text = ดังนั้น ฉันจึงได้ละทิ้งอาชีพวาดภาพอันสูงส่งนี้เสียตั้งแต่อายุ ๖ ขวบ
 # text_en = <TRANSLATE>
-1	ดัง	consequence_of	CCONJ	_	_	6	cc	_	_
+1	ดัง	consequence_of	CCONJ	_	_	6	discourse	_	_
 2	นั้น	that	DET	_	_	1	fixed	_	_
 3	ฉัน	1SG	PRON	_	_	6	nsubj	_	_
 4	จึง	thus	ADV	_	_	6	advmod	_	_
@@ -279,7 +279,7 @@
 9	อัน	CLF	NOUN	_	_	7	clf	_	_
 10	สูงส่ง	noble.majestic	NUM	_	_	7	amod	_	_
 11	นี้	this	DET	_	_	7	det	_	_
-12	เสีย	completely.PERF	VERB	_	_	6	advmod	_	_
+12	เสีย	completely.PERF	VERB	_	_	6	advmod/aux	_	_
 13	ตั้ง	from	VERB	_	_	15	case	_	_
 14	แต่	since	ADP	_	_	13	fixed	_	_
 15	อายุ	age	NOUN	_	_	6	obl	_	_
