@@ -28,7 +28,7 @@
 
 # n2
 # text = รูปนั้นเป็นรูปงูเหลือมกำลังกลืนสัตว์ป่า
-# text_en = <TRANSLATE>
+# text_en = That picture was a picture of a boa constrictor swallowing a wild animal.
 1	รูป	picture.CLF	NOUN	_	_	4	nsubj	_	_
 2	นั้น	DEM	DET	_	_	1	det	_	_
 3	เป็น	COP	VERB	_	_	4	cop	_	_
@@ -40,7 +40,7 @@
 
 # n3
 # text = นี่คือรูปลอกของภาพนั้น
-# text_en = <TRANSLATE>
+# text_en = This is a sticker(?) of that image.
 1	นี่	DEM	PRON	_	_	3	nsubj	_	_
 2	คือ	COP	VERB	_	_	3	cop	_	_
 3	รูปลอก	sticker	NOUN	_	_	_	_	_	_
@@ -77,7 +77,7 @@
 2	จากนั้น	after.that	ADV	_	_	7	advmod	_	_
 3	มัน	3SG	PRON	_	_	7	nsubj	_	_
 4	ก็	then	ADV	_	_	7	advmod	_	_
-5	ไม่	NEG	PART	_	_	7	advmod	_	_
+5	ไม่	NEG	PART	_	_	6	advmod	_	_
 6	สามารถ	able.to	AUX	_	_	7	aux	_	_
 7	เคลื่อนไหว	move	VERB	_	_	0	root	_	_
 8	ได้	able.to	AUX	_	_	7	aux	_	_
@@ -168,7 +168,7 @@
 
 # n11
 # text = รูปภาพของฉันไม่ได้เป็นรูปหมวก
-# text_en = <TRANSLATE>
+# text_en = My picture was not a picture of a hat.
 1	รูปภาพ	picture	NOUN	_	_	7	nsubj	_	_
 2	ของ	of	ADP	_	_	3	case	_	_
 3	ฉัน	1SG	PRON	_	_	1	nmod	_	_
@@ -180,7 +180,7 @@
 
 # n12
 # text = แต่เป็นรูปงูเหลือมที่กำลังนอนย่อยช้างที่มันกลืนเข้าไป
-# text_en = <TRANSLATE>
+# text_en = Rather it was a picture of a boa digesting an elephant that it had swallowed whole.
 1	แต่	but	CCONJ	_	_	3	cc	_	_
 2	เป็น	COP	AUX	_	_	3	cop	_	_
 3	รูป	picture	NOUN	_	_	0	root	_	_
@@ -198,7 +198,7 @@
 
 # n13
 # text = ฉันจึงต้องวาดรูปภายในงูเหลือมเพื่อให้พวกผู้ใหญ่เข้าใจ เพราะพวกนี้ต้องการคำอธิบายเสมอ
-# text_en = <TRANSLATE>
+# text_en = I thus had to draw a picture inside a boa so the adults would understand, because they always need explanations.
 1	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
 2	จึง	thus	ADV	_	_	3	advmod	_	_
 3	ต้อง	need.to	VERB	_	_	0	root	_	_
@@ -219,7 +219,7 @@
 
 # n14
 # text = รูปวาดที่ ๒ ของฉันจึงเป็นดังนี้
-# text_en = <TRANSLATE>
+# text_en = Thus, my second drawing looked as such.
 1	รูปวาด	_	NOUN	_	_	8	nsubj	_	_
 2	ที่	_	SCONJ	_	_	3	case	_	_
 3	๒	_	NOUN	_	_	1	amod	_	_
@@ -231,7 +231,7 @@
 
 # n15
 # text = พวกผู้ใหญ่ได้แนะนำว่าฉันควรจะเลิกยุ่งกับการวาดภาพงูเหลือมชนิดที่เห็นด้านนอกหรือด้านในเสีย และหันมาสนใจเรียนวิชาภูมิศาสตร์ ประวัติศาสตร์ คณิตศาสตร์ และไวยากรณ์แทน
-# text_en = <TRANSLATE>
+# text_en = The adults advised that I should stop bothering with drawing boas, inside oroutside, and instead turn my interest towards the study of geography, history, mathematics, and grammar.
 1	พวกผู้ใหญ่	PL-adult	NOUN	_	_	3	nsubj	_	_
 2	ได้	PST	AUX	_	_	3	aux	_	_
 3	แนะนำ	advise	VERB	_	_	0	root	_	_
@@ -267,7 +267,7 @@
 
 # n16
 # text = ดังนั้น ฉันจึงได้ละทิ้งอาชีพวาดภาพอันสูงส่งนี้เสียตั้งแต่อายุ ๖ ขวบ
-# text_en = <TRANSLATE>
+# text_en = Consequently, I completely abandoned the noble career of drawing at the age of six.
 1	ดัง	consequence_of	CCONJ	_	_	6	discourse	_	_
 2	นั้น	that	DET	_	_	1	fixed	_	_
 3	ฉัน	1SG	PRON	_	_	6	nsubj	_	_
@@ -288,32 +288,34 @@
 
 # n17
 # text = เพราะว่าฉันรู้สึกหมดกำลังใจที่ภาพวาดรูปแรกและรูปที่สองไม่ได้รับผลสำเร็จ
-# text_en = <TRANSLATE>
-1	เพราะว่า	_	SCONJ	_	_	_	_	_	_
-2	ฉัน	_	PRON	_	_	_	_	_	_
-3	รู้สึก	_	VERB	_	_	_	_	_	_
-4	หมดกำลังใจ	_	NOUN	_	_	_	_	_	_
-5	ที่	_	SCONJ	_	_	_	_	_	_
-6	ภาพ	_	NOUN	_	_	_	_	_	_
-7	วาดรูป	_	NOUN	_	_	_	_	_	_
-8	แรก	_	ADJ	_	_	_	_	_	_
-9	และ	_	CCONJ	_	_	_	_	_	_
-10	รูป	_	NOUN	_	_	_	_	_	_
-11	ที่สอง	_	ADJ	_	_	_	_	_	_
-12	ไม่	_	PART	_	_	_	_	_	_
-13	ได้รับ	_	VERB	_	_	_	_	_	_
-14	ผลสำเร็จ	_	NOUN	_	_	_	_	_	_
+# text_en = Because I was disheartened that my first and second drawings were not successful.
+1	เพราะว่า	because	SCONJ	_	_	4	mark	_	_
+2	ว่า	that	SCONJ	_	_	1	fixed	_	_
+3	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
+4	รู้สึก	feel	VERB	_	_	0	root	_	_
+5	หมดกำลังใจ	disheartened	ADJ	_	_	4	xcomp	_	_
+6	ที่	that	SCONJ	_	_	15	mark	_	_
+7	ภาพวาด	drawing	NOUN	_	_	15	nsubj	_	_
+8	รูป	CLF	CLF	_	_	7	clf	_	_
+9	แรก	first	ADJ	_	_	8	amod	_	_
+10	และ	and	CCONJ	_	_	11	cc	_	_
+11	รูป	CLF	CLF	_	_	8	conj	_	_
+12	ที่สอง	second	ADJ	_	_	11	amod	_	_
+13	ไม่	not	PART	_	_	14	advmod	_	_
+14	ได้	PST	PART	_	_	15	nsubj	_	_
+15	รับ	receive	VERB	_	_	4	ccomp	_	_
+16	ผลสำเร็จ	success	NOUN	_	_	15	obj	_	_
 
 # n18
 # text = พวกผู้ใหญ่ไม่เคยเข้าใจอะไรเลย
-# text_en = <TRANSLATE>
-1	พวก	_	NOUN	_	_	_	_	_	_
-2	ผู้ใหญ่	_	NOUN	_	_	_	_	_	_
-3	ไม่	_	PART	_	_	_	_	_	_
-4	เคย	_	AUX	_	_	_	_	_	_
-5	เข้าใจ	_	VERB	_	_	_	_	_	_
-6	อะไร	_	PRON	_	_	_	_	_	_
-7	เลย	_	ADV	_	_	_	_	_	_
+# text_en = Adults never understand anything at all.
+1	พวก	PL	NOUN	_	_	2	compound	_	_
+2	ผู้ใหญ่	adult	NOUN	_	_	5	nsubj	_	_
+3	ไม่	not	PART	_	_	4	advmod	_	_
+4	เคย	ever	AUX	_	_	5	aux	_	_
+5	เข้าใจ	understand	VERB	_	_	0	root	_	_
+6	อะไร	anything	PRON	_	_	5	obj	_	_
+7	เลย	at_all	ADV	_	_	5	advmod	_	_
 
 # n19
 # text = เป็นเรื่องที่น่าเหนื่อยหน่ายอย่างยิ่งที่พวกเราเด็กๆ จะต้องอธิบายให้พวกเขาเข้าใจอยู่ตลอดเวลา
