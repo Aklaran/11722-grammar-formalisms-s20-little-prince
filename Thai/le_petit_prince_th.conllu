@@ -319,22 +319,105 @@
 
 # n19
 # text = เป็นเรื่องที่น่าเหนื่อยหน่ายอย่างยิ่งที่พวกเราเด็กๆ จะต้องอธิบายให้พวกเขาเข้าใจอยู่ตลอดเวลา
-# text_en = <TRANSLATE>
-1	เป็นเรื่อง	_	NOUN	_	_	_	_	_	_
-2	ที่	_	SCONJ	_	_	_	_	_	_
-3	น่า	_	AUX	_	_	_	_	_	_
-4	เหนื่อยหน่าย	_	VERB	_	_	_	_	_	_
-5	อย่างยิ่ง	_	NOUN	_	_	_	_	_	_
-6	ที่	_	SCONJ	_	_	_	_	_	_
-7	พวกเรา	_	VERB	_	_	_	_	_	_
-8	เด็ก	_	NOUN	_	_	_	_	_	_
-9	ๆ	_	NOUN	_	_	_	_	_	_
-10	จะ	_	AUX	_	_	_	_	_	_
-11	ต้อง	_	AUX	_	_	_	_	_	_
-12	อธิบาย	_	VERB	_	_	_	_	_	_
-13	ให้	_	SCONJ	_	_	_	_	_	_
-14	พวกเขา	_	NOUN	_	_	_	_	_	_
-15	เข้าใจ	_	VERB	_	_	_	_	_	_
-16	อยู่	_	AUX	_	_	_	_	_	_
-17	ตลอดเวลา	_	ADV	_	_	_	_	_	_
+# text_en = It is extremely tiring for us children to always have to explain such that they can understand.
+1	เป็น	_	COP	_	_	2	cop	_	_
+2	เรื่อง	issue	NOUN	_	_	0	root	_	_
+3	ที่	that	SCONJ	_	_	4	mark	_	_
+4	น่า	ADJ	AUX	_	_	2	xcomp	_	_
+5	เหนื่อย	tired	VERB	_	_	4	compound	_	_
+6	หน่าย	bored	VERB	_	_	5	compound	_	_
+7	อย่าง	way	NOUN	_	_	4	advmod	_	_
+8	ยิ่ง	extreme	ADJ	_	_	7	fixed	_	_
+9	ที่	that	SCONJ	_	_	16	mark	_	_
+10	พวก	PL	NOUN	_	_	16	nsubj	_	_
+11	เรา	1	PRON	_	_	10	compound	_	_
+12	เด็ก	child	NOUN	_	_	10	nmod	_	_
+13	ๆ	PL	SYM	_	_	12	dep	_	_
+14	จะ	FUT	AUX	_	_	16	aux	_	_
+15	ต้อง	have_to	AUX	_	_	16	aux	_	_
+16	อธิบาย	explain	VERB	_	_	2	ccomp	_	_
+17	ให้	such_that	SCONJ	_	_	20	mark	_	_
+18	พวก	PL	NOUN	_	_	20	nsubj	_	_
+19	เขา	3	PRON	_	_	18	compound	_	_
+20	เข้าใจ	understand	VERB	_	_	16	ccomp	_	_
+21	อยู่	PROG	AUX	_	_	20	aux	_	_
+22	ตลอด	throughout	ADV	_	_	23	case	_	_
+23	เวลา	time	NOUN	_	_	20	obl	_	_
+
+# n20
+# text = ดังนั้นฉันจึงได้เลือกอาชีพใหม่
+# text_en = So I then chose a new career.
+1	ดังนั้น	so	SCONJ	_	_	5	cc	_	_
+2	ฉัน	1SG	PRON	_	_	5	subj	_	_
+3	จึง	so	ADV	_	_	5	advmod	_	_
+4	ได้	PST	AUX	_	_	5	aux	_	_
+5	เลือก	choose	VERB	_	_	0	root	_	_
+6	อาชีพ	career	NOUN	_	_	5	obj	_	_
+7	ใหม่	new	ADJ	_	_	6	acl	_	_
+
+# n21
+# text = ฉันหัดขับเครื่องบิน
+# text_en = I trained to fly airplanes.
+1	ฉัน	1SG	PRON	_	_	2	subj	_	_
+2	หัด	train	VERB	_	_	0	root	_	_
+3	ขับ	drive	VERB	_	_	2	xcomp	_	_
+4	เครื่อง	machine	NOUN	_	_	3	obj	_	_
+5	บิน	fly	VERB	_	_	4	compound	_	_
+
+# n22
+# text = ฉันบินไปเกือบจะทั่วโลก
+# text_en = I've flow to almost the whole world.
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	บิน	fly	VERB	_	_	0	root	_	_
+3	ไป	go	VERB	_	_	2	compound:svc	_	_
+4	เกือบ	almost	ADV	_	_	6	advmod	_	_
+5	จะ	FUT	AUX	_	_	6	aux	_	_
+6	ทั่ว	whole	ADJ	_	_	7	acl	_	_
+7	โลก	world	NOUN	_	_	2	obj	_	_
+
+# n23
+# text = และภูมิศาสตร์ก็ช่วยฉันมากทีเดียว
+# text_en = And geography has truly helped me quite a lot.
+1	และ	and	CCONJ	_	_	4	cc	_	_
+2	ภูมิศาสตร์	geography	NOUN	_	_	4	nsubj	_	_
+3	ก็	(emphasis)	CCONJ	_	_	4	advmod	_	_
+4	ช่วย	help	VERB	_	_	0	root	_	_
+5	ฉัน	1SG	PRON	_	_	4	obj	_	_
+6	มาก	a_lot	ADV	_	_	4	advmod	_	_
+7	ทีเดียว	quite	ADV	_	_	4	advmod	_	_
+
+# n24
+# text = ฉันสามารถบอกได้ทันทีว่านี่คือประเทศจีนไม่ใช่แอริโซนา
+# text_en = I can tell you immediately that this is China, not Arizona.
+1	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+2	สามารถ	able_to	AUX	_	_	3	aux	_	_
+3	บอก	tell	VERB	_	_	0	root	_	_
+4	ได้	able_to	AUX	_	_	3	aux	_	_
+5	ทันที	immediately	ADV	_	_	3	advmod	_	_
+6	ว่า	QUOT	SCONJ	_	_	9	mark	_	_
+7	นี่	this	PRON	_	_	9	nsubj	_	_
+8	คือ	COP	AUX	_	_	9	cop	_	_
+9	ประเทศ	country	NOUN	_	_	3	ccomp	_	_
+10	จีน	China	PROPN	_	_	9	flat:name	_	_
+11	ไม่	not	PART	_	_	13	advmod	_	_
+12	ใช่	COP	AUX	_	_	13	cop	_	_
+13	แอริโซนา	Arizona	PROPN	_	_	9	appos	_	_
+
+# n25
+# text = วิชานี้จึงเป็นประโยชน์มากถ้าเราหลงทางในเวลากลางคืน
+# text_en = This knowledge is a huge benefit if one loses their way in the middle of the night.
+1	วิชา	knowledge	NOUN	_	_	5	nsubj	_	_
+2	นี้	this	DET	_	_	1	det	_	_
+3	จึง	thus	ADV	_	_	5	advmod	_	_
+4	เป็น	COP	AUX	_	_	5	cop	_	_
+5	ประโยชน์	benefit	NOUN	_	_	0	root	_	_
+6	มาก	a_lot	ADV	_	_	5	advmod	_	_
+7	ถ้า	if	SCONJ	_	_	9	mark	_	_
+8	เรา	1SG	PRON	_	_	9	nsubj	_	_
+9	หลง	lose	VERB	_	_	5	advcl	_	_
+10	ทาง	way	NOUN	_	_	9	obj	_	_
+11	ใน	in	ADP	_	_	12	case	_	_
+12	เวลา	time	NOUN	_	_	9	obl	_	_
+13	กลาง	middle_of	NOUN	_	_	12	nmod	_	_
+14	คืน	night	NOUN	_	_	13	compound	_	_
 
