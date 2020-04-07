@@ -401,7 +401,7 @@
 10	จีน	China	PROPN	_	_	9	flat:name	_	_
 11	ไม่	not	PART	_	_	13	advmod	_	_
 12	ใช่	COP	AUX	_	_	13	cop	_	_
-13	แอริโซนา	Arizona	PROPN	_	_	9	appos	_	_
+13	แอริโซนา	Arizona	PROPN	_	_	9	conj	_	_
 
 # n25
 # text = วิชานี้จึงเป็นประโยชน์มากถ้าเราหลงทางในเวลากลางคืน
