@@ -3,7 +3,7 @@
 # text_en = Once when I was six-year-old, from a book about primeval forests with the title "Tales experienced," I saw an amazing drawing.
 1	내가	내+가	PRON	np+jks	_	3	nsubj	_	_
 2	여섯	여섯	NUM	nr	_	3	nummod	_	_
-3	살	살	NOUN	nnb	_	4	nmod	_	_
+3	살	살	NOUN	nnb	_	4	compound	_	_
 4	적에	적+에	ADV	nnb+jkb	_	21	obl	_	_
 5	한번은	한+번+은	NUM	mm+nnb+jx	_	21	dislocated	_	_
 6	"	"	PUNCT	ss	_	7	punct	_	SpaceAfter=No
@@ -31,7 +31,7 @@
 2	집어삼키고	집어삼키+고	VERB	vv+ec	_	5	acl	_	_
 3	있는	있+는	AUX	vv+etm	_	2	aux	_	_
 4	보아	보아	NOUN	nng	_	5	compound	_	_
-5	구렁이	구렁이	NOUN	nng	_	6	nmod	_	_
+5	구렁이	구렁이	NOUN	nng	_	6	compound	_	_
 6	그림이었다	그림+이+었+다	VERB	nng+vcp+ep+ef	_	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sf	_	6	punct	_	_
 
@@ -40,7 +40,7 @@
 # text_en = If one copies over that (drawing), it's like this.
 1	그것을	그것+을	PRON	np+jko	_	3	obj	_	_
 2	옮기어	옮기+어	VERB	vv+ec	_	3	advcl	_	_
-3	그리면	그리+면	SCONJ	vv+ec	_	4	ccomp	_	_
+3	그리면	그리+면	VERB	vv+ec	_	4	advcl	_	_
 4	이렇다	이렇+다	VERB	va+ef	_	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	sf	_	4	punct	_	_
 
@@ -62,7 +62,7 @@
 3	구렁이는	구렁이+는	NOUN	nng+jx	_	5	nsubj	_	_
 4	먹이를	먹이+를	NOUN	nng+jko	_	5	obj	_	_
 5	씹지도	씹+지+도	VERB	vv+ec+jx	_	0	root	_	_
-6	않고	않+고	CCONJ	vx+ec	_	5	aux	_	_
+6	않고	않+고	AUX	vx+ec	_	5	aux	_	_
 7	통째로	통째+로	ADV	nng+jkb	_	8	advmod	_	_
 8	집어삼킨다	집어삼키+ㄴ다	VERB	vv+ef	_	5	conj	_	SpaceAfter=No
 9	.	.	PUNCT	sf	_	8	punct	_	_
@@ -73,7 +73,7 @@
 1	그리고는	그리고+는	CCONJ	maj+jx	_	3	cc	_	_
 2	꼼짝도	꼼짝+도	ADV	mag+jx	_	3	advmod	_	_
 3	하지	하+지	VERB	vv+ec	_	0	root	_	_
-4	못하고	못하+고	CCONJ	vx+ec	_	3	aux	_	_
+4	못하고	못하+고	AUX	vx+ec	_	3	aux	_	_
 5	여섯	여섯	NUM	nr	_	6	nummod	_	_
 6	달	달	NOUN	nng	_	7	compound	_	_
 7	동안	동안	ADV	nng	_	9	advmod	_	_
@@ -89,23 +89,23 @@
 # text_en = So I drew a picture for the first time in my life with colored pencils in my own ways, after pondering about adventures in jungles for a while.
 1	나는	나+는	PRON	np+jks	_	13	nsubj	_	_
 2	그래서	그래서	CCONJ	maj	_	13	cc	_	_
-3	밀림	밀림	NOUN	nng	_	4	nmod	_	_
+3	밀림	밀림	NOUN	nng	_	4	compound	_	_
 4	속에서의	속+에서+의	NOUN	nng+jkb+jkg	_	5	nmod	_	_
 5	모험에	모험+에	ADV	nng+jkb	_	6	obl	_	_
-6	대해	대하+아	SCONJ	vv+ec	_	8	ccomp	_	_
+6	대해	대하+아	VERB	vv+ec	_	8	ccomp	_	_
 7	한참	한참	ADV	mag	_	8	advmod	_	_
-8	생각해	생각하+아	CCONJ	vv+ec	_	11	acl	_	_
-9	보고	보+고	CCONJ	vx+ec	_	8	aux	_	_
+8	생각해	생각하+아	VERB	vv+ec	_	11	acl	_	_
+9	보고	보+고	AUX	vx+ec	_	8	aux	_	_
 10	난	나+ㄴ	AUX	vx+etm	_	9	aux	_	_
 11	끝에	끝+에	ADV	nng+jkb	_	13	obl	_	_
 12	색연필을	색연필+을	NOUN	nng+jko	_	13	obj	_	_
-13	가지고	가지+고	CCONJ	vv+ec	_	0	root	_	_
+13	가지고	가지+고	VERB	vv+ec	_	0	root	_	_
 14	내	내	PRON	np	_	15	nmod	_	_
 15	나름대로	나름+대로	ADV	nnb+jx	_	21	advmod	_	_
 16	내	내	PRON	np	_	17	nmod	_	_
-17	생애	생애	NOUN	nng	_	20	nmod	_	_
+17	생애	생애	NOUN	nng	_	19	nmod	_	_
 18	첫	첫	ADJ	mm	_	19	amod	_	_
-19	번째	번째	NOUN	nnb	_	20	nmod	_	_
+19	번째	번째	NOUN	nnb	_	20	compound	_	_
 20	그림을	그림+을	NOUN	nng+jko	_	21	obj	_	_
 21	그려보았다	그리+어+보+았+다	VERB	vv+ec+vx+ep+ef	_	13	conj	_	SpaceAfter=No
 22	.	.	PUNCT	sf	_	21	punct	_	_
@@ -114,7 +114,7 @@
 # text = 나의 그림 제1호였다.
 # text_en = It was my first drawing.
 1	나의	나+의	PRON	np+jkg	_	2	nmod	_	_
-2	그림	그림	NOUN	nng	_	3	nmod	_	_
+2	그림	그림	NOUN	nng	_	3	compound	_	_
 3	제1호였다	제+1+호+이+었+다	VERB	xpn+sn+nnb+vcp+ep+ef	_	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sf	_	3	punct	_	_
 
@@ -128,13 +128,13 @@
 
 # sent_id = 1_10
 # text = 나는 그 걸작품을 어른들에게 보여 주면서 내 그림이 무섭지 않느냐고 물었다.
-# text_en = I showed the masterpiece to adults and asked them if my drawing was terrifying.
+# text_en = I showed the masterpiece to grown-ups and asked them if my drawing was terrifying.
 1	나는	나+는	PRON	np+jx	_	11	nsubj	_	_
 2	그	그	DET	mm	_	3	det	_	_
 3	걸작품을	걸작품+을	NOUN	nng+jko	_	5	obj	_	_
 4	어른들에게	어른+들+에게	ADV	nng+xsn+jkb	_	5	iobj	_	_
-5	보여	보이+어	VERB	vv+ec	_	11	xcomp	_	_
-6	주면서	주+면서	SCONJ	vx+ec	_	5	aux	_	_
+5	보여	보이+어	VERB	vv+ec	_	11	advcl	_	_
+6	주면서	주+면서	AUX	vx+ec	_	5	aux	_	_
 7	내	내	PRON	np	_	8	nmod	_	_
 8	그림이	그림+이	NOUN	nng+jks	_	9	nsubj	_	_
 9	무섭지	무섭+지	ADJ	va+ec	_	11	ccomp	_	_
@@ -181,13 +181,13 @@
 
 # sent_id = 1_14
 # text = 그래서 나는 어른들이 알아볼 수 있도록 보아 구렁이의 속을 그렸다.
-# text_en = So I drew the inside of the boa constrictor so that adults can recognize it.
+# text_en = So I drew the inside of the boa constrictor so that grown-ups can recognize it.
 1	그래서	그래서	CCONJ	maj	_	10	cc	_	_
 2	나는	나+는	PRON	np+jx	_	10	nsubj	_	_
 3	어른들이	어른+들+이	NOUN	nng+xsn+jks	_	4	nsubj	_	_
-4	알아볼	알아보+ㄹ	VERB	vv+etm	_	10	ccomp	_	_
-5	수	수	NOUN	nnb	_	4	fixed	_	_
-6	있도록	있+도록	SCONJ	vv+ec	_	4	fixed	_	_
+4	알아볼	알아보+ㄹ	VERB	vv+etm	_	10	advcl	_	_
+5	수	수	NOUN	nnb	_	4	aux	_	_
+6	있도록	있+도록	VERB	vv+ec	_	5	fixed	_	_
 7	보아	보아	NOUN	nng	_	8	compound	_	_
 8	구렁이의	구렁이+의	NOUN	nng+jkg	_	9	nmod	_	_
 9	속을	속+을	NOUN	nng+jko	_	10	obj	_	_
@@ -196,7 +196,7 @@
 
 # sent_id = 1_15
 # text = 어른들은 언제나 설명을 해주어야만 한다.
-# text_en = Adults always need explanations.
+# text_en = Grown-ups always need explanations.
 1	어른들은	어른+들+은	NOUN	nng+xsn+jx	_	4	dislocated	_	_
 2	언제나	언제나	ADV	mag	_	4	advmod	_	_
 3	설명을	설명+을	NOUN	nng+jko	_	4	obj	_	_
@@ -208,14 +208,14 @@
 # text = 나의 그림 제2호는 이러했다.
 # text_en = My drawing no. 2 was like this.
 1	나의	나+의	PRON	np+jkg	_	2	nmod	_	_
-2	그림	그림	NOUN	nng	_	3	nmod	_	_
+2	그림	그림	NOUN	nng	_	3	compound	_	_
 3	제2호는	제+2+호+는	NOUN	xpn+sn+nnb+jx	_	4	nsubj	_	_
 4	이러했다	이러하+었+다	VERB	va+ep+ef	_	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	sf	_	4	punct	_	_
 
 # sent_id = 1_17
 # text = 어른들은 속이 보이거나 보이지 않거나 하는 보아 구렁이의 그림들은 집어치우고 차라리 지리, 역사, 계산, 그리고 문법 쪽에 관심을 가져보는 게 좋을 것이라고 충고해 주었다.
-# text_en = Adults advised me it would be better to throw away those drawings of boa constrictors with visible interior and whatnot, and rather take interest in geopgraphy, history, arithmetics and grammar instead.
+# text_en = Grown-ups advised me it would be better to throw away those drawings of boa constrictors with visible interior and whatnot, and rather take interest in geopgraphy, history, arithmetics and grammar instead.
 1	어른들은	어른+들+은	NOUN	nng+xsn+jx	_	26	nsubj	_	_
 2	속이	속+이	NOUN	nng+jks	_	3	nsubj	_	_
 3	보이거나	보이+거나	VERB	vv+ec	_	8	acl	_	_
@@ -225,9 +225,9 @@
 7	보아	보아	NOUN	nng	_	8	compound	_	_
 8	구렁이의	구렁이+의	NOUN	nnp+jkg	_	9	nmod	_	_
 9	그림들은	그림+들+은	NOUN	nng+xsn+jx	_	10	obj	_	_
-10	집어치우고	집어치우+고	CCONJ	vv+ec	_	23	acl	_	_
+10	집어치우고	집어치우+고	VERB	vv+ec	_	23	acl	_	_
 11	차라리	차라리	ADV	mag	_	22	advmod	_	_
-12	지리	지리	NOUN	nng	_	20	nmod	_	SpaceAfter=No
+12	지리	지리	NOUN	nng	_	20	compound	_	SpaceAfter=No
 13	,	,	PUNCT	sp	_	12	punct	_	_
 14	역사	역사	NOUN	nng	_	12	conj	_	SpaceAfter=No
 15	,	,	PUNCT	sp	_	14	punct	_	_
@@ -251,7 +251,7 @@
 1	그래서	그래서	CCONJ	maj	_	9	cc	_	_
 2	나는	나+는	PRON	np+jx	_	9	nsubj	_	_
 3	여섯	여섯	NUM	nr	_	4	nummod	_	_
-4	살	살	NOUN	nnb	_	5	nmod	_	_
+4	살	살	NOUN	nnb	_	5	compound	_	_
 5	적에	적+에	ADV	nnb+jkb	_	9	obl	_	_
 6	화가라는	화가+이+라는	VERB	nng+vcp+etm	_	8	acl	_	_
 7	멋진	멋지+ㄴ	ADJ	va+etm	_	8	amod	_	_
@@ -264,16 +264,16 @@
 # text = 내 그림 제1호와 제2호가 성공을 거두지 못한 데 낙심해 버렸던 것이다.
 # text_en = I had been disappointed that my pictures no. 1 and 2 failed to succeed.
 1	내	내	PRON	np	_	2	nmod	_	_
-2	그림	그림	NOUN	nng	_	3	nmod	_	_
-3	제1호와	제+1+호+와	CCONJ	xpn+sn+nnb+jc	_	6	nsubj	_	_
+2	그림	그림	NOUN	nng	_	3	compound	_	_
+3	제1호와	제+1+호+와	NOUN	xpn+sn+nnb+jc	_	6	nsubj	_	_
 4	제2호가	제+2+호가	NOUN	xpn+sn+nnb+jks	_	3	conj	_	_
 5	성공을	성공+을	NOUN	nng+jko	_	6	obj	_	_
 6	거두지	거두+지	VERB	vv+ec	_	8	acl	_	_
 7	못한	못하+ㄴ	AUX	vx+etm	_	6	aux	_	_
 8	데	데	NOUN	nnb	_	9	advmod	_	_
-9	낙심해	낙심+하+아	VERB	nng+xsv+ec	_	11	acl	_	_
+9	낙심해	낙심+하+아	VERB	nng+xsv+ec	_	0	root	_	_
 10	버렸던	버리+었+던	AUX	vx+ep+etm	_	9	aux	_	_
-11	것이다	것+이+다	VERB	nnb+vcp+ef	_	0	root	_	SpaceAfter=No
+11	것이다	것+이+다	VERB	nnb+vcp+ef	_	9	aux	_	SpaceAfter=No
 12	.	.	PUNCT	sf	_	11	punct	_	_
 
 # sent_id = 1_20
@@ -292,13 +292,13 @@
 # text_en = It is quite exhausting that they need explanations again and again.
 1	자꾸자꾸	자꾸자꾸	ADV	mag	_	3	advmod	_	_
 2	설명을	설명+을	NOUN	nng+jko	_	3	obj	_	_
-3	해주어야	하+아+주+어야	VERB	vv+ec+vx+ec	_	7	ccomp	_	_
+3	해주어야	하+아+주+어야	VERB	vv+ec+vx+ec	_	7	advcl	_	_
 4	하니	하+니	VERB	vv+ec	_	3	aux	_	_
 5	맥빠지는	맥+빠지+는	VERB	nng+vv+etm	_	6	acl	_	_
 6	노릇이	노릇+이	NOUN	nng+jks	_	7	nsubj	_	_
 7	아닐	아니+ㄹ	VERB	vcn+etm	_	0	root	_	_
-8	수	수	NOUN	nnb	_	7	fixed	_	_
-9	없다	없+다	ADJ	va+ef	_	7	fixed	_	SpaceAfter=No
+8	수	수	NOUN	nnb	_	7	aux	_	_
+9	없다	없+다	ADJ	va+ef	_	8	fixed	_	SpaceAfter=No
 10	.	.	PUNCT	sf	_	9	punct	_	_
 
 # sent_id = 1_22
@@ -309,8 +309,8 @@
 3	직업을	직업+을	NOUN	nng+jko	_	4	obj	_	_
 4	선택하지	선택+하+지	VERB	nng+xsv+ec	_	9	acl	_	_
 5	않을	않+을	AUX	vx+etm	_	4	aux	_	_
-6	수	수	NOUN	nnb	_	5	fixed	_	_
-7	없게	없+게	ADJ	va+ec	_	5	fixed	_	_
+6	수	수	NOUN	nnb	_	4	aux	_	_
+7	없게	없+게	ADJ	va+ec	_	6	fixed	_	_
 8	된	되+ㄴ	AUX	vx+etm	_	4	aux	_	_
 9	나는	나+는	PRON	np+jx	_	13	nsubj	_	_
 10	비행기	비행기	NOUN	nng	_	11	compound	_	_
@@ -328,8 +328,98 @@
 4	안	안	ADV	mag	_	5	advmod	_	_
 5	가본	가+아+보+ㄴ	VERB	vv+ec+vx+etm	_	6	acl	_	_
 6	데	데	NOUN	nnb	_	7	nsubj	_	_
-7	없이	없+이	SCONJ	va+ec	_	9	advcl	_	_
+7	없이	없+이	ADV	va+ec	_	9	advcl	_	_
 8	나는	나+는	PRON	np+jx	_	9	nsubj	_	_
 9	날아다녔다	날아다니+었+다	VERB	vv+ep+ef	_	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sf	_	9	punct	_	_
 
+# sent_id = 1_24
+# text = 그러니 지리는 정말로 많은 도움을 준 셈이었다.
+# text_en = Thus, geography ended up being a great help indeed.
+1	그러니	그러니	CCONJ	maj	_	6	cc	_	_
+2	지리는	지리+는	NOUN	nng+jx	_	6	nsubj	_	_
+3	정말로	정말로	ADV	mag	_	4	advmod	_	_
+4	많은	많+은	ADJ	va+etm	_	5	amod	_	_
+5	도움을	도움+을	NOUN	nng+jko	_	6	obj	_	_
+6	준	주+ㄴ	VERB	vv+etm	_	0	root	_	_
+7	셈이었다	셈+이+었+다	VERB	nnb+vcp+ep+ef	_	6	aux	_	SpaceAfter=No
+8	.	.	PUNCT	sf	_	7	punct	_	_
+
+# sent_id = 1_25
+# text = 한번 슬쩍 보고도 중국과 애리조나를 나는 구별할 수 있었던 것이다.
+# text_en = Even with a quick glance, I was able to distinguish China from Arizona.
+1	한번	한+번	ADV	mm+nnb	_	3	advmod	_	_
+2	슬쩍	슬쩍	ADV	mag	_	3	advmod	_	_
+3	보고도	보+고+도	VERB	vv+ec+jx	_	0	root	_	_
+4	중국과	중국+과	PROPN	nnp+jc	_	7	obj	_	_
+5	애리조나를	애리조나+를	PROPN	nnp+jko	_	4	conj	_	_
+6	나는	나+는	PRON	np+jx	_	7	nsubj	_	_
+7	구별할	구별+하+ㄹ	VERB	nng+xsv+etm	_	3	conj	_	_
+8	수	수	NOUN	nnb	_	7	aux	_	_
+9	있었던	있+었+던	AUX	vx+ep+etm	_	8	fixed	_	_
+10	것이다	것+이+다	VERB	nnb+vcp+ef	_	7	aux	_	SpaceAfter=No
+11	.	.	PUNCT	sf	_	10	punct	_	_
+
+# sent_id = 1_26
+# text = 그것은 밤에 길을 잃었을 때 아주 유용한 일이다.
+# text_en = That is very helpful when lost in the night.
+1	그것은	그것+은	PRON	np+jx	_	8	nsubj	_	_
+2	밤에	밤+에	ADV	nng+jkb	_	4	obl	_	_
+3	길을	길+을	NOUN	nng+jko	_	4	obj	_	_
+4	잃었을	잃+었+을	VERB	vv+ep+etm	_	8	advcl	_	_
+5	때	때	NOUN	nng	_	4	mark	_	_
+6	아주	아주	ADV	mag	_	7	advmod	_	_
+7	유용한	유용+하+ㄴ	ADJ	xr+xsa+etm	_	8	amod	_	_
+8	일이다	일+이+다	VERB	nnb+vcp+ef	_	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	sf	_	8	punct	_	_
+
+# sent_id = 1_27
+# text = 나는 그리하여 일생 동안 수없이 많은 점잖은 사람들과 수많은 접촉을 가져왔다.
+# text_en = So I have been having encounters with many countless gentle people in the course of my life.
+1	나는	나+는	PRON	np+jx	_	11	nsubj	_	_
+2	그리하여	그리하여	CCONJ	maj	_	11	cc	_	_
+3	일생	일생	NOUN	nng	_	4	compound	_	_
+4	동안	동안	NOUN	nng	_	11	advmod	_	_
+5	수없이	수없이	ADV	mag	_	6	advmod	_	_
+6	많은	많+은	ADJ	va+etm	_	8	amod	_	_
+7	점잖은	점잖+은	ADJ	va+etm	_	8	amod	_	_
+8	사람들과	사람+들+과	NOUN	nng+xsn+jc	_	11	advmod	_	_
+9	수많은	수많+은	ADJ	va+etm	_	10	amod	_	_
+10	접촉을	접촉+을	NOUN	nng+jko	_	11	obj	_	_
+11	가져왔다	가져오+았+다	VERB	vv+ep+ef	_	_	_	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	_
+
+# sent_id = 1_28
+# text = 어른들 틈에서 많이 살아온 것이다.
+# text_en = I have lived among grown-ups for long.
+1	어른들	어른+들	NOUN	nng+xsn	_	2	nmod	_	_
+2	틈에서	틈+에서	ADV	nng+jkb	_	4	obl	_	_
+3	많이	많이	ADV	mag	_	4	advmod	_	_
+4	살아온	살아오+ㄴ	VERB	vv+etm	_	0	root	_	_
+5	것이다	것+이+다	VERB	nnb+vcp+ef	_	4	aux	_	SpaceAfter=No
+6	.	.	PUNCT	sf	_	5	punct	_	_
+
+# sent_id = 1_29
+# text = 나는 가까이서 그들을 볼 수 있었다.
+# text_en = I was able to observe them up close.
+1	나는	나+는	PRON	np+jx	_	4	nsubj	_	_
+2	가까이서	가까이+서	ADV	nng+jkb	_	4	advmod	_	_
+3	그들을	그+들+을	PRON	np+xsn+jko	_	4	obj	_	_
+4	볼	보+ㄹ	VERB	vv+etm	_	0	root	_	_
+5	수	수	NOUN	nnb	_	4	aux	_	_
+6	있었다	있+었+다	AUX	vx+ep+ef	_	5	fixed	_	SpaceAfter=No
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 1_30
+# text = 그렇다고 해서 그들에 대한 내 생각이 나아진 건 없었다.
+# text_en = However, that didn't improve my impression of them at all.
+1	그렇다고	그렇+다고	ADJ	va+ec	_	2	ccomp	_	_
+2	해서	하+아서	VERB	vv+ec	_	7	advcl	_	_
+3	그들에	그+들+에	ADV	np+xsn+jkb	_	4	obl	_	_
+4	대한	대하+ㄴ	VERB	vv+etm	_	6	acl	_	_
+5	내	내	PRON	np	_	6	nmod	_	_
+6	생각이	생각+이	NOUN	nng+jks	_	7	nsubj	_	_
+7	나아진	나아지+ㄴ	VERB	vv+etm	_	8	acl	_	_
+8	건	것+은	NOUN	nnb+jx	_	9	nsubj	_	_
+9	없었다	없+었+다	ADJ	va+ep+ef	_	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	sf	_	9	punct	_	_
