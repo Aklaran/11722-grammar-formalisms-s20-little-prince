@@ -366,7 +366,7 @@
 
 # n22
 # text = ฉันบินไปเกือบจะทั่วโลก
-# text_en = I've flow to almost the whole world.
+# text_en = I've flown to almost the whole world.
 1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
 2	บิน	fly	VERB	_	_	0	root	_	_
 3	ไป	go	VERB	_	_	2	compound:svc	_	_
