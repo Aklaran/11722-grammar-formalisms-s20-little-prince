@@ -21,7 +21,7 @@
 18	하나를	하나+를	NUM	nr+jko	_	17	nummod	_	_
 19	본	보+ㄴ	VERB	vv+etm	_	20	acl	_	_
 20	적이	적+이	NOUN	nnb+jks	_	21	nsubj	_	_
-21	있다	있+다	ADJ	vx+ef	_	0	root	_	SpaceAfter=No
+21	있다	있+다	ADJ	va+ef	_	0	root	_	SpaceAfter=No
 22	.	.	PUNCT	sf	_	21	punct	_	_
 
 # sent_id = 1_2
@@ -39,7 +39,7 @@
 # text = 그것을 옮기어 그리면 이렇다.
 # text_en = If one copies over that (drawing), it's like this.
 1	그것을	그것+을	PRON	np+jko	_	3	obj	_	_
-2	옮기어	옮기+어	VERB	vv+ec	_	3	advcl	_	_
+2	옮기어	옮기+어	VERB	vv+ec	_	3	compound	_	_
 3	그리면	그리+면	VERB	vv+ec	_	4	advcl	_	_
 4	이렇다	이렇+다	VERB	va+ef	_	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	sf	_	4	punct	_	_
@@ -92,7 +92,7 @@
 3	밀림	밀림	NOUN	nng	_	4	compound	_	_
 4	속에서의	속+에서+의	NOUN	nng+jkb+jkg	_	5	nmod	_	_
 5	모험에	모험+에	ADV	nng+jkb	_	6	obl	_	_
-6	대해	대하+아	VERB	vv+ec	_	8	ccomp	_	_
+6	대해	대하+아	VERB	vv+ec	_	8	advcl	_	_
 7	한참	한참	ADV	mag	_	8	advmod	_	_
 8	생각해	생각하+아	VERB	vv+ec	_	11	acl	_	_
 9	보고	보+고	AUX	vx+ec	_	8	aux	_	_
@@ -187,7 +187,7 @@
 3	어른들이	어른+들+이	NOUN	nng+xsn+jks	_	4	nsubj	_	_
 4	알아볼	알아보+ㄹ	VERB	vv+etm	_	10	advcl	_	_
 5	수	수	NOUN	nnb	_	4	aux	_	_
-6	있도록	있+도록	VERB	vv+ec	_	5	fixed	_	_
+6	있도록	있+도록	ADJ	va+ec	_	5	fixed	_	_
 7	보아	보아	NOUN	nng	_	8	compound	_	_
 8	구렁이의	구렁이+의	NOUN	nng+jkg	_	9	nmod	_	_
 9	속을	속+을	NOUN	nng+jko	_	10	obj	_	_
@@ -356,7 +356,7 @@
 6	나는	나+는	PRON	np+jx	_	7	nsubj	_	_
 7	구별할	구별+하+ㄹ	VERB	nng+xsv+etm	_	3	conj	_	_
 8	수	수	NOUN	nnb	_	7	aux	_	_
-9	있었던	있+었+던	AUX	vx+ep+etm	_	8	fixed	_	_
+9	있었던	있+었+던	ADJ	va+ep+etm	_	8	fixed	_	_
 10	것이다	것+이+다	VERB	nnb+vcp+ef	_	7	aux	_	SpaceAfter=No
 11	.	.	PUNCT	sf	_	10	punct	_	_
 
@@ -407,7 +407,7 @@
 3	그들을	그+들+을	PRON	np+xsn+jko	_	4	obj	_	_
 4	볼	보+ㄹ	VERB	vv+etm	_	0	root	_	_
 5	수	수	NOUN	nnb	_	4	aux	_	_
-6	있었다	있+었+다	AUX	vx+ep+ef	_	5	fixed	_	SpaceAfter=No
+6	있었다	있+었+다	ADJ	va+ep+ef	_	5	fixed	_	SpaceAfter=No
 7	.	.	PUNCT	sf	_	6	punct	_	_
 
 # sent_id = 1_30
@@ -423,3 +423,112 @@
 8	건	것+은	NOUN	nnb+jx	_	9	nsubj	_	_
 9	없었다	없+었+다	ADJ	va+ep+ef	_	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sf	_	9	punct	_	_
+
+# sent_id = 1_31
+# text = 조금 총명해 보이는 사람을 만날 때면 나는 늘 간직해 오고 있던 예의 나의 그림 제1호를 가지고 그 사람을 시험해 보고는 했다.
+# text_en = Whenever I met someone who looks somewhat bright, I used to test him with the aforementioned drawing no. 1 of mine that I've always been keeping.
+1	조금	조금	ADV	mag	_	2	advmod	_	_
+2	총명해	총명+하+아	VERB	nng+xsv+ec	_	3	xcomp	_	_
+3	보이는	보이+는	VERB	vv+etm	_	4	acl	_	_
+4	사람을	사람+을	NOUN	nng+jko	_	5	obj	_	_
+5	만날	만나+ㄹ	VERB	vv+etm	_	6	acl	_	_
+6	때면	때+이+면	VERB	nng+vcp+ec	_	16	advcl	_	_
+7	나는	나+는	PRON	np+jx	_	16	nsubj	_	_
+8	늘	늘	ADV	mag	_	9	advmod	_	_
+9	간직해	간직+하+아	VERB	nng+xsv+ec	_	15	acl	_	_
+10	오고	오+고	AUX	vv+ec	_	9	aux	_	_
+11	있던	있+던	AUX	vx+etm	_	9	aux	_	_
+12	예의	예+의	NOUN	nng+jkg	_	15	nmod	_	_
+13	나의	나+의	PRON	np+jkg	_	14	nmod	_	_
+14	그림	그림	NOUN	nng	_	15	compound	_	_
+15	제1호를	제+1+호+를	NOUN	xpn+sn+nnb+jko	_	16	obj	_	_
+16	가지고	가지+고	VERB	vv+ec	_	0	root	_	_
+17	그	그	DET	mm	_	18	det	_	_
+18	사람을	사람+을	NOUN	nng+jko	_	19	obj	_	_
+19	시험해	시험+하+아	VERB	nng+xsv+ec	_	16	conj	_	_
+20	보고는	보+고는	AUX	vx+ec	_	19	aux	_	_
+21	했다	하+았+다	AUX	vx+ep+ef	_	19	aux	_	SpaceAfter=No
+22	.	.	PUNCT	sf	_	_	_	_	_
+
+# sent_id = 1_32
+# text = 그 사람이 정말로 뭘 이해할 줄 아는 사람인가 알고 싶었던 것이다.
+# text_en = I wanted to know if he was someone who is capable of truly understanding stuffs.
+1	그	그	DET	mm	_	2	det	_	_
+2	사람이	사람+이	NOUN	nng+jks	_	8	nsubj	_	_
+3	정말로	정말로	ADV	mag	_	5	advmod	_	_
+4	뭘	무엇+을	PRON	np+jko	_	5	obj	_	_
+5	이해할	이해+하+ㄹ	VERB	nng+xsv+etm	_	8	acl	_	_
+6	줄	줄	NOUN	nnb	_	5	aux	_	_
+7	아는	알+는	VERB	vv+etm	_	6	fixed	_	_
+8	사람인가	사람+이+ㄴ가	VERB	nng+vcp+ec	_	9	ccomp	_	_
+9	알고	알+고	VERB	vv+ec	_	0	root	_	_
+10	싶었던	싶+었+던	AUX	vx+ep+etm	_	9	aux	_	_
+11	것이다	것+이+다	VERB	nnb+vcp+ef	_	9	aux	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	_
+
+# sent_id = 1_33
+# text = 그러나 으레 그 사람은 모자라는 것이었다.
+# text_en = But that person would always say it was a hat.
+1	그러나	그러나	CCONJ	maj	_	5	cc	_	_
+2	으레	으레	ADV	mag	_	5	advmod	_	_
+3	그	그	DET	mm	_	4	det	_	_
+4	사람은	사람+은	NOUN	nng+jx	_	5	nsubj	_	_
+5	모자라는	모자+이+라는	VERB	nng+vcp+etm	_	0	root	_	_
+6	것이었다	것+이+었+다	VERB	nnb+vcp+ep+ef	_	5	aux	_	SpaceAfter=No
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 1_34
+# text = 그러면 나는 보아 구렁이도 원시림도 별들도 그에게 이야기하지 않았다.
+# text_en = Then I would never talk to him about boa constrictors, primeval forests or stars.
+1	그러면	그러면	CCONJ	maj	_	8	cc	_	_
+2	나는	나+는	PRON	np+jx	_	8	nsubj	_	_
+3	보아	보아	NOUN	nng	_	4	compound	_	_
+4	구렁이도	구렁이+도	NOUN	nng+jx	_	8	obj	_	_
+5	원시림도	원시림+도	NOUN	nng+jx	_	4	conj	_	_
+6	별들도	별+들+도	NOUN	nng+xsn+jx	_	4	conj	_	_
+7	그에게	그+에게	ADV	np+jkb	_	8	iobj	_	_
+8	이야기하지	이야기+하+지	VERB	nng+xsv+ec	_	_	_	_	_
+9	않았다	않+았+다	AUX	vx+ep+ef	_	8	aux	_	SpaceAfter=No
+10	.	.	PUNCT	sf	_	9	punct	_	_
+
+# sent_id = 1_35
+# text = 그가 이해할 수 있는 이야기를 했다.
+# text_en = I talked about things he could understand.
+1	그가	그+가	PRON	np+jks	_	2	nsubj	_	_
+2	이해할	이해+하+ㄹ	VERB	nng+xsv+etm	_	5	acl	_	_
+3	수	수	NOUN	nnb	_	2	aux	_	_
+4	있는	있+는	VERB	vv+etm	_	3	fixed	_	_
+5	이야기를	이야기+를	NOUN	nng+jko	_	6	obj	_	_
+6	했다	하+았+다	VERB	vv+ep+ef	_	_	_	_	SpaceAfter=No
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 1_36
+# text = 브리지니 골프니 정치니 넥타이니 하는 것들에 대해 이야기하는 것이다.
+# text_en = Talked about bridge, golf, politics or neckties.
+1	브리지니	브리지+니	NOUN	nng+ㅓc	_	5	ccomp	_	_
+2	골프니	골프+니	NOUN	nng+ㅓc	_	1	conj	_	_
+3	정치니	정치+니	NOUN	nng+ㅓc	_	1	conj	_	_
+4	넥타이니	넥타이+니	NOUN	nng+ㅓc	_	1	conj	_	_
+5	하는	하+는	VERB	vv+etm	_	6	acl	_	_
+6	것들에	것+들+에	ADV	nnb+xsn+jkb	_	7	obl	_	_
+7	대해	대하+아	VERB	vv+ec	_	8	advcl	_	_
+8	이야기하는	이야기+하+는	VERB	nng+xsv+etm	_	0	root	_	_
+9	것이다	것+이+다	VERB	nnb+vcp+ef	_	8	aux	_	SpaceAfter=No
+10	.	.	PUNCT	sf	_	9	punct	_	_
+
+# sent_id = 1_37
+# text = 그러면 그 어른은 매우 착실한 청년을 알게 된 것을 몹시 기뻐했다.
+# text_en = Then that grown-up would greatly rejoice in getting to know a very steady-going young man.
+1	그러면	그러면	CCONJ	maj	_	11	cc	_	_
+2	그	그	DET	mm	_	3	det	_	_
+3	어른은	어른+은	NOUN	nng+jx	_	11	nsubj	_	_
+4	매우	매우	ADV	mag	_	5	advmod	_	_
+5	착실한	착실+하+ㄴ	ADJ	xr+xsa+etm	_	6	amod	_	_
+6	청년을	청년+을	NOUN	nng+jko	_	7	obj	_	_
+7	알게	알+게	VERB	vv+ec	_	9	acl	_	_
+8	된	되+ㄴ	AUX	vx+etm	_	7	aux	_	_
+9	것을	것+을	NOUN	nnb+jko	_	11	obj	_	_
+10	몹시	몹시	ADV	mag	_	11	advmod	_	_
+11	기뻐했다	기뻐하+았+다	VERB	vv+ep+ef	_	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	sf	_	11	punct	_	_
+
