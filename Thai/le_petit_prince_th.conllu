@@ -424,7 +424,7 @@
 # n26
 # text = ตลอดชีวิตของฉัน ฉันต้องติดต่อกับคนเป็นจำนวนมาก
 # text_en = <TRANSLATE>
-1	ตลอด	throughout	PREP	_	_	4	nsubj	_	_
+1	ตลอด	throughout	PREP	_	_	2	nsubj	_	_
 2	ชีวิต	life	NOUN	_	_	8	obl	_	_
 3	ของ	of	ADP	_	_	_	_	_	_
 4	ฉัน	1SG	NOUN	_	_	_	_	_	_
