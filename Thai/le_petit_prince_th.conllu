@@ -436,7 +436,7 @@
 10	คน	person	NOUN	_	_	8	obl	_	_
 11	เป็น	COP	VERB	_	_	12	cop	_	_
 12	จำนวน	serious	ADJ	_	_	10	acl	_	_
-13	มาก	very	ADV	_	_	12	nsubj	_	_
+13	มาก	very	ADV	_	_	12	advmod	_	_
 
 # n27
 # text = เป็นคนที่เอาจริงเอาจังทั้งนั้น
