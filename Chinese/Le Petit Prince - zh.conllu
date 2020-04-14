@@ -1,4 +1,7 @@
-#当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看到 了 一 副 精彩 的 插画 ， 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
+# sent_id = 1_1, 1_2
+# text = 当我还只有六岁的时候，在一本描写原始森林的名叫《真实的故事》的书中，看到了一副精彩的插画，画的是一条蟒蛇正在吞食一只大野兽。
+# text_segmented = 当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看到 了 一 副 精彩 的 插画 ， 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
+# comment = 当...时候? advcl?
 1	当	当	ADP	_	_	9	mark	_	_
 2	我	我	PRON	_	_	5	nsubj	_	_
 3	还	还	ADV	_	_	5	advmod	_	_
@@ -10,7 +13,7 @@
 9	时候	时候	NOUN	_	_	29	advcl	_	_
 10	，	，	PUNCT	_	_	9	punct	_	_
 11	在	在	ADP	_	_	26	case	_	_
-12	一	一	NUM	_	_	13	nmod	_	_
+12	一	一	NUM	_	_	13	nummod	_	_
 13	本	本	NOUN	_	_	26	clf	_	_
 14	描写	描写	VERB	_	_	26	acl	_	_
 15	原始	原始	NOUN	_	_	16	nmod	_	_
@@ -24,11 +27,11 @@
 23	故事	故事	NOUN	_	_	19	obj	_	_
 24	》	》	PUNCT	_	_	23	punct	_	_
 25	的	的	PART	_	_	19	mark	_	_
-26	书	书	NOUN	_	_	29	advcl	_	_
-27	中	中	ADP	_	_	26	acl	_	_
+26	书	书	NOUN	_	_	29	obl	_	_
+27	中	中	ADP	_	_	26	case	_	_
 28	，	，	PUNCT	_	_	26	punct	_	_
 29	看到	看到	VERB	_	_	0	root	_	_
-30	了	了	PART	_	_	29	case	_	_
+30	了	了	PART	_	_	29	aux	_	_
 31	一	一	NUM	_	_	32	nummod	_	_
 32	副	副	NOUN	_	_	35	clf	_	_
 33	精彩	精彩	ADJ	_	_	35	amod	_	_
@@ -49,11 +52,12 @@
 48	野兽	野兽	NOUN	_	_	44	obj	_	_
 49	。	。	PUNCT	_	_	44	punct	_	_
 
-
-#页头 上 就 是 那 副 画 的 摹本 。
+# sent_id = 1_3
+# text = 页头上就是那副画的摹本。
+# text_segmented = 页头 上 就 是 那 副 画 的 摹本 。
 1	页头	页头	NOUN	_	_	9	nsubj	_	_
 2	上	上	ADP	_	_	1	case	_	_
-3	就	就	ADV	_	_	4	mark	_	_
+3	就	就	ADV	_	_	4	advmod	_	_
 4	是	是	AUX	_	_	9	aux	_	_
 5	那	那	DET	_	_	6	det	_	_
 6	副	副	NOUN	_	_	7	clf	_	_
@@ -62,9 +66,10 @@
 9	摹本	摹本	NOUN	_	_	0	root	_	_
 10	。	。	PUNCT	_	_	9	punct	_	_
 
-
-# 这本书中写道：“这些蟒蛇把它们的猎获物不加咀嚼地囫囵吞下，尔后就不能再动弹了；它们就在长长的六个月的睡眠中消化这些食物。”
-# 这 本 书 中 写 道 ： `` 这些 蟒蛇 把 它们 的 猎获物 不 加 咀嚼 地 囫囵 吞下 ， 尔后 就 不 能 再 动弹 了 ； 它们 就 在 长长 的 六 个 月 的 睡眠 中 消化 这些 食物 。 '' 
+# sent_id = 1_4, 1_5
+# text = 这本书中写道：“这些蟒蛇把它们的猎获物不加咀嚼地囫囵吞下，尔后就不能再动弹了；它们就在长长的六个月的睡眠中消化这些食物。”
+# text_segmented = 这 本 书 中 写 道 ： `` 这些 蟒蛇 把 它们 的 猎获物 不 加 咀嚼 地 囫囵 吞下 ， 尔后 就 不 能 再 动弹 了 ； 它们 就 在 长长 的 六 个 月 的 睡眠 中 消化 这些 食物 。 '' 
+# comment = 5->3 obl? 写道? 不加咀嚼?
 1	这	这	DET	_	_	2	det	_	this
 2	本	本	NOUN	_	_	3	clf	_	clf
 3	书	书	NOUN	_	_	5	obl	_	book
@@ -75,99 +80,103 @@
 8	``	``	PUNCT	_	_	5	punct	_	"
 9	这些	这些	DET	_	_	10	det	_	these
 10	蟒蛇	蟒蛇	NOUN	_	_	20	nsubj	_	boas
-11	把	把	ADP	_	_	14	case	_	"ba"
+11	把	把	ADP	_	_	14	case	_	BA
 12	它们	它们	PRON	_	_	14	nmod	_	they
-13	的	的	PART	_	_	12	case:dec	_	gen
+13	的	的	PART	_	_	12	case:dec	_	DE
 14	猎获物	猎获物	NOUN	_	_	20	obj	_	prey
 15	不	不	ADV	_	_	16	advmod	_	no
-16	加	加	VERB	_	_	17	advmod	_	add
-17	咀嚼	咀嚼	VERB	_	_	20	advcl	_	chew
+16	加	加	VERB	_	_	20	advcl	_	add
+17	咀嚼	咀嚼	NOUN	_	_	16	obj	_	chew
 18	地	地	PART	_	_	17	mark:advb	_	adv
 19	囫囵	囫囵	ADV	_	_	20	advmod	_	whole
 20	吞下	吞下	VERB	_	_	6	ccomp	_	swallow
 21	，	，	PUNCT	_	_	20	punct	_	,
 22	尔后	尔后	ADV	_	_	25	advmod	_	afterwards
-23	就	就	ADV	_	_	25	mark	_	then
+23	就	就	ADV	_	_	25	advmod	_	then
 24	不	不	ADV	_	_	25	advmod	_	no
 25	能	能	AUX	_	_	27	aux	_	able to
 26	再	再	ADV	_	_	27	advmod	_	continue to
 27	动弹	动弹	VERB	_	_	20	parataxis	_	move
-28	了	了	PART	_	_	27	case:aspect	_	prf
+28	了	了	PART	_	_	27	aux	_	prf
 29	；	；	PUNCT	_	_	27	punct	_	;
 30	它们	它们	PRON	_	_	41	nsubj	_	they
 31	就	就	ADV	_	_	41	mark	_	just
 32	在	在	ADP	_	_	39	case	_	at
 33	长长	长长	ADJ	_	_	39	amod	_	long
-34	的	的	PART	_	_	33	mark:relcl	_	gen
+34	的	的	PART	_	_	33	mark:relcl	_	DE
 35	六	六	NUM	_	_	36	nummod	_	six
 36	个	个	NOUN	_	_	37	clf	_	clf
 37	月	月	NOUN	_	_	39	nmod	_	month
-38	的	的	PART	_	_	37	case:dec	_	gen
+38	的	的	PART	_	_	37	case:dec	_	DE
 39	睡眠	睡眠	NOUN	_	_	41	obl	_	sleep
-40	中	中	ADP	_	_	39	acl	_	inside
+40	中	中	ADP	_	_	39	case	_	inside
 41	消化	消化	VERB	_	_	27	parataxis	_	digest
 42	这些	这些	DET	_	_	43	det	_	these
 43	食物	食物	NOUN	_	_	41	obj	_	food
 44	。	。	PUNCT	_	_	41	punct	_	.
 45	''	''	PUNCT	_	_	41	punct	_	"
 
-# 当时，我对丛林中的奇遇想得很多，于是，我也用彩色铅笔画出了我的第一副图画。
-# 当时 ， 我 对 丛林 中 的 奇遇 想 得 很 多 ， 于是 ， 我 也 用 彩色 铅笔 画 出 了 我 的 第一 副 图画 。
+
+# sent_id = 1_6
+# text = 当时，我对丛林中的奇遇想得很多，于是，我也用彩色铅笔画出了我的第一副图画。
+# text_segmented = 当时 ， 我 对 丛林 中 的 奇遇 想 得 很 多 ， 于是 ， 我 也 用 彩色 铅笔 画 出 了 我 的 第一 副 图画 。
+# comment = 得很多, 用, 画出(!)
 1	当时	当时	ADV	_	_	9	advmod	_	at that time
 2	，	，	PUNCT	_	_	9	punct	_	,
 3	我	我	PRON	_	_	9	nsubj	_	I
 4	对	对	ADP	_	_	8	case	_	regarding
 5	丛林	丛林	NOUN	_	_	8	nmod	_	jungle
-6	中	中	ADP	_	_	5	acl	_	inside
-7	的	的	PART	_	_	5	case:dec	_	gen
+6	中	中	ADP	_	_	5	case	_	inside
+7	的	的	PART	_	_	5	case:dec	_	DE
 8	奇遇	奇遇	NOUN	_	_	9	obl	_	adventure
 9	想	想	VERB	_	_	0	root	_	think
 10	得	得	PART	_	_	12	mark:comp	_	comp
 11	很	很	ADV	_	_	12	advmod	_	very
-12	多	多	ADJ	_	_	9	advcl	_	much
+12	多	多	ADJ	_	_	9	advmod	_	much
 13	，	，	PUNCT	_	_	9	punct	_	,
 14	于是	于是	ADV	_	_	21	advmod	_	hence
 15	，	，	PUNCT	_	_	21	punct	_	,
-16	我	我	PRON	_	_	18	nsubj	_	I
-17	也	也	ADV	_	_	21	mark	_	also
+16	我	我	PRON	_	_	21	nsubj	_	I
+17	也	也	ADV	_	_	21	advmod	_	also
 18	用	用	VERB	_	_	21	advcl	_	use
 19	彩色	彩色	NOUN	_	_	20	nmod	_	color
 20	铅笔	铅笔	NOUN	_	_	18	obj	_	pencil
 21	画	画	VERB	_	_	0	root	_	draw
 22	出	出	VERB	_	_	21	mark	_	out
-23	了	了	PART	_	_	21	case:aspect	_	prf
+23	了	了	PART	_	_	21	aux	_	LE
 24	我	我	PRON	_	_	28	nmod	_	I
-25	的	的	PART	_	_	24	case:dec	_	gen
+25	的	的	PART	_	_	24	case:dec	_	DE
 26	第一	第一	NUM	_	_	27	nummod	_	first
 27	副	副	NOUN	_	_	28	clf	_	clf
 28	图画	图画	NOUN	_	_	21	obj	_	painting
 29	。	。	PUNCT	_	_	21	punct	_	.
 
-
+# sent_id =
 # 我的第一号作品。
 # 我 的 第一 号 作品 。
 1	我	我	PRON	_	_	5	nmod	_	I
-2	的	的	PART	_	_	1	case	_	gen
+2	的	的	PART	_	_	1	case	_	DE
 3	第一	第一	NUM	_	_	4	nummod	_	first
 4	号	号	NOUN	_	_	5	clf	_	clf
 5	作品	作品	NOUN	_	_	0	root	_	work
 6	。	。	PUNCT	_	_	5	punct	_	.
 
+# sent_id =
 # 它是这样的：
 # 它 是 这样 的 ：
 1	它	它	PRON	_	_	3	nsubj	_	it
 2	是	是	AUX	_	_	3	aux	_	is 
 3	这样	这样	NOUN	_	_	0	root	_	like this
-4	的	的	PART	_	_	3	discourse	_	gen
+4	的	的	PART	_	_	3	discourse	_	DE
 5	：	：	PUNCT	_	_	3	punct	_	:
 
-
+# sent_id =
 # 我把我的这副杰作拿给大人看，我问他们我的画是不是叫他们害怕。
 # 我 把 我 的 这 副 杰作 拿 给 大人 看 ， 我 问 他们 我 的 画 是不是 叫 他们 害怕 。
 1	我	我	PRON	_	_	8	nsubj	_	I
-2	把	把	ADP	_	_	7	case	_	"ba"
+2	把	把	ADP	_	_	7	case	_	BA
 3	我	我	PRON	_	_	7	nmod	_	I
-4	的	的	PART	_	_	3	case	_	gen
+4	的	的	PART	_	_	3	case	_	DE
 5	这	这	DET	_	_	6	det	_	this
 6	副	副	NOUN	_	_	7	clf	_	clf
 7	杰作	杰作	NOUN	_	_	8	obj	_	masterpiece
@@ -188,7 +197,7 @@
 22	害怕	害怕	VERB	_	_	20	xcomp	_	afraid
 23	。	。	PUNCT	_	_	20	punct	_	.
 
-
+# sent_id =
 # 他们回答我说：“一顶帽子有什么可怕的？”
 # 他们 回答 我 说 ： “ 一 顶 帽子 有 什么 可怕 的 ？ ”
 1	他们	他们	PRON	_	_	2	nsubj	_	they
@@ -207,7 +216,7 @@
 14	？	？	PUNCT	_	_	10	punct	_	?
 15	”	”	PUNCT	_	_	10	punct	_	"
 
-
+# sent_id =
 # 我画的不是帽子，是一条巨蟒在消化着一头大象。
 # 我 画 的 不 是 帽子 ， 是 一 条 巨蟒 在 消化 着 一 头 大象 。
 1	我	我	PRON	_	_	2	nsubj	_	_
@@ -221,15 +230,15 @@
 9	一	一	NUM	_	_	10	nummod	_	_
 10	条	条	NOUN	_	_	11	clf	_	_
 11	巨蟒	巨蟒	NOUN	_	_	6	parataxis	_	_
-12	在	在	ADP	_	_	13	case	_	_
+12	在	在	ADP	_	_	13	aux	_	_
 13	消化	消化	VERB	_	_	11	acl	_	_
-14	着	着	PART	_	_	13	case:aspect	_	_
+14	着	着	PART	_	_	13	aux	_	_
 15	一	一	NUM	_	_	16	nummod	_	_
 16	头	头	NOUN	_	_	17	clf	_	_
 17	大象	大象	NOUN	_	_	13	obj	_	_
 18	。	。	PUNCT	_	_	11	punct	_	_
 
-
+# sent_id =
 # 于是我又把巨蟒肚子里的情况画了出来，以便让大人们能够看懂。
 # 于是 我 又 把 巨蟒 肚子 里 的 情况 画 了 出来 ， 以 便 让 大人 们 能够 看懂 。
 1	于是	于是	ADV	_	_	10	mark	_	so
@@ -254,7 +263,7 @@
 20	看懂	看懂	VERB	_	_	16	ccomp	_	understand
 21	。	。	PUNCT	_	_	20	punct	_	.
 
-
+# sent_id =
 # 这些大人总是需要解释。
 # 这些 大人 总是 需要 解释 。
 1	这些	这些	DET	_	_	2	det	_	_
@@ -264,7 +273,7 @@
 5	解释	解释	NOUN	_	_	0	root	_	_
 6	。	。	PUNCT	_	_	5	punct	_	_
 
-
+# sent_id =
 # 我的第二号作品是这样的：
 # 我 的 第二 号 作品 是 这样 的 ：
 1	我	我	PRON	_	_	5	nmod	_	_
@@ -277,7 +286,7 @@
 8	的	的	PART	_	_	7	discourse	_	_
 9	：	：	PUNCT	_	_	7	punct	_	_
 
-
+# sent_id =
 #大人们劝我把这些画着开着肚皮的，或闭上肚皮的蟒蛇的图画放在一边，还是把兴趣放在地理、历史、算术、语法上。
 #大人 们 劝 我 把 这些 画 着 开 着 肚皮 的 ， 或 闭 上 肚皮 的 蟒蛇 的 图画 放 在 一边 ， 还是 把 兴趣 放 在 地理 、 历史 、 算术 、 语法 上 。
 1	大人	大人	NOUN	_	_	2	compound	_	_
@@ -320,7 +329,7 @@
 39	上	上	ADP	_	_	38	acl	_	_
 40	。	。	PUNCT	_	_	30	punct	_	_
 
-
+# sent_id =
 #就这样，在六岁的那年，我就放弃了当画家这一美好的职业。
 #就 这样 ， 在 六 岁 的 那 年 ， 我 就 放弃 了 当 画家 这 一 美好 的 职业 。
 1	就	就	ADV	_	_	2	advmod	_	_
@@ -346,7 +355,7 @@
 21	职业	职业	NOUN	_	_	16	appos	_	_
 22	。	。	PUNCT	_	_	13	punct	_	_
 
-
+# sent_id =
 #我的第一号、第二号作品的不成功，使我泄了气。
 # 我 的 第一 号 、 第二 号 作品 的 不成功 ， 使 我 泄 了 气 。
 1	我	我	PRON	_	_	8	nmod	_	_
@@ -367,7 +376,7 @@
 16	气	气	NOUN	_	_	14	obj	_	_
 17	。	。	PUNCT	_	_	12	punct	_	_
 
-
+# sent_id =
 #这些大人们，靠他们自己什么也弄不懂，还得老是不断地给他们作解释。
 #这些 大人 们 ， 靠 他们 自己 什么 也 弄 不 懂 ， 还得 老是 不断 地 给 他们 作 解释 。
 1	这些	这些	DET	_	_	2	det	_	_
@@ -393,7 +402,7 @@
 21	解释	解释	NOUN	_	_	20	obj	_	_
 22	。	。	PUNCT	_	_	18	punct	_	_
 
-
+# sent_id =
 #这真叫孩子们腻味。
 #这 真 叫 孩子 们 腻味 。
 1	这	这	DET	_	_	3	nsubj	_	_
@@ -404,7 +413,7 @@
 6	腻味	腻味	ADJ	_	_	3	xcomp	_	_
 7	。	。	PROPN	_	_	3	punct	_	_
 
-
+# sent_id =
 #后来，我只好选择了另外一个职业，我学会了开飞机，世界各地差不多都飞到过。
 #后来 ， 我 只好 选择 了 另外 一 个 职业 ， 我 学会 了 开 飞机 ， 世界 各地 差不多 都 飞 到 过 。
 1	后来	后来	ADV	_	_	5	advmod	_	_
@@ -433,7 +442,7 @@
 24	过	过	PART	_	_	22	case	_	_
 25	。	。	PUNCT	_	_	22	punct	_	_
 
-
+# sent_id =
 #的确，地理学帮了我很大的忙。
 # 的确 ， 地理学 帮 了 我 很 大 的 忙 。
 1	的确	的确	ADV	_	_	4	advmod	_	_
@@ -448,7 +457,7 @@
 10	忙	忙	NOUN	_	_	4	obj	_	_
 11	。	。	PUNCT	_	_	4	punct	_	_
 
-
+# sent_id =
 #我一眼就能分辨出中国和亚里桑那。
 # 我 一眼 就 能 分辨 出 中国 和 亚里桑那 。
 1	我	我	NOUN	_	_	5	nsubj	_	_
@@ -462,7 +471,7 @@
 9	亚里桑那	亚里桑那	NOUN	_	_	7	conj	_	_
 10	。	。	PUNCT	_	_	5	punct	_	_
 
-
+# sent_id =
 #要是夜里迷失了航向，这是很有用的。
 #要是 夜里 迷失 了 航向 ， 这 是 很 有用 的 。
 1	要是	要是	SCONJ	_	_	3	mark	_	_
@@ -478,7 +487,7 @@
 11	的	的	PART	_	_	10	discourse	_	_
 12	。	。	PUNCT	_	_	10	punct	_	_
 
-
+# sent_id =
 #这样，在我的生活中，我跟许多严肃的人有过很多的接触。
 #这样 ， 在 我 的 生活 中 ， 我 跟 许多 严肃 的 人 有 过 很 多 的 接触 。
 1	这样	这样	ADV	_	_	15	advmod	_	_
@@ -503,7 +512,7 @@
 20	接触	接触	NOUN	_	_	15	obj	_	_
 21	。	。	PUNCT	_	_	15	punct	_	_
 
-
+# sent_id =
 #我在大人们中间生活过很长时间。
 # 我 在 大人 们 中间 生活 过 很 长 时间 。
 1	我	我	PRON	_	_	6	nsubj	_	_
@@ -518,7 +527,7 @@
 10	时间	时间	NOUN	_	_	6	advmod	_	_
 11	。	。	PUNCT	_	_	6	punct	_	_
 
-
+# sent_id =
 #我仔细地观察过他们，但这并没有使我对他们的看法有多大的改变。
 # 我 仔细 地 观察 过 他们 ， 但 这 并 没有 使 我 对 他们 的 看法 有 多大 的 改变 。
 1	我	我	PART	_	_	4	nsubj	_	_
@@ -544,7 +553,7 @@
 21	改变	改变	NOUN	_	_	18	obj	_	_
 22	。	。	PUNCT	_	_	12	punct	_	_
 
-
+# sent_id =
 #当我遇到一个头脑看来稍微清楚的大人时，我就拿出一直保存着的我那第一号作品来测试测试他 。
 #当 我 遇到 一 个 头脑 看来 稍微 清楚 的 大人 时 ， 我 就 拿出 一直 保存 着 的 我 那 第一 号 作品 来 测试测试 他 。
 1	当	当	ADP	_	_	3	case	_	_
@@ -577,7 +586,7 @@
 28	他	他	PRON	_	_	27	obj	_	_
 29	。	。	PUNCT	_	_	16	punct	_	_
 
-
+# sent_id =
 #我想知道他是否真的有理解能力。
 #我 想 知道 他 是否 真的 有 理解 能力 。
 1	我	我	PRON	_	_	3	nsubj	_	_
@@ -591,7 +600,7 @@
 9	能力	能力	NOUN	_	_	7	obj	_	_
 10	。	。	PUNCT	_	_	3	punct	_	_
 
-
+# sent_id =
 #可是，得到的回答总是：“这是顶帽子。”
 #可是 ， 得到 的 回答 总 是 ： “ 这 是 顶 帽子 。 ”
 1	可是	可是	ADV	_	_	13	advmod	_	_
@@ -610,7 +619,7 @@
 14	。	。	PUNCT	_	_	13	punct	_	_
 15	”	”	PUNCT	_	_	13	punct	_	_
 
-
+# sent_id =
 #我就不和他谈巨蟒呀，原始森林呀，或者星星之类的事。
 #我 就 不 和 他 谈 巨蟒 呀 ， 原始 森林 呀 ， 或者 星星 之类 的 事 。
 1	我	我	PRON	_	_	6	nsubj	_	_
@@ -633,7 +642,7 @@
 18	事	事	NOUN	_	_	6	obj	_	_
 19	。	。	PUNCT	_	_	6	punct	_	_
 
-
+# sent_id =
 #我只得迁就他的水平，和他们谈些桥牌呀，高尔夫球呀，政治呀，领带呀这些。
 #我 只得 迁就 他 的 水平 ， 和 他们 谈 些 桥牌 呀 ， 高尔夫球 呀 ， 政治 呀 ， 领带 呀 这些 。
 1	我	我	PRON	_	_	3	nsubj	_	_
@@ -661,7 +670,7 @@
 23	这些	这些	DET	_	_	21	appos	_	_
 24	。	。	PUNCT	_	_	10	punct	_	_
 
-
+# sent_id =
 #于是大人们就十分高兴能认识我这样一个通情达理的人。
 #于是 大人 们 就 十分 高兴 能 认识 我 这样 一 个 通情达理 的 人 。
 1	于是	于是	ADV	_	_	6	advmod	_	_
@@ -681,6 +690,7 @@
 15	人	人	NOUN	_	_	8	obj	_	_
 16	。	。	PUNCT	_	_	6	punct	_	_
 
+# sent_id = 2_1
 #我就这样孤独地生活着，没有一个能真正谈得来的人，一直到六年前在撒哈拉沙漠上发生了那次故障。
 #我 就 这样 孤独 地 生活 着 ， 没有 一 个 能 真正 谈 得 来 的 人 ， 一直 到 六 年 前 在 撒哈拉 沙漠 上 发生 了 那 次 故障 。
 1	我	我	PRON	_	_	6	nsubj	_	_
@@ -718,7 +728,7 @@
 33	故障	故障	NOUN	_	_	29	obj	_	_
 34	。	。	PUNCT	_	_	29	punct	_	_
 
-
+# sent_id = 2_2
 #我的发动机里有个东西损坏了。
 #我 的 发动机 里 有 个 东西 损坏 了 。
 1	我	我	PRON	_	_	3	nmod	_	_
@@ -732,7 +742,7 @@
 9	了	了	PART	_	_	8	aux	_	_
 10	。	。	PUNCT	_	_	5	punct	_	_
 
-
+# sent_id = 2_3
 #当时由于我既没有带机械师也没有带旅客，我就试图独自完成这个困难的维修工作。
 #当时 由于 我 既 没有 带 机械师 也 没有 带 旅客 ， 我 就 试图 独自 完成 这 个 困难 的 维修 工作 。
 1	当时	当时	ADV	_	_	6	advmod	_	_
@@ -760,7 +770,7 @@
 23	工作	工作	NOUN	_	_	17	obj	_	_
 24	。	。	PUNCT	_	_	15	punct	_	_
 
-
+# sent_id = 2_4
 #这对我来说是个生与死的问题。
 #这 对 我 来说 是 个 生 与 死 的 问题 。
 1	这	这	DET	_	_	11	nsubj	_	_
@@ -776,7 +786,7 @@
 11	问题	问题	NOUN	_	_	0	root	_	_
 12	。	。	PUNCT	_	_	11	punct	_	_
 
-
+# sent_id = 2_5
 #我随身带的水只够饮用一星期。
 #我 随身 带 的 水 只 够 饮用 一 星期 。
 1	我	我	PRON	_	_	3	nsubj	_	_
@@ -791,7 +801,7 @@
 10	星期	星期	NOUN	_	_	8	advcl	_	_
 11	。	。	PUNCT	_	_	7	punct	_	_
 
-
+# sent_id = 2_6
 #第一天晚上我就睡在这远离人间烟火的大沙漠上。
 #第一 天 晚上 我 就 睡 在 这 远离 人间 烟火 的 大 沙漠 上 。
 1	第一	第一	NUM	_	_	3	nummod	_	_
@@ -811,7 +821,7 @@
 15	上	上	ADP	_	_	15	case	_	_
 16	。	。	PUNCT	_	_	7	punct	_	_
 
-
+# sent_id = 2_7
 #我比大海中伏在小木排上的遇难者还要孤独得多。
 #我 比 大海 中 伏 在 小 木排 上 的 遇难者 还 要 孤独 得 多 。
 1	我	我	PRON	_	_	14	nsubj	_	_
@@ -832,7 +842,7 @@
 16	多	多	ADJ	_	_	14	advmod	_	_
 17	。	。	PUNCT	_	_	14	punct	_	_
 
-
+# sent_id = 2_8
 #而在第二天拂晓，当一个奇怪的小声音叫醒我的时候，你们可以想见我当时是多么吃惊。
 #而 在 第二 天 拂晓 ， 当 一 个 奇怪 的 小 声音 叫醒 我 的 时候 ， 你们 可以 想见 我 当时 是 多么 吃惊 。
 1	而	而	CONJ	_	_	5	cc	_	_
@@ -863,7 +873,18 @@
 26	吃惊	吃惊	ADJ	_	_	21	ccomp	_	_
 27	。	。	PUNCT	_	_	21	punct	_	_
 
+# sent_id = 2_9
+# text = 这小小的声音说道：
+# text_segmented = 这 小小 的 声音 说道 ：
+# comment = 说道
+1	这	这	DET	_	_	4	det	_	_
+2	小小	小小	ADJ	_	_	4	amod	_	_
+3	的	的	PART	_	_	2	mark	_	_
+4	声音	声音	NOUN	_	_	5	nsubj	_	_
+5	说道	说道	VERB	_	_	0	root	_	_
+6	：	：	PUNCT	_	_	5	punct	_	_
 
+# sent_id = 2_10
 #“请你给我画一只羊，好吗？”
 #“ 请 你 给 我 画 一 只 羊 ， 好吗 ？ ”
 1	“	“	PUNCT	_	_	6	punct	_	_
@@ -880,7 +901,7 @@
 12	？	？	PUNCT	_	_	6	punct	_	_
 13	”	”	PUNCT	_	_	6	punct	_	_
 
-
+# sent_id = 2_11
 #“啊！”
 #“ 啊 ！ ”
 1	“	“	PUNCT	_	_	2	punct	_	_
@@ -888,9 +909,9 @@
 3	！	！	PUNCT	_	_	2	punct	_	_
 4	”	”	PUNCT	_	_	2	punct	_	_
 
-
-#“给我画一只羊……”
-#“ 给 我 画 一 只 羊 …… ”
+# sent_id = 2_12
+# text = “给我画一只羊……”
+# text_segmented = “ 给 我 画 一 只 羊 …… ”
 1	“	“	PUNCT	_	_	4	punct	_	_
 2	给	给	ADP	_	_	3	case	_	_
 3	我	我	PRON	_	_	4	obl	_	_
@@ -900,3 +921,48 @@
 7	羊	羊	NOUN	_	_	4	obj	_	_
 8	……	……	PUNCT	_	_	4	punct	_	_
 9	”	”	PUNCT	_	_	4	punct	_	_
+
+
+# 我象是受到惊雷轰击一般，一下子就站立起来。
+# 我使劲地揉了揉眼睛，仔细地看了看。
+# 我看见一个十分奇怪的小家伙严肃地朝我凝眸望着。
+# 这是后来我给他画出来的最好的一副画像。
+# 可是，我的画当然要比他本人的模样逊色得多。
+# 这不是我的过错。
+# 六岁时，大人们使我对我的画家生涯失去了勇气，除了画过开着肚皮和闭着肚皮的蟒蛇，后来再没有学过画。
+# 我惊奇地睁大着眼睛看着这突然出现的小家伙。
+# 你们不要忘记，我当时处在远离人烟千里之外的地方。
+# 而这个小家伙给我的印象是，他既不象迷了路的样子，也没有半点疲乏、饥渴、惧怕的神情。
+# 他丝毫不象是一个迷失在旷无人烟的大沙漠中的孩子。
+# 当我在惊讶之中终于又能说出话来的时候，对他说道：
+# “唉，你在这儿干什么？”
+# 可是他却不慌不忙地好象有一件重要的事一般，对我重复地说道：
+# “请……给我画一只羊……”
+# 当一种神秘的东西把你镇住的时候，你是不敢不听从它的支配的，在这旷无人烟的沙漠上，面临死亡的危险的情况下，尽管这样的举动使我感到十分荒诞，我还是掏出了一张纸和一支钢笔。
+# 这时我却又记起，我只学过地理、历史、算术和语法，就有点不大高兴地对小家伙说我不会画画。
+# 他回答我说：
+# “没有关系，给我画一只羊吧！”
+# 因为我从来没有画过羊，我就给他重画我所仅仅会画的两副画中的那副闭着肚皮的巨蟒。
+# “不，不！我不要蟒蛇，它肚子里还有一头象。”
+# 我听了他的话，简直目瞪口呆。
+# 他接着说：“巨蟒这东西太危险，大象又太占地方。
+# 我住的地方非常小，我需要一只羊。给我画一只羊吧。”
+# 我就给他画了。
+# 他专心地看着，随后又说：
+# “我不要，这只羊已经病得很重了。给我重新画一只。”
+# 我又画了起来。
+# 我的这位朋友天真可爱地笑了，并且客气地拒绝道：“你看，你画的不是小羊，是头公羊，还有犄角呢。”
+# 于是我又重新画了一张。
+# 这副画同前几副一样又被拒绝了。
+# “这一只太老了。我想要一只能活得长的羊。”
+# 我不耐烦了。
+# 因为我急于要检修发动机，于是就草草画了这张画，并且匆匆地对他说道：
+# “这是一只箱子，你要的羊就在里面。”
+# 这时我十分惊奇地看到我的这位小评判员喜笑颜开。他说：
+# “这正是我想要的，……你说这只羊需要很多草吗？”
+# “为什么问这个呢？”
+# “因为我那里地方非常小……”
+# “我给你画的是一只很小的小羊，地方小也够喂养它的。”
+# 他把脑袋靠近这张画。
+# “并不象你说的那么小……瞧！它睡着了……”
+# 就这样，我认识了小王子。
