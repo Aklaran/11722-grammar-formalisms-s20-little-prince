@@ -432,7 +432,7 @@
 6	ฉัน	1SG	PRON	_	_	8	nsubj	_	_
 7	ต้อง	have_to	AUX	_	_	8	aux	_	_
 8	ติดต่อ	communicate	VERB	_	_	0	root	_	_
-9	กับ	with	ADP	_	_	10	_	_	_
+9	กับ	with	ADP	_	_	10	case	_	_
 10	คน	person	NOUN	_	_	8	obl	_	_
 11	เป็น	COP	VERB	_	_	_	_	_	_
 12	จำนวน	serious	ADJ	_	_	_	_	_	_
