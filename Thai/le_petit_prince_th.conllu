@@ -435,7 +435,7 @@
 9	กับ	with	ADP	_	_	10	case	_	_
 10	คน	person	NOUN	_	_	8	obl	_	_
 11	เป็น	COP	VERB	_	_	12	_	_	_
-12	จำนวน	serious	ADJ	_	_	10	nsubj	_	_
+12	จำนวน	serious	ADJ	_	_	10	acl	_	_
 13	มาก	very	ADV	_	_	12	nsubj	_	_
 
 # n27
