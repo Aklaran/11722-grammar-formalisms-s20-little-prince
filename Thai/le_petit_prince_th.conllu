@@ -428,7 +428,7 @@
 2	ชีวิต	life	NOUN	_	_	8	obl	_	_
 3	ของ	of	ADP	_	_	4	case	_	_
 4	ฉัน	1SG	NOUN	_	_	2	nmod:poss	_	_
-5	_	_	PUNCT	_	_	0	root	_	_
+5	_	_	PUNCT	_	_	2	root	_	_
 6	ฉัน	1SG	PRON	_	_	8	nsubj	_	_
 7	ต้อง	have_to	AUX	_	_	8	aux	_	_
 8	ติดต่อ	communicate	VERB	_	_	0	root	_	_
