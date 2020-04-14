@@ -441,55 +441,58 @@
 # n27
 # text = เป็นคนที่เอาจริงเอาจังทั้งนั้น
 # text_en = <TRANSLATE>
-1	เป็น	_	VERB	_	_	_	_	_	_
-2	คน	_	NOUN	_	_	_	_	_	_
-3	ที่	_	SCONJ	_	_	_	_	_	_
-4	เอาจริงเอาจัง	_	VERB	_	_	_	_	_	_
-5	ทั้งนั้น	_	ADV	_	_	_	_	_	_
+1	เป็น	COP	VERB	_	_	2	cop	_	_
+2	คน	person	NOUN	_	_	0	root	_	_
+3	ที่	who	SCONJ	_	_	4	mark	_	_
+4	เอาจริงเอาจัง	serious	ADJ	_	_	2	acl	_	_
+5	ทั้งนั้น	completely	ADV	_	_	4	advmod	_	_
 
 # n28
 # text = ฉันอาศัยอยู่ในบ้านกับพวกผู้ใหญ่
 # text_en = <TRANSLATE>
-1	ฉัน	_	PRON	_	_	_	_	_	_
-2	อาศัย	_	VERB	_	_	_	_	_	_
-3	อยู่	_	AUX	_	_	_	_	_	_
-4	ใน	_	ADP	_	_	_	_	_	_
-5	บ้าน	_	NOUN	_	_	_	_	_	_
-6	กับ	_	ADP	_	_	_	_	_	_
-7	พวก	_	NOUN	_	_	_	_	_	_
-8	ผู้ใหญ่	_	NOUN	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	อาศัย	reside	VERB	_	_	0	root	_	_
+3	อยู่	stay	AUX	_	_	2	fixed	_	_
+4	ใน	in	ADP	_	_	5	case	_	_
+5	บ้าน	house	NOUN	_	_	2	obl	_	_
+6	กับ	with	ADP	_	_	8	case	_	_
+7	พวก	PL	NOUN	_	_	8	compound	_	_
+8	ผู้ใหญ่	adult	NOUN	_	_	2	obl	_	_
 
 # n29
 # text = ฉันได้ศึกษาคนพวกนี้อย่างใกล้ชิด
 # text_en = <TRANSLATE>
-1	ฉัน	_	PRON	_	_	_	_	_	_
-2	ได้	_	AUX	_	_	_	_	_	_
-3	ศึกษา	_	VERB	_	_	_	_	_	_
-4	คน	_	NOUN	_	_	_	_	_	_
-5	พวก	_	NOUN	_	_	_	_	_	_
-6	นี้	_	DET	_	_	_	_	_	_
-7	อย่าง	_	PART	_	_	_	_	_	_
-8	ใกล้ชิด	_	ADJ	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+2	ได้	PST	AUX	_	_	3	aux	_	_
+3	ศึกษา	study	VERB	_	_	0	root	_	_
+4	คน	person	NOUN	_	_	3	obj	_	_
+5	พวก	PL	NOUN	_	_	6	clf	_	_
+6	นี้	this	DET	_	_	4	det	_	_
+7	อย่าง	way	NOUN	_	_	3	advmod	_	_
+8	ใกล้	close	ADJ	_	_	7	amod	_	_
+9	ชิด	near	ADJ	_	_	8	compound	_	_
 
 # n30
 # text = แต่มัน็้มิได้ช่วยให้ฉันมีความเห็นต่อคนพวกนี้ในด้านที่ดีขึ้นเลย
 # text_en = <TRANSLATE>
-1	แต่	but	CCONJ	_	_	0	root	_	_
-2	มัน	it	PRON	_	_	_	_	_	_
-3	็้	_	VERB	_	_	_	_	_	_
-4	มิได้	_	PART	_	_	_	_	_	_
-5	ช่วย	_	VERB	_	_	_	_	_	_
-6	ให้	_	SCONJ	_	_	_	_	_	_
-7	ฉัน	_	PRON	_	_	_	_	_	_
-8	มี	_	VERB	_	_	_	_	_	_
-9	ความเห็น	_	VERB	_	_	_	_	_	_
-10	ต่อ	_	ADP	_	_	_	_	_	_
-11	คน	_	NOUN	_	_	_	_	_	_
-12	พวก	_	NOUN	_	_	_	_	_	_
-13	นี้	_	DET	_	_	_	_	_	_
-14	ใน	_	ADP	_	_	_	_	_	_
-15	ด้าน	_	NOUN	_	_	_	_	_	_
-16	ที่	_	SCONJ	_	_	_	_	_	_
-17	ดีขึ้น	_	VERB	_	_	_	_	_	_
-18	เลย	_	AUX	_	_	_	_	_	_
+1	แต่	but	CCONJ	_	_	6	cc	_	_
+2	มัน	it	PRON	_	_	6	nsubj	_	_
+3	็้	(typo)	VERB	_	_	_	_	_	_
+4	ไม่	not	PART	_	_	6	advmod	_	_
+5	ได้	PST	AUX	_	_	6	aux	_	_
+6	ช่วย	help	VERB	_	_	0	root	_	_
+7	ให้	such_that (give)	SCONJ	_	_	6	compound:svc	_	_
+8	ฉัน	1SG	PRON	_	_	9	1SG	_	_
+9	มี	have	VERB	_	_	6	ccomp	_	_
+10	ความเห็น	opinion	VERB	_	_	9	obj	_	_
+11	ต่อ	of	ADP	_	_	12	case	_	_
+12	คน	person	NOUN	_	_	10	obl	_	_
+13	พวก	_	NOUN	_	_	14	clf	_	_
+14	นี้	this	DET	_	_	12	det	_	_
+15	ใน	in	ADP	_	_	16	case	_	_
+16	ด้าน	viewpoint	NOUN	_	_	10	obl	_	_
+17	ที่	that	SCONJ	_	_	18	case	_	_
+18	ดี	good	VERB	_	_	16	amod	_	_
+19	ขึ้น	more	VERB	_	_	18	advmod	_	_
+20	เลย	at_all	ADV	_	_	9	advmod	_	_
 
