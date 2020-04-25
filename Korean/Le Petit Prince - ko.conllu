@@ -6,11 +6,11 @@
 3	살	살	NOUN	nnb	_	4	nmod	_	_
 4	적에	적+에	NOUN	nnb+jkb	_	21	obl	_	_
 5	한번은	한+번+은	NUM	mm+nnb+jx	_	21	dislocated	_	_
-6	"	"	PUNCT	ss	_	7	punct	_	SpaceAfter=No
+6	"	"	PUNCT	ss	_	8	punct	_	SpaceAfter=No
 7	체험한	체험+하+ㄴ	VERB	nng+xsv+etm	_	8	acl	_	_
 8	이야기	이야기	NOUN	nng	_	11	acl	_	SpaceAfter=No
 9	"	"	PUNCT	ss	_	8	punct	_	SpaceAfter=No
-10	라는	이+라는	AUX	vcp+etm	_	8	cop	_	_
+10	라는	라는	ADP	jkq	_	8	case	_	_
 11	제목의	제목+의	NOUN	nng+jkg	_	15	nmod	_	SpaceAfter=No
 12	,	,	PUNCT	sp	_	11	punct	_	_
 13	원시림에	원시림+에	NOUN	nng+jkb	_	14	obl	_	_
@@ -31,7 +31,7 @@
 2	집어삼키고	집어삼키+고	VERB	vv+ec	_	5	acl	_	_
 3	있는	있+는	AUX	vv+etm	_	2	aux	_	_
 4	보아	보아	NOUN	nng	_	5	compound	_	_
-5	구렁이	구렁이	NOUN	nng	_	6	compound	_	_
+5	구렁이	구렁이	NOUN	nng	_	6	nmod	_	_
 6	그림이었다	그림+이+었+다	NOUN	nng+vcp+ep+ef	_	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sf	_	6	punct	_	_
 
@@ -57,7 +57,7 @@
 # sent_id = 1_5
 # text = "보아 구렁이는 먹이를 씹지도 않고 통째로 집어삼킨다.
 # text_en = "Boa constrictors swallow their preys even without chewing.
-1	"	"	PUNCT	ss	_	2	punct	_	SpaceAfter=No
+1	"	"	PUNCT	ss	_	8	punct	_	SpaceAfter=No
 2	보아	보아	NOUN	nng	_	3	compound	_	_
 3	구렁이는	구렁이+는	NOUN	nng+jx	_	8	nsubj	_	_
 4	먹이를	먹이+를	NOUN	nng+jko	_	8	obj	_	_
@@ -146,7 +146,7 @@
 # text = 그들은 "모자가 뭐가 무섭다는 거니?"하고 대답했다.
 # text_en = They answered: "what is so terrifying about a hat?"
 1	그들은	그들+은	PRON	np+jx	_	10	nsubj	_	_
-2	"	"	PUNCT	ss	_	3	punct	_	SpaceAfter=No
+2	"	"	PUNCT	ss	_	6	punct	_	SpaceAfter=No
 3	모자가	모자+가	NOUN	nng+jks	_	6	dislocated	_	_
 4	뭐가	뭐+가	PRON	np+jks	_	6	nsubj	_	_
 5	무섭다는	무섭+다는	ADJ	va+etm	_	6	acl	_	_
@@ -202,7 +202,7 @@
 3	설명을	설명+을	NOUN	nng+jko	_	4	obj	_	_
 4	해주어야만	하+아+주+어야만	VERB	vv+ec+vx+ec	_	0	root	_	_
 5	한다	하+ㄴ다	AUX	vx+ef	_	4	aux	_	SpaceAfter=No
-6	.	.	PUNCT	sf	_	5	punct	_	_
+6	.	.	PUNCT	sf	_	4	punct	_	_
 
 # sent_id = 1_16
 # text = 나의 그림 제2호는 이러했다.
@@ -228,11 +228,11 @@
 10	집어치우고	집어치우+고	VERB	vv+ec	_	22	conj	_	_
 11	차라리	차라리	ADV	mag	_	22	advmod	_	_
 12	지리	지리	NOUN	nng	_	19	conj	_	SpaceAfter=No
-13	,	,	PUNCT	sp	_	12	punct	_	_
+13	,	,	PUNCT	sp	_	14	punct	_	_
 14	역사	역사	NOUN	nng	_	19	conj	_	SpaceAfter=No
-15	,	,	PUNCT	sp	_	14	punct	_	_
+15	,	,	PUNCT	sp	_	16	punct	_	_
 16	계산	계산	NOUN	nng	_	19	conj	_	SpaceAfter=No
-17	,	,	PUNCT	sp	_	16	punct	_	_
+17	,	,	PUNCT	sp	_	19	punct	_	_
 18	그리고	그리고	CCONJ	maj	_	19	cc	_	_
 19	문법	문법	NOUN	nng	_	20	nmod	_	_
 20	쪽에	쪽+에	NOUN	nnb+jkb	_	22	obl	_	_
@@ -240,10 +240,10 @@
 22	가져보는	가지+어+보+는	VERB	vv+ec+vx+etm	_	23	acl	_	_
 23	게	거+이	NOUN	nnb+jks	_	24	nsubj	_	_
 24	좋을	좋+을	ADJ	va+etm	_	26	ccomp	_	_
-25	것이라고	것+이+라고	NOUN	nnb+vcp+ec	_	24	aux	_	_
+25	것이라고	것+이라고	NOUN	nnb+jc	_	24	aux	_	_
 26	충고해	충고+하+아	VERB	nng+xsv+ec	_	0	root	_	_
 27	주었다	주+었+다	AUX	vx+ep+ef	_	26	aux	_	SpaceAfter=No
-28	.	.	PUNCT	sf	_	27	punct	_	_
+28	.	.	PUNCT	sf	_	26	punct	_	_
 
 # sent_id = 1_18
 # text = 그래서 나는 여섯 살 적에 화가라는 멋진 직업을 포기해 버렸다.
@@ -253,12 +253,12 @@
 3	여섯	여섯	NUM	nr	_	4	nummod	_	_
 4	살	살	NOUN	nnb	_	5	nmod	_	_
 5	적에	적+에	NOUN	nnb+jkb	_	9	obl	_	_
-6	화가라는	화가+이+라는	NOUN	nng+vcp+etm	_	8	acl	_	_
+6	화가라는	화가+라는	NOUN	nng+jkq	_	8	acl	_	_
 7	멋진	멋지+ㄴ	ADJ	va+etm	_	8	amod	_	_
 8	직업을	직업+을	NOUN	nng+jko	_	9	obj	_	_
 9	포기해	포기+하+아	VERB	nng+xsv+ec	_	0	root	_	_
 10	버렸다	버리+었+다	AUX	vx+ep+ef	_	9	aux	_	SpaceAfter=No
-11	.	.	PUNCT	sf	_	10	punct	_	_
+11	.	.	PUNCT	sf	_	9	punct	_	_
 
 # sent_id = 1_19
 # text = 내 그림 제1호와 제2호가 성공을 거두지 못한 데 낙심해 버렸던 것이다.
@@ -274,7 +274,7 @@
 9	낙심해	낙심+하+아	VERB	nng+xsv+ec	_	0	root	_	_
 10	버렸던	버리+었+던	AUX	vx+ep+etm	_	9	aux	_	_
 11	것이다	것+이+다	NOUN	nnb+vcp+ef	_	9	aux	_	SpaceAfter=No
-12	.	.	PUNCT	sf	_	11	punct	_	_
+12	.	.	PUNCT	sf	_	9	punct	_	_
 
 # sent_id = 1_20
 # text = 어른들은 언제나 스스로는 아무것도 이해하지 못한다.
@@ -285,7 +285,7 @@
 4	아무것도	아무것+도	NOUN	nng+jx	_	5	obj	_	_
 5	이해하지	이해+하+지	VERB	nng+xsv+ec	_	0	root	_	_
 6	못한다	못하+ㄴ다	AUX	vx+ef	_	5	aux	_	SpaceAfter=No
-7	.	.	PUNCT	sf	_	6	punct	_	_
+7	.	.	PUNCT	sf	_	5	punct	_	_
 
 # sent_id = 1_21
 # text = 자꾸자꾸 설명을 해주어야 하니 맥빠지는 노릇이 아닐 수 없다.
@@ -299,7 +299,7 @@
 7	아닐	아니+ㄹ	AUX	vcn+etm	_	6	cop	_	_
 8	수	수	NOUN	nnb	_	6	aux	_	_
 9	없다	없+다	ADJ	va+ef	_	8	fixed	_	SpaceAfter=No
-10	.	.	PUNCT	sf	_	9	punct	_	_
+10	.	.	PUNCT	sf	_	6	punct	_	_
 
 # sent_id = 1_22
 # text = 그래서 다른 직업을 선택하지 않을 수 없게 된 나는 비행기 조종하는 법을 배웠다.
@@ -343,22 +343,22 @@
 5	도움을	도움+을	NOUN	nng+jko	_	6	obj	_	_
 6	준	주+ㄴ	VERB	vv+etm	_	0	root	_	_
 7	셈이었다	셈+이+었+다	NOUN	nnb+vcp+ep+ef	_	6	aux	_	SpaceAfter=No
-8	.	.	PUNCT	sf	_	7	punct	_	_
+8	.	.	PUNCT	sf	_	6	punct	_	_
 
 # sent_id = 1_25
 # text = 한번 슬쩍 보고도 중국과 애리조나를 나는 구별할 수 있었던 것이다.
 # text_en = Even with a quick glance, I was able to distinguish China from Arizona.
 1	한번	한+번	ADV	mm+nnb	_	3	advmod	_	_
 2	슬쩍	슬쩍	ADV	mag	_	3	advmod	_	_
-3	보고도	보+고+도	VERB	vv+ec+jx	_	0	root	_	_
+3	보고도	보+고+도	VERB	vv+ec+jx	_	7	conj	_	_
 4	중국과	중국+과	PROPN	nnp+jc	_	5	conj	_	_
 5	애리조나를	애리조나+를	PROPN	nnp+jko	_	7	obj	_	_
 6	나는	나+는	PRON	np+jx	_	7	nsubj	_	_
-7	구별할	구별+하+ㄹ	VERB	nng+xsv+etm	_	3	conj	_	_
+7	구별할	구별+하+ㄹ	VERB	nng+xsv+etm	_	0	root	_	_
 8	수	수	NOUN	nnb	_	7	aux	_	_
 9	있었던	있+었+던	ADJ	va+ep+etm	_	8	fixed	_	_
 10	것이다	것+이+다	NOUN	nnb+vcp+ef	_	7	aux	_	SpaceAfter=No
-11	.	.	PUNCT	sf	_	10	punct	_	_
+11	.	.	PUNCT	sf	_	7	punct	_	_
 
 # sent_id = 1_26
 # text = 그것은 밤에 길을 잃었을 때 아주 유용한 일이다.
@@ -386,7 +386,7 @@
 8	사람들과	사람+들+과	NOUN	nng+xsn+jc	_	11	obl	_	_
 9	수많은	수많+은	ADJ	va+etm	_	10	amod	_	_
 10	접촉을	접촉+을	NOUN	nng+jko	_	11	obj	_	_
-11	가져왔다	가져오+았+다	VERB	vv+ep+ef	_	_	_	_	SpaceAfter=No
+11	가져왔다	가져오+았+다	VERB	vv+ep+ef	_	0	root	_	SpaceAfter=No
 12	.	.	PUNCT	sf	_	11	punct	_	_
 
 # sent_id = 1_28
@@ -397,7 +397,7 @@
 3	많이	많이	ADV	mag	_	4	advmod	_	_
 4	살아온	살아오+ㄴ	VERB	vv+etm	_	0	root	_	_
 5	것이다	것+이+다	NOUN	nnb+vcp+ef	_	4	aux	_	SpaceAfter=No
-6	.	.	PUNCT	sf	_	5	punct	_	_
+6	.	.	PUNCT	sf	_	4	punct	_	_
 
 # sent_id = 1_29
 # text = 나는 가까이서 그들을 볼 수 있었다.
@@ -408,7 +408,7 @@
 4	볼	보+ㄹ	VERB	vv+etm	_	0	root	_	_
 5	수	수	NOUN	nnb	_	4	aux	_	_
 6	있었다	있+었+다	ADJ	va+ep+ef	_	5	fixed	_	SpaceAfter=No
-7	.	.	PUNCT	sf	_	6	punct	_	_
+7	.	.	PUNCT	sf	_	4	punct	_	_
 
 # sent_id = 1_30
 # text = 그렇다고 해서 그들에 대한 내 생각이 나아진 건 없었다.
@@ -448,7 +448,7 @@
 19	시험해	시험+하+아	VERB	nng+xsv+ec	_	0	root	_	_
 20	보고는	보+고는	AUX	vx+ec	_	19	aux	_	_
 21	했다	하+았+다	AUX	vx+ep+ef	_	19	aux	_	SpaceAfter=No
-22	.	.	PUNCT	sf	_	_	_	_	_
+22	.	.	PUNCT	sf	_	19	punct	_	_
 
 # sent_id = 1_32
 # text = 그 사람이 정말로 뭘 이해할 줄 아는 사람인가 알고 싶었던 것이다.
@@ -464,7 +464,7 @@
 9	알고	알+고	VERB	vv+ec	_	0	root	_	_
 10	싶었던	싶+었+던	AUX	vx+ep+etm	_	9	aux	_	_
 11	것이다	것+이+다	NOUN	nnb+vcp+ef	_	9	aux	_	SpaceAfter=No
-12	.	.	PUNCT	sf	_	11	punct	_	_
+12	.	.	PUNCT	sf	_	9	punct	_	_
 
 # sent_id = 1_33
 # text = 그러나 으레 그 사람은 모자라는 것이었다.
@@ -473,9 +473,9 @@
 2	으레	으레	ADV	mag	_	5	advmod	_	_
 3	그	그	DET	mm	_	4	det	_	_
 4	사람은	사람+은	NOUN	nng+jx	_	5	nsubj	_	_
-5	모자라는	모자+이+라는	NOUN	nng+vcp+etm	_	0	root	_	_
+5	모자라는	모자+라는	NOUN	nng+jkq	_	0	root	_	_
 6	것이었다	것+이+었+다	NOUN	nnb+vcp+ep+ef	_	5	aux	_	SpaceAfter=No
-7	.	.	PUNCT	sf	_	6	punct	_	_
+7	.	.	PUNCT	sf	_	5	punct	_	_
 
 # sent_id = 1_34
 # text = 그러면 나는 보아 구렁이도 원시림도 별들도 그에게 이야기하지 않았다.
@@ -487,9 +487,9 @@
 5	원시림도	원시림+도	NOUN	nng+jx	_	6	conj	_	_
 6	별들도	별+들+도	NOUN	nng+xsn+jx	_	8	obj	_	_
 7	그에게	그+에게	ADV	np+jkb	_	8	iobj	_	_
-8	이야기하지	이야기+하+지	VERB	nng+xsv+ec	_	_	_	_	_
+8	이야기하지	이야기+하+지	VERB	nng+xsv+ec	_	0	root	_	_
 9	않았다	않+았+다	AUX	vx+ep+ef	_	8	aux	_	SpaceAfter=No
-10	.	.	PUNCT	sf	_	9	punct	_	_
+10	.	.	PUNCT	sf	_	8	punct	_	_
 
 # sent_id = 1_35
 # text = 그가 이해할 수 있는 이야기를 했다.
@@ -499,7 +499,7 @@
 3	수	수	NOUN	nnb	_	2	aux	_	_
 4	있는	있+는	VERB	vv+etm	_	3	fixed	_	_
 5	이야기를	이야기+를	NOUN	nng+jko	_	6	obj	_	_
-6	했다	하+았+다	VERB	vv+ep+ef	_	_	_	_	SpaceAfter=No
+6	했다	하+았+다	VERB	vv+ep+ef	_	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sf	_	6	punct	_	_
 
 # sent_id = 1_36
@@ -514,7 +514,7 @@
 7	대해	대하+아	VERB	vv+ec	_	8	advcl	_	_
 8	이야기하는	이야기+하+는	VERB	nng+xsv+etm	_	0	root	_	_
 9	것이다	것+이+다	NOUN	nnb+vcp+ef	_	8	aux	_	SpaceAfter=No
-10	.	.	PUNCT	sf	_	9	punct	_	_
+10	.	.	PUNCT	sf	_	8	punct	_	_
 
 # sent_id = 1_37
 # text = 그러면 그 어른은 매우 착실한 청년을 알게 된 것을 몹시 기뻐했다.
@@ -613,7 +613,7 @@
 7	남아	남+아	VERB	vv+ec	_	0	root	_	_
 8	있지	있+지	AUX	vx+ec	_	7	aux	_	_
 9	않았다	않+았+다	AUX	vx+ep+ef	_	7	aux	_	SpaceAfter=No
-10	.	.	PUNCT	sf	_	9	punct	_	_
+10	.	.	PUNCT	sf	_	7	punct	_	_
 
 # sent_id = 2_6
 # text = 첫날밤 나는 사람 사는 고장에서 수천 마일 떨어진 사막에서 잠이 들었다.
@@ -645,7 +645,7 @@
 9	더	더	ADV	mag	_	10	advmod	_	_
 10	고립되어	고립+되+어	VERB	nng+xsv+ec	_	0	root	_	_
 11	있었다	있+었+다	AUX	vx+ep+ef	_	10	aux	_	SpaceAfter=No
-12	.	.	PUNCT	sf	_	11	punct	_	_
+12	.	.	PUNCT	sf	_	10	punct	_	_
 
 # sent_id = 2_8
 # text = 그러니 해가 뜰 무렵, 야릇한 목소리가 나를 깨웠을 때 내가 얼마나 놀랐을지 여러분은 상상할 수 있을 것이다.
@@ -654,7 +654,7 @@
 2	해가	해+가	NOUN	nng+jks	_	3	nsubj	_	_
 3	뜰	뜨+ㄹ	VERB	vv+etm	_	13	advcl	_	_
 4	무렵	무렵	NOUN	nnb	_	3	mark	_	SpaceAfter=No
-5	,	,	PUNCT	sp	_	4	punct	_	_
+5	,	,	PUNCT	sp	_	3	punct	_	_
 6	야릇한	야릇+하+ㄴ	ADJ	xr+xsa+etm	_	7	amod	_	_
 7	목소리가	목소리+가	NOUN	nng+jks	_	9	nsubj	_	_
 8	나를	나+를	PRON	np+jko	_	9	obj	_	_
@@ -668,7 +668,7 @@
 16	수	수	NOUN	nnb	_	15	aux	_	_
 17	있을	있+을	ADJ	va+etm	_	16	fixed	_	_
 18	것이다	것+이+다	NOUN	nnb+vcp+ef	_	15	aux	_	SpaceAfter=No
-19	.	.	PUNCT	sf	_	18	punct	_	_
+19	.	.	PUNCT	sf	_	15	punct	_	_
 
 # sent_id = 2_9
 # text = 그 목소리는 말했다.
@@ -681,14 +681,14 @@
 # sent_id = 2_10
 # text = "양 한 마리를 그려 줘!"
 # text_en = "Draw me a sheep!"
-1	"	"	PUNCT	ss	_	2	punct	_	SpaceAfter=No
+1	"	"	PUNCT	ss	_	5	punct	_	SpaceAfter=No
 2	양	양	NOUN	nng	_	5	obj	_	_
 3	한	한	NUM	nr	_	2	nummod	_	_
 4	마리를	마리+를	NOUN	nnb+jko	_	3	clf	_	_
 5	그려	그리+어	VERB	vv+ec	_	0	root	_	_
 6	줘	주+어	AUX	vx+ef	_	5	aux	_	SpaceAfter=No
-7	!	!	PUNCT	sf	_	6	punct	_	SpaceAfter=No
-8	"	"	PUNCT	ss	_	7	punct	_	_
+7	!	!	PUNCT	sf	_	5	punct	_	SpaceAfter=No
+8	"	"	PUNCT	ss	_	5	punct	_	_
 
 # sent_id = 2_11
 # text = "뭐라고?"
@@ -696,19 +696,19 @@
 1	"	"	PUNCT	ss	_	2	punct	_	SpaceAfter=No
 2	뭐라고	뭐+이+라고	PRON	np+vcp+ef	_	0	root	_	SpaceAfter=No
 3	?	?	PUNCT	sf	_	2	punct	_	SpaceAfter=No
-4	"	"	PUNCT	ss	_	3	punct	_	_
+4	"	"	PUNCT	ss	_	2	punct	_	_
 
 # sent_id = 2_12
 # text = "양 한 마리를 그려 줘."
 # text_en = "Draw me a sheep."
-1	"	"	PUNCT	ss	_	2	punct	_	SpaceAfter=No
+1	"	"	PUNCT	ss	_	5	punct	_	SpaceAfter=No
 2	양	양	NOUN	nng	_	5	obj	_	_
 3	한	한	NUM	nr	_	2	nummod	_	_
 4	마리를	마리+를	NOUN	nnb+jko	_	3	clf	_	_
 5	그려	그리+어	VERB	vv+ec	_	0	root	_	_
 6	줘	주+어	AUX	vx+ef	_	5	aux	_	SpaceAfter=No
-7	!	!	PUNCT	sf	_	6	punct	_	SpaceAfter=No
-8	"	"	PUNCT	ss	_	7	punct	_	_
+7	.	.	PUNCT	sf	_	5	punct	_	SpaceAfter=No
+8	"	"	PUNCT	ss	_	5	punct	_	_
 
 # sent_id = 2_13
 # text = 나는 기겁을 해서 후다닥 일어섰다.
@@ -727,7 +727,7 @@
 2	막	막	ADV	mag	_	3	advmod	_	_
 3	비벼	비비+어	VERB	vv+ec	_	0	root	_	_
 4	보았다	보+았+다	AUX	vx+ep+ef	_	3	aux	_	SpaceAfter=No
-5	.	.	PUNCT	sf	_	4	punct	_	_
+5	.	.	PUNCT	sf	_	3	punct	_	_
 
 # sent_id = 2_15
 # text = 사방을 잘 살펴보았다.
@@ -752,7 +752,7 @@
 10	바라보고	바라보+고	VERB	vv+ec	_	0	root	_	_
 11	있는	있+는	VERB	vv+etm	_	10	aux	_	_
 12	것이었다	것+이+었+다	NOUN	nnb+vcp+ep+ef	_	10	aux	_	SpaceAfter=No
-13	.	.	PUNCT	sf	_	12	punct	_	_
+13	.	.	PUNCT	sf	_	10	punct	_	_
 
 # sent_id = 2_17
 # text = 훗날 내가 그를 그린 그림 중에서 가장 잘된 것이 여기 있다.
@@ -790,7 +790,7 @@
 2	내	내	PRON	np	_	3	nmod	_	_
 3	잘못이	잘못+이	NOUN	nng+jks	_	0	root	_	_
 4	아니다	아니+다	AUX	vcn+ef	_	3	cop	_	SpaceAfter=No
-5	.	.	PUNCT	sf	_	4	punct	_	_
+5	.	.	PUNCT	sf	_	3	punct	_	_
 
 # sent_id = 2_20
 # text = 여섯 살 적에 어른들이 화가로 출세할 수 없다고 나를 낙심시켰기 때문에 나는 속이 보이지 않거나 보이거나 하는 보아 구렁이 이외에는 아무것도 그리는 연습을 하지 않았으니까 말이다.
@@ -821,7 +821,7 @@
 24	하지	하+지	VERB	vv+ec	_	0	root	_	_
 25	않았으니까	않+았+으니까	AUX	vx+ep+ec	_	24	aux	_	_
 26	말이다	말+이+다	NOUN	nng+vcp+ef	_	24	aux	_	SpaceAfter=No
-27	.	.	PUNCT	sf	_	26	punct	_	_
+27	.	.	PUNCT	sf	_	24	punct	_	_
 
 # sent_id = 2_21
 # text = 어쨌든 나는 그의 느닷없는 출현에 너무도 놀라서 눈을 휘둥그렇게 뜨고 그를 바라보았다.
@@ -837,7 +837,7 @@
 9	휘둥그렇게	휘둥그렇+게	ADJ	va+ec	_	10	xcomp	_	_
 10	뜨고	뜨+고	VERB	vv+ec	_	12	conj	_	_
 11	그를	그+를	PRON	np+jko	_	12	obj	_	_
-12	바라보았다	바라보+았+다	VERB	vv+ep+ef	_	_	_	_	SpaceAfter=No
+12	바라보았다	바라보+았+다	VERB	vv+ep+ef	_	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	sf	_	12	punct	_	_
 
 # sent_id = 2_22
@@ -881,7 +881,223 @@
 16	같아	같+아	ADJ	va+ec	_	15	fixed	_	_
 17	보이지도	보이+지+도	VERB	vv+ec+jx	_	0	root	_	_
 18	않았다	않+았+다	AUX	vx+ep+ef	_	17	aux	_	SpaceAfter=No
-19	.	.	PUNCT	sf	_	18	punct	_	_
+19	.	.	PUNCT	sf	_	17	punct	_	_
+
+# sent_id = 2_24
+# text = 사람 사는 고장에서 수천 마일 떨어진 사막 한가운데에서 길을 잃은 어린아이 같은 구석이라고는 없었다.
+# text_en = Nothing about him was like a kid lost in the middle of a desert which was thousands miles apart from inhabited towns.
+1	사람	사람	NOUN	nng	_	2	nsubj	_	_
+2	사는	살+는	VERB	vv+etm	_	3	acl	_	_
+3	고장에서	고장+에서	NOUN	nng+jkb	_	6	obl	_	_
+4	수천	수천	NUM	nr	_	5	nummod	_	_
+5	마일	마일	NOUN	nnb	_	6	obl	_	_
+6	떨어진	떨어지+ㄴ	VERB	vv+etm	_	7	acl	_	_
+7	사막	사막	NOUN	nng	_	8	nmod	_	_
+8	한가운데에서	한가운데+에서	NOUN	nng+jkb	_	10	obl	_	_
+9	길을	길+을	NOUN	nng+jko	_	10	obj	_	_
+10	잃은	잃+은	VERB	vv+etm	_	11	acl	_	_
+11	어린아이	어린아이	NOUN	nng	_	12	obl	_	_
+12	같은	같+은	ADJ	va+etm	_	13	amod	_	_
+13	구석이라고는	구석+이라고는	NOUN	nng+jx	_	14	nsubj	_	_
+14	없었다	없+었+다	ADJ	va+ep+ef	_	0	root	_	_
+15	.	.	PUNCT	sf	_	14	punct	_	_
+
+# sent_id = 2_25
+# text = 가까스로 정신을 차리고 내가 말을 걸었다.
+# text_en = I narrowly managed to come back to my senses, and talked to him.
+1	가까스로	가까스로	ADV	mag	_	6	advmod	_	_
+2	정신을	정신+을	NOUN	nng+jko	_	3	obj	_	_
+3	차리고	차리+고	VERB	vv+ec	_	6	conj	_	_
+4	내가	내+가	PRON	np+jks	_	6	nsubj	_	_
+5	말을	말+을	NOUN	nng+jko	_	6	obj	_	_
+6	걸었다	걸+었+다	VERB	vv+ep+ef	_	0	root	_	_
+7	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 2_26
+# text = "그런데… 여기서 뭘 하고 있는거니?"
+# text_en = "But… what are you doing here?"
+1	"	"	PUNCT	ss	_	6	punct	_	_
+2	그런데	그런데	CCONJ	maj	_	6	cc	_	_
+3	…	…	PUNCT	se	_	2	reparandum	_	_
+4	여기서	여기+서	PRON	np+jkb	_	6	obl	_	_
+5	뭘	무엇+을	PRON	np+jko	_	6	obj	_	_
+6	하고	하+고	VERB	vv+ec	_	0	root	_	_
+7	있는거니	있+는+거+이+니	AUX	vx+etm+nnb+vcp+ef	_	6	aux	_	_
+8	?	?	PUNCT	sf	_	6	punct	_	_
+9	"	"	PUNCT	ss	_	6	punct	_	_
+
+# sent_id = 2_27
+# text = 그러자 그는 아주 심각한 이야기나 되는 듯이 소곤소곤 다시 되풀이해 말했다.
+# text_en = Then he repeated again in whispers, as if it was of some serious issue.
+1	그러자	그러자	CCONJ	maj	_	11	cc	_	_
+2	그는	그+는	PRON	np+jx	_	11	nsubj	_	_
+3	아주	아주	ADV	mag	_	4	advmod	_	_
+4	심각한	심각+하+ㄴ	ADJ	xr+xsa+etm	_	5	amod	_	_
+5	이야기나	이야기+나	NOUN	nng+jx	_	6	obl	_	_
+6	되는	되+는	VERB	vv+etm	_	11	advcl	_	_
+7	듯이	듯이	NOUN	nnb	_	6	mark	_	_
+8	소곤소곤	소곤소곤	ADV	mag	_	11	advmod	_	_
+9	다시	다시	ADV	mag	_	11	advmod	_	_
+10	되풀이해	되풀이+하+아	VERB	nng+xsv+ec	_	11	compound	_	_
+11	말했다	말+하+았+다	VERB	nng+xsv+ep+ef	_	0	root	_	_
+12	.	.	PUNCT	sf	_	11	root	_	_
+
+# sent_id = 2_28
+# text = "부탁이야… 양을 한 마리 그려 줘…"
+# text_en = "Please… draw me a sheep…"
+1	"	"	PUNCT	ss	_	7	punct	_	_
+2	부탁이야	부탁+이+야	NOUN	nng+vcp+sf	_	7	discourse	_	_
+3	…	…	PUNCT	se	_	2	punct	_	_
+4	양을	양+을	NOUN	nng+jko	_	7	obj	_	_
+5	한	한	DET	mm	_	6	nummod	_	_
+6	마리	마리	NOUN	nnb	_	7	obl	_	_
+7	그려	그리+어	VERB	vv+ec	_	0	root	_	_
+8	줘	주+어	AUX	vx+ec	_	7	aux	_	_
+9	…	…	PUNCT	se	_	7	punct	_	_
+10	"	"	PUNCT	ss	_	7	punct	_	_
+
+# sent_id = 2_29
+# text = 너무도 인상깊은 신비스러운 일을 당하게 되면 누구나 거기에 순순히 따르게 마련이다.
+# text_en = If something far too impressive and mysterious happens, anyone would certainly obey that.
+1	너무도	너무+도	ADV	mag+jx	_	2	advmod	_	_
+2	인상깊은	인상+깊+은	ADJ	nng+va+etm	_	4	amod	_	_
+3	신비스러운	신비+스럽+ㄴ	ADJ	nng+xsa+etm	_	4	amod	_	_
+4	일을	일+을	NOUN	nng+jko	_	5	obj	_	_
+5	당하게	당하+게	VERB	vv+ec	_	6	xcomp	_	_
+6	되면	되+면	AUX	vx+ec	_	10	ccomp	_	_
+7	누구나	누구+나	PRON	np+jx	_	10	nsubj	_	_
+8	거기에	거기+에	PRON	np+jkb	_	10	obl	_	_
+9	순순히	순순히	ADV	mag	_	10	advmod	_	_
+10	따르게	따르+게	VERB	vv+ec	_	0	root	_	_
+11	마련이다	마련+이+다	NOUN	nng+vcp+ef	_	10	aux	_	_
+12	.	.	PUNCT	sf	_	10	punct	_	_
+
+# sent_id = 2_30
+# text = 사람 사는 고장에서 수천 마일 떨어진 곳에서 죽음의 위험을 마주하고 있는 중에 참 엉뚱한 짓이라고 느껴지기는 했지만 나는 포켓에서 종이 한 장과 만년필을 꺼냈다.
+# text_en = Although it felt very random, thousands miles apart from inhabited regions, I pulled out a sheet of paper and a pen from my pocket.
+1	사람	사람	NOUN	nng	_	2	nsubj	_	_
+2	사는	살+는	VERB	vv+etm	_	3	acl	_	_
+3	고장에서	고장+에서	NOUN	nng+jkb	_	6	obl	_	_
+4	수천	수천	NUM	nr	_	5	nummod	_	_
+5	마일	마일	NOUN	nnb	_	6	obl	_	_
+6	떨어진	떨어지+ㄴ	VERB	vv+etm	_	7	acl	_	_
+7	곳에서	곳+에서	NOUN	nng+jkb	_	10	obl	_	_
+8	죽음의	죽음+의	NOUN	nng+jkg	_	9	nummod	_	_
+9	위험을	위험+을	NOUN	nng+jko	_	10	obj	_	_
+10	마주하고	마주하+고	VERB	vv+ec	_	12	acl	_	_
+11	있는	있+는	AUX	vx+etm	_	10	aux	_	_
+12	중에	중+에	NOUN	nnb+jkb	_	15	obl	_	_
+13	참	참	ADV	mag	_	14	advmod	_	_
+14	엉뚱한	엉뚱+하+ㄴ	ADJ	xr+xsa+etm	_	15	amod	_	_
+15	짓이라고	짓+이+라고	NOUN	nng+vcp+ec	_	16	ccomp	_	_
+16	느껴지기는	느끼+어+지+기+는	VERB	vv+ec+vx+etn+jx	_	24	advcl	_	_
+17	했지만	하+았+지만	AUX	vv+ep+ec	_	16	aux	_	_
+18	나는	나+는	PRON	np+jx	_	24	nsubj	_	_
+19	포켓에서	포켓+에서	NOUN	nng+jkb	_	24	obl	_	_
+20	종이	종이	NOUN	nng	_	23	conj	_	_
+21	한	한	NUM	nr	_	20	nummod	_	_
+22	장과	장+과	NOUN	nnb+jc	_	21	clf	_	_
+23	만년필을	만년필+을	NOUN	nng+jko	_	24	obj	_	_
+24	꺼냈다	꺼내+었+다	VERB	vv+ep+ef	_	0	root	_	_
+25	.	.	PUNCT	sf	_	24	punct	_	_
+
+# sent_id = 2_31
+# text = 그러나 내가 공부한 것은 지리, 역사, 계산, 문법이라는 생각이 나서 그 어린 소년에게, 나는 그림을 그릴 줄 모른다고 (조금 기분이 나빠져서) 말했다.
+# text_en = But as it occured to me what I studied were geography, history, arithmetic and grammar, I told the little boy (a bit bluntly) that I don't know how to draw.
+1	그러나	그러나	CCONJ	maj	_	11	cc	_	_
+2	내가	내+가	PRON	np+jks	_	3	nsubj	_	_
+3	공부한	공부+하+ㄴ	VERB	nng+xsv+etm	_	4	acl	_	_
+4	것은	것+은	NOUN	nnb+jx	_	11	nsubj	_	_
+5	지리	지리	NOUN	nng	_	11	conj	_	_
+6	,	,	PUNCT	sp	_	7	punct	_	_
+7	역사	역사	NOUN	nng	_	11	conj	_	_
+8	,	,	PUNCT	sp	_	9	punct	_	_
+9	계산	계산	NOUN	nng	_	11	conj	_	_
+10	,	,	PUNCT	sp	_	11	punct	_	_
+11	문법이라는	문법+이라는	NOUN	nng+jkq	_	12	acl	_	_
+12	생각이	생각+이	NOUN	nng+jks	_	13	nsubj	_	_
+13	나서	나+아서	VERB	vv+ec	_	28	advcl	_	_
+14	그	그	DET	mm	_	15	det	_	_
+15	어린	어리+ㄴ	ADJ	va+etm	_	16	amod	_	_
+16	소년에게	소년+에게	NOUN	nng+jkb	_	28	obl	_	_
+17	,	,	PUNCT	sp	_	16	punct	_	_
+18	나는	나+는	PRON	np+jx	_	20	nsubj	_	_
+19	그림을	그림+을	NOUN	nng+jko	_	20	obj	_	_
+20	그릴	그릴	PROPN	nnp	_	28	ccomp	_	_
+21	줄	줄	NOUN	nnb	_	20	aux	_	_
+22	모른다고	모르+ㄴ다고	VERB	vv+ec	_	21	fixed	_	_
+23	(	(	PUNCT	ss	_	26	punct	_	_
+24	조금	조금	ADV	mag	_	26	advmod	_	_
+25	기분이	기분+이	NOUN	nng+jks	_	26	nsubj	_	_
+26	나빠져서	나빠지+어서	ADJ	vv+ec	_	28	parataxis	_	_
+27	)	)	PUNCT	ss	_	26	punct	_	_
+28	말했다	말+하+았+다	VERB	nng+xsv+ep+ef	_	0	root	_	_
+29	.	.	PUNCT	sf	_	28	punct	_	_
+
+# sent_id = 2_32
+# text = 그는 대답했다.
+# text_en = He answered.
+1	그는	그+는	PRON	np+jx	_	2	nsubj	_	_
+2	대답했다	대답+하+았+다	VERB	nng+xsv+ep+ef	_	0	root	_	_
+3	.	.	PUNCT	sf	_	2	punct	_	_
+
+# sent_id = 2_33
+# text = "괜찮아.
+# text_en = "That's all right.
+1	"	"	PUNCT	ss	_	2	punct	_	_
+2	괜찮아	괜찮+아	ADJ	va+ef	_	0	root	_	_
+3	.	.	PUNCT	sf	_	2	punct	_	_
+
+# sent_id = 2_34
+# text = 양을 한 마리 그려 줘."
+# text_en = Draw me a sheep."
+1	양을	양+을	NOUN	nng+jko	_	4	obj	_	_
+2	한	한	NUM	nr	_	3	nummod	_	_
+3	마리	마리	NOUN	nnb	_	4	obl	_	_
+4	그려	그리+어	VERB	vv+ec	_	0	root	_	_
+5	줘	주+어	AUX	vx+ef	_	4	aux	_	_
+6	.	.	PUNCT	sf	_	4	punct	_	_
+7	"	"	PUNCT	ss	_	4	punct	_	_
+
+# sent_id = 2_35
+# text = 양은 한 번도 그려 본 적이 없었으므로 나는 그를 위해 내가 그릴 수 있는 단 두 가지 그림 중의 하나를 다시 그려 주었다.
+# text_en = Since I had never drawn a sheep, I drew for him one of the only two pictures I could draw.
+1	양은	양은	NOUN	nng	_	4	obj	_	_
+2	한	한	NUM	nr	_	3	nummod	_	_
+3	번도	번+도	NOUN	nnb+jx	_	4	obl	_	_
+4	그려	그리+어	VERB	vv+ec	_	6	acl	_	_
+5	본	보+ㄴ	AUX	vx+etm	_	4	aux	_	_
+6	적이	적+이	NOUN	nnb+jks	_	7	nsubj	_	_
+7	없었으므로	없+었+으므로	ADJ	va+ep+ec	_	22	advcl	_	_
+8	나는	나+는	PRON	np+jx	_	22	nsubj	_	_
+9	그를	그+를	PRON	np+jko	_	10	obj	_	_
+10	위해	위하+아	VERB	vv+ec	_	22	advcl	_	_
+11	내가	내+가	PRON	np+jks	_	12	nsubj	_	_
+12	그릴	그리+ㄹ	VERB	vv+etm	_	18	acl	_	_
+13	수	수	NOUN	nnb	_	12	aux	_	_
+14	있는	있+는	ADJ	va+etm	_	13	fixed	_	_
+15	단	단	ADJ	mm	_	18	amod	_	_
+16	두	두	NUM	nr	_	17	nummod	_	_
+17	가지	가지	NOUN	nnb	_	18	nmod	_	_
+18	그림	그림	NOUN	nng	_	19	nmod	_	_
+19	중의	중+의	NOUN	nnb+jkg	_	20	nmod	_	_
+20	하나를	하나+를	NOUN	nng+jko	_	22	obj	_	_
+21	다시	다시	ADV	mag	_	22	advmod	_	_
+22	그려	그리+어	VERB	vv+ec	_	0	root	_	_
+23	주었다	주+었+다	AUX	vx+ep+ef	_	22	aux	_	_
+24	.	.	PUNCT	sf	_	22	punct	_	_
+
+# sent_id = 2_36
+# text = 속이 보이지 않는 보아 구렁이의 그림 말이다.
+# text_en = That picture of a boa constrictor with invisible inside.
+1	속이	속+이	NOUN	nng+jks	_	2	nsubj	_	_
+2	보이지	보이+지	VERB	vv+ec	_	5	acl	_	_
+3	않는	않+는	AUX	vx+etm	_	2	aux	_	_
+4	보아	보아	NOUN	nng	_	5	compound	_	_
+5	구렁이의	구렁이+의	NOUN	nng+jkg	_	6	nmod	_	_
+6	그림	그림	NOUN	nng	_	0	root	_	_
+7	말이다	말+이+다	NOUN	nng+vcp+ef	_	6	aux	_	_
+8	.	.	PUNCT	sf	_	6	punct	_	_
 
 # sent_id = 2_37-42
 # text = 그러자 그 어린 소년은, "아냐, 아냐, 보아 구렁이 속의 코끼리는 싫어. 보아 구렁이는 아주 위험해. 그리고 코끼리는 아주 거추장스럽고. 내가 사는 곳은 아주 조그맣거든. 내게는 양이 필요해. 양을 그려 줘"라고 말하는 것이었다.
@@ -891,7 +1107,7 @@
 3	어린	어리+ㄴ	ADJ	va+etm	_	4	amod	_	_
 4	소년은	소년+은	NOUN	nng+jx	_	42	nsubj	_	SpaceAfter=No
 5	,	,	PUNCT	sp	_	4	punct	_	_
-6	"	"	PUNCT	ss	_	7	punct	_	SpaceAfter=No
+6	"	"	PUNCT	ss	_	15	punct	_	SpaceAfter=No
 7	아냐	아냐	INTJ	ic	_	15	discourse	_	SpaceAfter=No
 8	,	,	PUNCT	sp	_	7	punct	_	_
 9	아냐	아냐	INTJ	ic	_	15	discourse	_	SpaceAfter=No
@@ -910,7 +1126,7 @@
 22	그리고	그리고	CCONJ	maj	_	25	cc	_	_
 23	코끼리는	코끼리+는	PROPN	nnp+jx	_	25	nsubj	_	_
 24	아주	아주	ADV	mag	_	25	advmod	_	_
-25	거추장스럽고	거추장스럽+고	ADJ	va+ef	_	20	parataxis	_	SpaceAfter=No
+25	거추장스럽고	거추장스럽+고	ADJ	va+ec	_	20	parataxis	_	SpaceAfter=No
 26	.	.	PUNCT	sf	_	25	punct	_	_
 27	내가	내+가	PRON	np+jks	_	28	nsubj	_	_
 28	사는	살+는	VERB	vv+etm	_	29	acl	_	_
@@ -919,17 +1135,17 @@
 31	조그맣거든	조그맣+거든	ADJ	va+ef	_	25	parataxis	_	SpaceAfter=No
 32	.	.	PUNCT	sf	_	31	punct	_	_
 33	내게는	내+게+는	PRON	np+jkb+jx	_	35	iobj	_	_
-34	양이	양이	NOUN	nng	_	35	nsubj	_	_
+34	양이	양+이	NOUN	nng+jks	_	35	nsubj	_	_
 35	필요해	필요+하+아	ADJ	nng+xsa+ef	_	31	parataxis	_	SpaceAfter=No
 36	.	.	PUNCT	sf	_	35	punct	_	_
 37	양을	양+을	NOUN	nng+jko	_	38	obj	_	_
 38	그려	그리+어	VERB	vv+ec	_	35	parataxis	_	_
-39	줘	주+어	AUX	vx+ec	_	38	aux	_	SpaceAfter=No
+39	줘	주+어	AUX	vx+ef	_	38	aux	_	SpaceAfter=No
 40	"	"	PUNCT	ss	_	39	punct	_	_
 41	라고	라고	ADP	jkq	_	38	mark	_	_
 42	말하는	말+하+는	VERB	nng+xsv+etm	_	38	parataxis	_	_
 43	것이었다	것+이+었+다	NOUN	nnb+vcp+ep+ef	_	42	aux	_	SpaceAfter=No
-44	.	.	PUNCT	sf	_	43	punct	_	_
+44	.	.	PUNCT	sf	_	42	punct	_	_
 
 # sent_id = 2_37
 # text = 그러자 그 어린 소년은, "아냐, 아냐, 보아 구렁이 속의 코끼리는 싫어.
@@ -966,7 +1182,7 @@
 1	그리고	그리고	CCONJ	maj	_	4	cc	_	_
 2	코끼리는	코끼리+는	PROPN	nnp+jx	_	4	nsubj	_	_
 3	아주	아주	ADV	mag	_	4	advmod	_	_
-4	거추장스럽고	거추장스럽+고	ADJ	va+ef	_	0	root	_	SpaceAfter=No
+4	거추장스럽고	거추장스럽+고	ADJ	va+ec	_	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	sf	_	4	punct	_	_
 
 # sent_id = 2_40
@@ -983,7 +1199,7 @@
 # text = 내게는 양이 필요해.
 # text_en = I need a sheep.
 1	내게는	내+게+는	PRON	np+jkb+jx	_	3	iobj	_	_
-2	양이	양이	NOUN	nng	_	3	nsubj	_	_
+2	양이	양+이	NOUN	nng+jks	_	3	nsubj	_	_
 3	필요해	필요+하+아	ADJ	nng+xsa+ef	_	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sf	_	3	punct	_	_
 
@@ -992,10 +1208,338 @@
 # text_en = Draw me a sheep," (the little boy) said.
 1	양을	양+을	NOUN	nng+jko	_	2	obj	_	_
 2	그려	그리+어	VERB	vv+ec	_	0	root	_	_
-3	줘	주+어	AUX	vx+ec	_	2	aux	_	SpaceAfter=No
+3	줘	주+어	AUX	vx+ef	_	2	aux	_	SpaceAfter=No
 4	"	"	PUNCT	ss	_	3	punct	_	_
 5	라고	라고	ADP	jkq	_	2	mark	_	_
 6	말하는	말+하+는	VERB	nng+xsv+etm	_	2	parataxis	_	_
 7	것이었다	것+이+었+다	NOUN	nnb+vcp+ep+ef	_	6	aux	_	SpaceAfter=No
+8	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 2_43
+# text = 그래서 나는 양을 그렸다.
+# text_en = So I drew a sheep.
+1	그래서	그래서	CCONJ	maj	_	4	cc	_	_
+2	나는	나+는	PRON	np+jx	_	4	nsubj	_	_
+3	양을	양+을	NOUN	nng+jko	_	4	obj	_	_
+4	그렸다	그리+었+다	VERB	vv+ep+ef	_	0	root	_	_
+5	.	.	PUNCT	sf	_	4	punct	_	_
+
+# sent_id = 2_44-45
+# text = 그는 주의 깊게 바라보더니, "안돼! 그 양은 벌써 병이 들었는 걸"하고 말했다.
+# text_en = He carefully stared at it and said, "No! The sheep is already ill."
+1	그는	그+는	PRON	np+jx	_	16	nsubj	_	_
+2	주의	주의	NOUN	nng	_	3	nsubj	_	_
+3	깊게	깊+게	ADV	va+ec	_	4	advcl	_	_
+4	바라보더니	바라보+더니	VERB	vv+ec	_	16	advcl	_	_
+5	,	,	PUNCT	sp	_	4	punct	_	_
+6	"	"	PUNCT	ss	_	7	punct	_	_
+7	안돼	안+되+어	VERB	nng+xsv+ef	_	0	root	_	_
+8	!	!	PUNCT	sf	_	7	punct	_	_
+9	그	그	DET	mm	_	10	det	_	_
+10	양은	양+은	NOUN	nnp+jx	_	13	dislocated	_	_
+11	벌써	벌써	ADV	mag	_	13	advmod	_	_
+12	병이	병+이	NOUN	nng+jks	_	13	nsubj	_	_
+13	들었는걸	들+었+ㄴ걸	VERB	vv+ep+ef	_	7	parataxis	_	_
+14	"	"	PUNCT	ss	_	13	punct	_	_
+15	하고	하+고	ADP	jkq	_	13	mark	_	_
+16	말했다	말+하+았+다	VERB	nng+xsv+ep+ef	_	13	parataxis	_	_
+17	.	.	PUNCT	sf	_	16	punct	_	_
+
+# sent_id = 2_44
+# text = 그는 주의 깊게 바라보더니, "안돼!
+# text_en = He carefully stared at it and (said), "No!
+1	그는	그+는	PRON	np+jx	_	4	nsubj	_	_
+2	주의	주의	NOUN	nng	_	3	nsubj	_	_
+3	깊게	깊+게	ADV	va+ec	_	4	advcl	_	_
+4	바라보더니	바라보+더니	VERB	vv+ec	_	7	orphan	_	_
+5	,	,	PUNCT	sp	_	4	punct	_	_
+6	"	"	PUNCT	ss	_	7	punct	_	_
+7	안돼	안+되+어	VERB	nng+xsv+ef	_	0	root	_	_
+8	!	!	PUNCT	sf	_	7	punct	_	_
+
+# sent_id = 2_45
+# text = 그 양은 벌써 병이 들었는걸"하고 말했다.
+# text_en = The sheep is already ill," (he) said.
+1	그	그	DET	mm	_	2	det	_	_
+2	양은	양+은	NOUN	nnp+jx	_	5	dislocated	_	_
+3	벌써	벌써	ADV	mag	_	5	advmod	_	_
+4	병이	병+이	NOUN	nng+jks	_	5	nsubj	_	_
+5	들었는걸	들+었+걸	VERB	vv+ep+ef	_	0	root	_	_
+6	"	"	PUNCT	ss	_	5	punct	_	_
+7	하고	하고	ADP	jkq	_	5	mark	_	_
+8	말했다	말+하+았+다	VERB	nng+xsv+ep+ef	_	5	parataxis	_	_
+9	.	.	PUNCT	sf	_	8	punct	_	_
+
+# sent_id = 2_46
+# text = "다시 하나 그려 줘."
+# text_en = "Draw me another one."
+1	"	"	PUNCT	ss	_	4	punct	_	_
+2	다시	다시	ADV	mag	_	4	advmod	_	_
+3	하나	하나	NOUN	nr	_	4	obj	_	_
+4	그려	그리+어	VERB	vv+ec	_	0	root	_	_
+5	줘	주+어	AUX	vx+ef	_	4	aux	_	_
+6	.	.	PUNCT	sf	_	4	punct	_	_
+7	"	"	PUNCT	ss	_	4	punct	_	_
+
+# sent_id = 2_47
+# text = 나는 또 그렸다.
+# text_en = I drew again.
+1	나는	나+는	PRON	np+jx	_	3	nsubj	_	_
+2	또	또	ADV	maj	_	3	advmod	_	_
+3	그렸다	그리+었+다	VERB	vv+ep+ef	_	0	root	_	_
+4	.	.	PUNCT	sf	_	3	punct	_	_
+
+# sent_id = 2_48
+# text = 내 친구는 너그러운 모습으로 상냥한 미소를 지었다.
+# text_en = My friend generously made a gentle smile.
+1	내	내	PRON	np	_	2	nmod	_	_
+2	친구는	친구+는	NOUN	nng+jx	_	7	nsubj	_	_
+3	너그러운	너그럽+ㄴ	ADJ	va+etm	_	4	amod	_	_
+4	모습으로	모습+으로	NOUN	nng+jkb	_	7	obl	_	_
+5	상냥한	상냥+하+ㄴ	ADJ	xr+xsa+etm	_	6	amod	_	_
+6	미소를	미소+를	NOUN	nng+jko	_	7	obj	_	_
+7	지었다	지+었+다	VERB	vx+ep+ef	_	0	root	_	_
 8	.	.	PUNCT	sf	_	7	punct	_	_
 
+# sent_id = 2_49
+# text = "봐… 이건 양이 아니라 염소잖아.
+# text_en = "See… this is a goat, not a sheep."
+1	"	"	PUNCT	ss	_	7	punct	_	_
+2	봐	보+아	VERB	vv+ef	_	7	discourse	_	_
+3	…	…	PUNCT	se	_	2	punct	_	_
+4	이건	이것+은	PRON	np+jx	_	7	nsubj	_	_
+5	양이	양+이	NOUN	nng+jks	_	6	nsubj	_	_
+6	아니라	아니+라	AUX	vcn+ec	_	7	advcl	_	_
+7	염소잖아	염소+잖아	NOUN	nng+ef	_	0	root	_	_
+8	.	.	PUNCT	sf	_	7	punct	_	_
+
+# sent_id = 2_50
+# text = 뿔이 있으니까…"
+# text_en = There are horns…"
+1	뿔이	뿔+이	NOUN	nng+jks	_	2	nsubj	_	_
+2	있으니까	있+으니까	ADJ	va+ec	_	0	root	_	_
+3	…	…	PUNCT	se	_	2	punct	_	_
+4	"	"	PUNCT	ss	_	2	punct	_	_
+
+# sent_id = 2_51
+# text = 그래서 난 또다시 그렸다.
+# text_en = So I drew once again.
+1	그래서	그래서	CCONJ	maj	_	4	cc	_	_
+2	난	나+는	PRON	np+jx	_	4	nsubj	_	_
+3	또다시	또다시	ADV	mag	_	4	advmod	_	_
+4	그렸다	그리+었+다	VERB	vv+ep+ef	_	0	root	_	_
+5	.	.	PUNCT	sf	_	4	punct	_	_
+
+# sent_id = 2_52
+# text = 그러나 그것도 앞의 것들과 마찬가지로 거절을 당했다.
+# text_en = However, it was rejected like the others.
+1	그러나	그러나	CCONJ	maj	_	7	cc	_	_
+2	그것도	그것+도	PRON	np+jx	_	7	nsubj	_	_
+3	앞의	앞+의	NOUN	nng+jkg	_	4	nmod	_	_
+4	것들과	것+들+과	NOUN	nnb+xsn+jc	_	5	nmod	_	_
+5	마찬가지로	마찬가지+로	NOUN	nng+jkb	_	7	obl	_	_
+6	거절을	거절+을	NOUN	nng+jko	_	7	obj	_	_
+7	당했다	당하+았+다	VERB	vv+ep+ef	_	0	root	_	_
+8	.	.	PUNCT	sf	_	7	punct	_	_
+
+# sent_id = 2_53
+# text = "그건 너무 늙었어.
+# text_en = "That one's too old.
+1	"	"	PUNCT	ss	_	4	punct	_	_
+2	그건	그거+ㄴ	PRON	np+jx	_	4	nsubj	_	_
+3	너무	너무	ADV	mag	_	4	advmod	_	_
+4	늙었어	늙+었+어	VERB	vv+ep+ef	_	0	root	_	_
+5	.	.	PUNCT	sf	_	4	punct	_	_
+
+# sent_id = 2_54
+# text = 난 오래 살 수 있는 양을 갖고 싶어."
+# text_en = I want a sheep that can live long."
+1	난	나+ㄴ	PRON	np+jx	_	7	nsubj	_	_
+2	오래	오래	ADV	mag	_	3	advmod	_	_
+3	살	살+ㄹ	VERB	vv+etm	_	6	acl	_	_
+4	수	수	NOUN	nnb	_	3	aux	_	_
+5	있는	있+는	ADJ	va+etm	_	4	fixed	_	_
+6	양을	양+을	NOUN	nng+jko	_	7	obj	_	_
+7	갖고	갖+고	VERB	vv+ec	_	0	root	_	_
+8	싶어	싶+어	AUX	vx+ef	_	7	aux	_	_
+9	.	.	PUNCT	sf	_	7	punct	_	_
+10	"	"	PUNCT	ss	_	7	punct	_	_
+
+# sent_id = 2_55
+# text = 나는 모터의 분해를 서둘러야 했으므로 더 이상 참지 못하고 여기 있는 이 그림을 되는대로 끄적거려 놓고는 한 마디 툭 던졌다.
+# text_en = Running out of patience, as I needed to hurry to disassemble the motor, I haphazardly scribbled this picture below and threw out a word.
+1	나는	나+는	PRON	np+jx	_	20	nsubj	_	_
+2	모터의	모터+의	NOUN	nng+jkg	_	3	nmod	_	_
+3	분해를	분해+를	NOUN	nng+jko	_	4	obj	_	_
+4	서둘러야	서두르+어야	VERB	vv+ec	_	20	advcl	_	_
+5	했으므로	하+았+으므로	VERB	vv+ep+ec	_	4	aux	_	_
+6	더	더	ADV	mag	_	7	advmod	_	_
+7	이상	이상	NOUN	nng	_	8	obj	_	_
+8	참지	참+지	VERB	vv+ec	_	20	conj	_	_
+9	못하고	못하+고	AUX	vx+ec	_	8	aux	_	_
+10	여기	여기	PRON	np	_	11	obl	_	_
+11	있는	있+는	ADJ	va+etm	_	13	amod	_	_
+12	이	이	DET	mm	_	13	det	_	_
+13	그림을	그림+을	NOUN	nng+jko	_	15	obj	_	_
+14	되는대로	되는대로	ADV	mag	_	15	advmod	_	_
+15	끄적거려	끄적거리+어	NOUN	vv+ec	_	20	conj	_	_
+16	놓고는	놓+고+는	AUX	vx+ec+jx	_	15	aux	_	_
+17	한	한	NUM	nr	_	18	nummod	_	_
+18	마디	마디	NOUN	nng	_	20	obj	_	_
+19	툭	툭	ADV	mag	_	20	advmod	_	_
+20	던졌다	던지+었+다	VERB	vv+ep+ef	_	0	root	_	_
+21	.	.	PUNCT	sf	_	20	punct	_	_
+
+# sent_id = 2_56
+# text = "이건 상자야.
+# text_en = "This is a box.
+1	"	"	PUNCT	ss	_	3	punct	_	_
+2	이건	이거+ㄴ	PRON	np+jx	_	3	nsubj	_	_
+3	상자야	상자+야	NOUN	nng+ef	_	0	root	_	_
+4	.	.	PUNCT	sf	_	3	punct	_	_
+
+# sent_id = 2_57
+# text = 네가 원하는 양은 그 안에 있어."
+# text_en = The sheep you want is inside it."
+1	네가	네+가	PRON	np+jks	_	2	nsubj	_	_
+2	원하는	원하+는	VERB	vv+etm	_	3	acl	_	_
+3	양은	양+은	NOUN	nng+jx	_	6	nsubj	_	_
+4	그	그	DET	mm	_	5	det	_	_
+5	안에	안+에	NOUN	nng+jkb	_	6	obl	_	_
+6	있어	있+어	ADJ	va+ef	_	0	root	_	_
+7	.	.	PUNCT	sf	_	6	punct	_	_
+8	"	"	PUNCT	ss	_	6	punct	_	_
+
+# sent_id = 2_58
+# text = 그러자 나의 어린 심판관의 얼굴이 환히 밝아지는 걸 보고 나는 새삼 놀라지 않을 수 없었다.
+# text_en = After seeing my young judge's face then brightly lightening up, I couldn't help but was surprised anew.
+1	그러자	그러자	CCONJ	maj	_	7	cc	_	_
+2	나의	나+의	PRON	np+jkg	_	4	nmod	_	_
+3	어린	어리+ㄴ	ADJ	va+etm	_	4	amod	_	_
+4	심판관의	심판관+의	NOUN	nng+jkg	_	5	nmod	_	_
+5	얼굴이	얼굴+이	NOUN	nng+jks	_	7	nsubj	_	_
+6	환히	환히	ADV	mag	_	7	advmod	_	_
+7	밝아지는	밝아지+는	VERB	vv+etm	_	8	acl	_	_
+8	걸	거+ㄹ	NOUN	nnb+jko	_	9	obj	_	_
+9	보고	보+고	VERB	vv+ec	_	12	advcl	_	_
+10	나는	나+는	PRON	np+jx	_	12	nsubj	_	_
+11	새삼	새삼	ADV	mag	_	12	advmod	_	_
+12	놀라지	놀라+지	VERB	vv+ec	_	0	root	_	_
+13	않을	않+을	AUX	vx+etm	_	12	aux	_	_
+14	수	수	NOUN	nnb	_	13	fixed	_	_
+15	없었다	없+었+다	ADJ	va+ep+ef	_	12	aux	_	_
+16	.	.	PUNCT	sf	_	12	punct	_	_
+
+# sent_id = 2_59
+# text = "이게 바로 내가 원하던 거야!
+# text_en = "This is exactly what I wanted!
+1	"	"	PUNCT	ss	_	6	reparandum	_	_
+2	이게	이것+이	PRON	np+jks	_	6	nsubj	_	_
+3	바로	바로	ADV	mag	_	5	advmod	_	_
+4	내가	내+가	PRON	np+jks	_	5	nsubj	_	_
+5	원하던	원하+던	VERB	vv+etm	_	6	acl	_	_
+6	거야	거+야	NOUN	nnb+ef	_	0	root	_	_
+7	!	!	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 2_60
+# text = 이 양에게 풀을 많이 주어야 해?"
+# text_en = Should I feed this sheep a lot of grass?"
+1	이	이	DET	mm	_	2	det	_	_
+2	양에게	양+에게	NOUN	nng+jkb	_	5	iobj	_	_
+3	풀을	풀+을	NOUN	nng+jko	_	5	obj	_	_
+4	많이	많이	ADV	mag	_	5	advmod	_	_
+5	주어야	주+어야	VERB	vv+ec	_	0	root	_	_
+6	해	하+아	AUX	vx+ef	_	5	aux	_	_
+7	?	?	PUNCT	sf	_	5	punct	_	_
+8	"	"	PUNCT	ss	_	5	punct	_	_
+
+# sent_id = 2_61
+# text = "왜 그런 걸 묻지?"
+# text_en = "Why'd you ask such thing?"
+1	"	"	PUNCT	ss	_	5	punct	_	_
+2	왜	왜	ADV	mag	_	5	advmod	_	_
+3	그런	그런	DET	mm	_	4	det	_	_
+4	걸	거+ㄹ	NOUN	nnb+jko	_	5	obj	_	_
+5	묻지	묻+지	VERB	vv+ef	_	0	root	_	_
+6	?	?	PUNCT	sf	_	5	punct	_	_
+7	"	"	PUNCT	ss	_	5	punct	_	_
+
+# sent_id = 2_62
+# text = "내가 사는 곳은 아주 작거든…"
+# text_en = "Because where I live is very small…"
+1	"	"	PUNCT	ss	_	6	punct	_	_
+2	내가	내+가	PRON	np+jks	_	3	nsubj	_	_
+3	사는	살+는	VERB	vv+etm	_	4	acl	_	_
+4	곳은	곳+은	NOUN	nng+jx	_	6	nsubj	_	_
+5	아주	아주	ADV	mag	_	6	advmod	_	_
+6	작거든	작+거든	ADJ	va+ef	_	0	punct	_	_
+7	…	…	PUNCT	se	_	6	punct	_	_
+8	"	"	PUNCT	ss	_	6	punct	_	_
+
+# sent_id = 2_63
+# text = "거기 있는 걸로 아마 충분할 거다.
+# text_en = "I believe what you have there would suffice.
+1	"	"	PUNCT	ss	_	6	punct	_	_
+2	거기	거기	PRON	np	_	3	obl	_	_
+3	있는	있+는	ADJ	va+etm	_	4	acl	_	_
+4	걸로	것+로	NOUN	nnb+jkb	_	6	obl	_	_
+5	아마	아마	ADV	mag	_	6	advmod	_	_
+6	충분할	충분+하+ㄹ	ADJ	xr+xsa+etm	_	0	root	_	_
+7	거다	거+이+다	NOUN	nnb+vcp+ef	_	6	aux	_	_
+8	.	.	PUNCT	sf	_	6	punct	_	_
+
+# sent_id = 2_64
+# text = 네게 준 건 아주 작은 양이니까."
+# text_en = Since what I gave you is a very small sheep."
+1	네게	네+게	PRON	np+ec	_	2	iobj	_	_
+2	준	주+ㄴ	VERB	vv+etm	_	3	acl	_	_
+3	건	거+ㄴ	NOUN	nnb+jx	_	6	nsubj	_	_
+4	아주	아주	ADV	mag	_	5	advmod	_	_
+5	작은	작+은	ADJ	va+etm	_	6	amod	_	_
+6	양이니까	양+이+니까	NOUN	nnb+vcp+ef	_	0	root	_	_
+7	.	.	PUNCT	sf	_	6	punct	_	_
+8	"	"	PUNCT	ss	_	6	punct	_	_
+
+# sent_id = 2_65
+# text = 그는 고개를 숙여 그림을 들여다보았다.
+# text_en = He bowed down to look at the picture.
+1	그는	그+는	PRON	np+jx	_	5	nsubj	_	_
+2	고개를	고개+를	NOUN	nng+jko	_	3	obj	_	_
+3	숙여	숙이+어	VERB	vv+ec	_	5	advcl	_	_
+4	그림을	그림+을	NOUN	nng+jko	_	5	obj	_	_
+5	들여다보았다	들여다보+았+다	VERB	vv+ep+ef	_	0	root	_	_
+6	.	.	PUNCT	sf	_	5	punct	_	_
+
+# sent_id = 2_66
+# text = "그다지 작지도 않은걸.
+# text_en = "It's not so small.
+1	"	"	PUNCT	ss	_	3	punct	_	_
+2	그다지	그다지	ADV	mag	_	3	advmod	_	_
+3	작지도	작+지+도	ADJ	va+ec+jx	_	0	root	_	_
+4	않은걸	않+ㄴ걸	AUX	vx+ef	_	3	aux	_	_
+5	.	.	PUNCT	sf	_	3	punct	_	_
+
+# sent_id = 2_67
+# text = 어머!
+# text_en = Oh!
+1	어머	어머	INTJ	ic	_	0	root	_	_
+2	!	!	PUNCT	sf	_	1	punct	_	_
+
+# sent_id = 2_68
+# text = 잠들었네…"
+# text_en = It's gone asleep…"
+1	잠들었네	잠들+었+네	VERB	vv+ep+ec	_	0	root	_	_
+2	…	…	PUNCT	se	_	1	punct	_	_
+3	"	"	PUNCT	ss	_	1	punct	_	_
+
+# sent_id = 2_69
+# text = 이렇게 해서 나는 어린 왕자를 알게 되었다.
+# text_en = This is how I came to know the little prince.
+1	이렇게	이렇+게	ADJ	va+ec	_	2	xcomp	_	_
+2	해서	하+아서	VERB	vv+ec	_	7	advcl	_	_
+3	나는	나+는	PRON	np+jx	_	7	nsubj	_	_
+4	어린	어리+ㄴ	ADJ	va+etm	_	5	acl	_	_
+5	왕자를	왕자+를	NOUN	nng+jko	_	6	obj	_	_
+6	알게	알+게	VERB	vv+ec	_	7	xcomp	_	_
+7	되었다	되+었+다	VERB	vv+ep+ef	_	0	root	_	_
+8	.	.	PUNCT	sf	_	7	punct	_	_
