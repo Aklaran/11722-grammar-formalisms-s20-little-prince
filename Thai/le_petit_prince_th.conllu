@@ -18,12 +18,12 @@
 15	ใน	in	ADP	_	_	16	case	_	_
 16	หนังสือ	book	NOUN	_	_	11	nmod	_	_
 17	เกี่ยวกับ	about	ADP	_	_	18	case	_	_
-18	ป่าดงดิบ	rainforest	NOUN	_	_	16	mod	_	_
+18	ป่าดงดิบ	rainforest	NOUN	_	_	16	nmod	_	_
 19	ชื่อว่า	name-QUOT	NOUN	_	_	16	acl	_	_
 20	"	_	PUNCT	_	_	21	punct	_	_
 21	ประวัติ	story	NOUN	_	_	19	obj	_	_
-22	ชีวิต	life	NOUN	_	_	21	flat	_	_
-23	ธรรมชาติ	nature	NOUN	_	_	22	flat	_	_
+22	ชีวิต	life	NOUN	_	_	21	nmod	_	_
+23	ธรรมชาติ	nature	NOUN	_	_	22	nmod	_	_
 24	"	_	PUNCT	_	_	21	punct	_	_
 
 # n2
@@ -63,7 +63,7 @@
 10	เหยื่อ	prey	NOUN	_	_	9	obj	_	_
 11	ของ	of	ADP	_	_	12	case	_	_
 12	มัน	it	PRON	_	_	10	nmod	_	_
-13	เข้าไป	enter	VERB	_	_	9	xcomp	_	_
+13	เข้าไป	enter	VERB	_	_	9	compound:svc	_	_
 14	ทั้งหมด	whole	ADV	_	_	13	advmod	_	_
 15	โดย	by	SCONJ	_	_	17	mark	_	_
 16	ไม่	NEG	PART	_	_	17	advmod	_	_
@@ -112,9 +112,9 @@
 4	วาดภาพ	to draw	VERB	_	_	3	obj/(ccomp/xcomp/advcl?)	_	_
 5	ด้วย	with	ADP	_	_	6	case	_	_
 6	ดินสอ	pencil	NOUN	_	_	4	obl	_	_
-7	สี	_	NOUN	_	_	6	amod	_	_
-8	จน	_	SCONJ	_	_	9	mark	_	_
-9	สำเร็จ	_	VERB	_	_	3	advcl	_	_
+7	สี	color	NOUN	_	_	6	nmod	_	_
+8	จน	until	SCONJ	_	_	9	mark	_	_
+9	สำเร็จ	succeed	VERB	_	_	3	advcl	_	_
 
 # n8
 # text = นี่คือรูปภาพรูปแรกของฉัน
@@ -145,7 +145,7 @@
 13	รูป	image	NOUN	_	_	16	nsubj	_	_
 14	ของ	POSS	ADP	_	_	15	case	_	_
 15	ฉัน	1SG	PRON	_	_	13	nmod	_	_
-16	ทำให้	cause to be	VERB	_	_	10	ccomp/(xcomp?)	_	_
+16	ทำให้	cause to be	VERB	_	_	10	ccomp	_	_
 17	เขา	3SG/PL	PRON	_	_	18	nsubj	_	_
 18	กลัว	fear	VERB	_	_	16	ccomp	_	_
 19	ไหม	Q	PART	_	_	16	?	_	_
@@ -220,14 +220,14 @@
 # n14
 # text = รูปวาดที่ ๒ ของฉันจึงเป็นดังนี้
 # text_en = Thus, my second drawing looked as such.
-1	รูปวาด	_	NOUN	_	_	8	nsubj	_	_
-2	ที่	_	SCONJ	_	_	3	case	_	_
-3	๒	_	NOUN	_	_	1	amod	_	_
-4	ของ	_	ADP	_	_	5	case	_	_
-5	ฉัน	_	PRON	_	_	1	nmod	_	_
-6	จึง	_	ADV	_	_	8	advmod	_	_
-7	เป็น	_	AUX	_	_	8	cop	_	_
-8	ดังนี้	_	SCONJ	_	_	0	root	_	_
+1	รูปวาด	drawing	NOUN	_	_	8	nsubj	_	_
+2	ที่	number/place	SCONJ	_	_	3	case	_	_
+3	๒	two	NOUN	_	_	1	amod	_	_
+4	ของ	POSS	ADP	_	_	5	case	_	_
+5	ฉัน	1SG	PRON	_	_	1	nmod	_	_
+6	จึง	thus	ADV	_	_	8	advmod	_	_
+7	เป็น	COP	AUX	_	_	8	cop	_	_
+8	ดังนี้	as such	SCONJ	_	_	0	root	_	_
 
 # n15
 # text = พวกผู้ใหญ่ได้แนะนำว่าฉันควรจะเลิกยุ่งกับการวาดภาพงูเหลือมชนิดที่เห็นด้านนอกหรือด้านในเสีย และหันมาสนใจเรียนวิชาภูมิศาสตร์ ประวัติศาสตร์ คณิตศาสตร์ และไวยากรณ์แทน
@@ -320,7 +320,7 @@
 # n19
 # text = เป็นเรื่องที่น่าเหนื่อยหน่ายอย่างยิ่งที่พวกเราเด็กๆ จะต้องอธิบายให้พวกเขาเข้าใจอยู่ตลอดเวลา
 # text_en = It is extremely tiring for us children to always have to explain such that they can understand.
-1	เป็น	_	COP	_	_	2	cop	_	_
+1	เป็น	COP	COP	_	_	2	cop	_	_
 2	เรื่อง	issue	NOUN	_	_	0	root	_	_
 3	ที่	that	SCONJ	_	_	4	mark	_	_
 4	น่า	ADJ	AUX	_	_	2	xcomp	_	_
@@ -425,18 +425,17 @@
 # text = ตลอดชีวิตของฉัน ฉันต้องติดต่อกับคนเป็นจำนวนมาก
 # text_en = Throughout my life, I have had to communicate with a great many people.
 1	ตลอด	throughout	PREP	_	_	2	case	_	_
-2	ชีวิต	life	NOUN	_	_	8	obl	_	_
+2	ชีวิต	life	NOUN	_	_	7	obl	_	_
 3	ของ	of	ADP	_	_	4	case	_	_
 4	ฉัน	1SG	NOUN	_	_	2	nmod:poss	_	_
-5	_	_	PUNCT	_	_	0	root	_	_
-6	ฉัน	1SG	PRON	_	_	8	nsubj	_	_
-7	ต้อง	have_to	AUX	_	_	8	aux	_	_
-8	ติดต่อ	communicate	VERB	_	_	0	root	_	_
-9	กับ	with	ADP	_	_	10	case	_	_
-10	คน	person	NOUN	_	_	8	obl	_	_
-11	เป็น	COP	VERB	_	_	12	cop	_	_
-12	จำนวน	serious	ADJ	_	_	10	acl	_	_
-13	มาก	very	ADV	_	_	12	advmod	_	_
+5	ฉัน	1SG	PRON	_	_	7	nsubj	_	_
+6	ต้อง	have_to	AUX	_	_	7	aux	_	_
+7	ติดต่อ	communicate	VERB	_	_	0	root	_	_
+8	กับ	with	ADP	_	_	9	case	_	_
+9	คน	person	NOUN	_	_	7	obl	_	_
+10	เป็น	COP	VERB	_	_	11	cop	_	_
+11	จำนวน	serious	ADJ	_	_	9	acl	_	_
+12	มาก	very	ADV	_	_	11	advmod	_	_
 
 # n27
 # text = เป็นคนที่เอาจริงเอาจังทั้งนั้น
