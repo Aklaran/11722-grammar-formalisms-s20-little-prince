@@ -495,3 +495,155 @@
 19	ขึ้น	more	VERB	_	_	18	advmod	_	_
 20	เลย	at_all	ADV	_	_	9	advmod	_	_
 
+# n31
+# text = เมื่อฉันพบใครสักคนที่ฉันเห็นว่าพอมีแววจะฉลาดหลักแหลมฉันก็ทดสอบเขาด้วยการให้ดูรูปวาดรูปที่หนึ่งซึ่งฉันยังคงเก็บรักษาไว้
+# text_en = When I met anyone that looked to have the promise of being clever enough, I tested them by giving them my drawing number one which I still keep.
+1	เมื่อ	when	SCONJ	_	_	3	mark	_	_
+2	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+3	พบ	meet	VERB	_	_	19	root	_	_
+4	ใคร	someone	PRON	_	_	3	obj	_	_
+5	สัก	mere	NOUN	_	_	4	compound	_	_
+6	คน	person	NOUN	_	_	5	compound	_	_
+7	ที่	who	SCONJ	_	_	12	nsubj	_	_
+8	ฉัน	1SG	PRON	_	_	9	nsubj	_	_
+9	เห็น	see	VERB	_	_	4	acl	_	_
+10	ว่า	that	SCONJ	_	_	12	mark	_	_
+11	พอ	enough	SCONJ	_	_	12	advmod	_	_
+12	มี	have	VERB	_	_	9	ccomp/xcomp?	_	_
+13	แวว	promise	NOUN	_	_	12	obj	_	_
+14	จะ	FUT	AUX	_	_	15	aux	_	_
+15	ฉลาด	clever	VERB	_	_	13	xcomp	_	_
+16	หลักแหลม	sharp	VERB	_	_	15	compound	_	_
+17	ฉัน	1SG	PRON	_	_	19	root	_	_
+18	ก็	then	SCONJ	_	_	19	_	_	_
+19	ทดสอบ	quiz	VERB	_	_	0	root	_	_
+20	เขา	3SG	PRON	_	_	19	_	_	_
+21	ด้วย	with	ADP	_	_	22	_	_	_
+22	การให้	giving	PART	_	_	19	root	_	_
+23	ดู	look	VERB	_	_	22	root	_	_
+24	รูปวาด	drawing	NOUN	_	_	23	root	_	_
+25	รูป	CLF	NOUN	_	_	24	_	_	_
+26	ที่หนึ่ง	number_one	ADJ	_	_	25	root	_	_
+27	ซึ่ง	which	SCONJ	_	_	30	_	_	_
+28	ฉัน	1SG	PRON	_	_	30	_	_	_
+29	ยังคง	still	AUX	_	_	30	_	_	_
+30	เก็บ	keep	VERB	_	_	24	root	_	_
+31	รักษาไว้	save	AUX	_	_	30	_	_	_
+
+# n32
+# text = ฉันอยากทราบว่าเขาเป็นคนที่เข้าใจในสิ่งต่าง ๆ ได้ดีหรือไม่
+# text_en = I wanted to know if they were someone who could understand various things well or not.
+1	ฉัน	1SG	PRON	_	_	_	_	_	_
+2	อยาก	want	AUX	_	_	_	_	_	_
+3	ทราบ	know	VERB	_	_	_	_	_	_
+4	ว่า	that	SCONJ	_	_	_	_	_	_
+5	เขา	3SG	PRON	_	_	_	_	_	_
+6	เป็น	COP	VERB	_	_	_	_	_	_
+7	คน	person	NOUN	_	_	_	_	_	_
+8	ที่	who	SCONJ	_	_	_	_	_	_
+9	เข้าใจ	understand	VERB	_	_	_	_	_	_
+10	ใน	in	ADP	_	_	_	_	_	_
+11	สิ่ง	things	NOUN	_	_	_	_	_	_
+12	ต่าง ๆ	various	NOUN	_	_	_	_	_	_
+13	ได้	able_to	VERB	_	_	_	_	_	_
+14	ดี	good	ADJ	_	_	_	_	_	_
+15	หรือ	or	PART	_	_	0	root	_	_
+16	ไม่	not	PART	_	_	0	root	_	_
+
+# n33
+# text = แต่ทุกครั้งคนเหล่านั้นจะพูดว่า "นี่คือหมวก"
+# text_en = But every time these people would say, "this is a hat."
+1	แต่	but	CCONJ	_	_	_	_	_	_
+2	ทุก	every	ADV	_	_	_	_	_	_
+3	ครั้ง	time	ADV	_	_	0	root	_	_
+4	คน	person	NOUN	_	_	_	_	_	_
+5	เหล่า	group	NOUN	_	_	_	_	_	_
+6	นั้น	that	DET	_	_	_	_	_	_
+7	จะ	FUT	AUX	_	_	_	_	_	_
+8	พูด	say	VERB	_	_	_	_	_	_
+9	ว่า	that	SCONJ	_	_	_	_	_	_
+10	"	_	PUNCT	_	_	_	_	_	_
+11	นี่	this	NOUN	_	_	_	_	_	_
+12	คือ	COP	VERB	_	_	_	_	_	_
+13	หมวก	hat	NOUN	_	_	_	_	_	_
+14	"	_	PUNCT	_	_	_	_	_	_
+
+# n34
+# text = เมื่อเป็นอย่างนั้นฉันจึงไม่ยอมพูดถึงงูเหลือม ป่าดงดิบ หรือดวงดาวกับเขาให้เสียเวลาเลย
+# text_en = When that was the case, I would not waste time by speaking to them about boas, rainforests, or stars.
+1	เมื่อ	when	ADP	_	_	_	_	_	_
+2	เป็น	COP	AUX	_	_	_	_	_	_
+3	อย่าง	way	NOUN	_	_	_	_	_	_
+4	นั้น	that	DET	_	_	_	_	_	_
+5	ฉัน	1SG	PRON	_	_	_	_	_	_
+6	จึง	thus	AUX	_	_	_	_	_	_
+7	ไม่	not	PART	_	_	_	_	_	_
+8	ยอม	allow	VERB	_	_	_	_	_	_
+9	พูด	speak	VERB	_	_	_	_	_	_
+10	ถึง	about	?	_	_	_	_	_	_
+11	งูเหลือม	boa	NOUN	_	_	_	_	_	_
+12	ป่าดงดิบ	rainforest	NOUN	_	_	_	_	_	_
+13	หรือ	or	CCONJ	_	_	_	_	_	_
+14	ดวงดาว	stars	NOUN	_	_	_	_	_	_
+15	กับ	with	ADP	_	_	_	_	_	_
+16	เขา	3SG	PRON	_	_	_	_	_	_
+17	ให้	such_that	SCONJ	_	_	_	_	_	_
+18	เสีย	break	VERB	_	_	_	_	_	_
+19	เวลา	time	NOUN	_	_	_	_	_	_
+20	เลย	totally	ADV	_	_	_	_	_	_
+
+# n35
+# text = ฉันจะปล่อยเขาไปตามวิถีทางของเขา
+# text_en = I would release them to go follow their own way.
+1	ฉัน	1SG	PRON	_	_	_	_	_	_
+2	จะ	FUT	AUX	_	_	_	_	_	_
+3	ปล่อย	release	VERB	_	_	_	_	_	_
+4	เขา	3SG	PRON	_	_	_	_	_	_
+5	ไป	go	VERB	_	_	_	_	_	_
+6	ตาม	follow	ADP	_	_	_	_	_	_
+7	วิถีทาง	way	NOUN	_	_	_	_	_	_
+8	ของ	of	ADP	_	_	_	_	_	_
+9	เขา	3SG	PRON	_	_	_	_	_	_
+
+# n36
+# text = ฉันจะพูดกับเขาเรื่องไพ่บริดจ์ เรื่องกอล์ฟ เรื่องการเมืองและเรื่องเนคไท
+# text_en = I would speak with them about bridge, about golf, about politics and about neckties.
+1	ฉัน	1SG	PRON	_	_	_	_	_	_
+2	จะ	FUT	AUX	_	_	_	_	_	_
+3	พูด	speak	VERB	_	_	_	_	_	_
+4	กับ	with	ADP	_	_	_	_	_	_
+5	เขา	3SG	PRON	_	_	_	_	_	_
+6	เรื่อง	about	NOUN	_	_	_	_	_	_
+7	ไพ่บริดจ์	Bridge	PART	_	_	0	root	_	_
+8	เรื่อง	about	NOUN	_	_	_	_	_	_
+9	กอล์ฟ	golf	NOUN	_	_	_	_	_	_
+10	เรื่อง	about	NOUN	_	_	_	_	_	_
+11	การเมือง	politics	NOUN	_	_	_	_	_	_
+12	และ	and	CCONJ	_	_	_	_	_	_
+13	เรื่อง	about	NOUN	_	_	_	_	_	_
+14	เนคไท	neckties	NOUN	_	_	_	_	_	_
+
+# n37
+# text = และพวกผู้ใหญ่เหล่านั้นก็จะยินดีที่ได้รู้จักกับคนที่พูดจาได้เรื่องราวคนหนึ่ง
+# text_en = And these adults would be pleased to meet someone who can speak on such matters.
+1	และ	and	CCONJ	_	_	_	_	_	_
+2	พวก	PL	NOUN	_	_	_	_	_	_
+3	ผู้ใหญ่	adult	NOUN	_	_	_	_	_	_
+4	เหล่า	group	NOUN	_	_	_	_	_	_
+5	นั้น	that	DET	_	_	_	_	_	_
+6	ก็	then	SCONJ	_	_	_	_	_	_
+7	จะ	FUT	AUX	_	_	0	root	_	_
+8	ยินดี	pleased	VERB	_	_	_	_	_	_
+9	ที่	that	SCONJ	_	_	_	_	_	_
+10	ได้	PST	AUX	_	_	_	_	_	_
+11	รู้จัก	know	VERB	_	_	_	_	_	_
+12	กับ	with	ADP	_	_	_	_	_	_
+13	คน	person	NOUN	_	_	_	_	_	_
+14	ที่	who	SCONJ	_	_	_	_	_	_
+15	พูด	speak	VERB	_	_	_	_	_	_
+16	จา	discuss	VERB	_	_	_	_	_	_
+17	ได้	able_to	AUX	_	_	_	_	_	_
+18	เรื่องราว	matters	DET	_	_	0	root	_	_
+19	คน	CLF	NOUN	_	_	_	_	_	_
+20	หนึ่ง	one	NUM	_	_	_	_	_	_
+
