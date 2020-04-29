@@ -109,7 +109,7 @@
 1	จึง	so/then	AUX	_	_	3	cc	_	_
 2	ได้	PST	AUX	_	_	3	aux	_	_
 3	หัด	train	VERB	_	_	0	root	_	_
-4	วาดภาพ	to draw	VERB	_	_	3	obj/(ccomp/xcomp/advcl?)	_	_
+4	วาดภาพ	to draw	VERB	_	_	3	xcomp	_	_
 5	ด้วย	with	ADP	_	_	6	case	_	_
 6	ดินสอ	pencil	NOUN	_	_	4	obl	_	_
 7	สี	color	NOUN	_	_	6	nmod	_	_
@@ -500,19 +500,19 @@
 # text_en = When I met anyone that looked to have the promise of being clever enough, I tested them by giving them my Drawing Number One which I still keep.
 1	เมื่อ	when	SCONJ	_	_	3	mark	_	_
 2	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
-3	พบ	meet	VERB	_	_	19	root	_	_
+3	พบ	meet	VERB	_	_	19	advcl	_	_
 4	ใคร	someone	PRON	_	_	3	obj	_	_
 5	สัก	mere	NOUN	_	_	4	compound	_	_
 6	คน	person	NOUN	_	_	5	compound	_	_
-7	ที่	who	SCONJ	_	_	12	nsubj	_	_
+7	ที่	who	SCONJ	_	_	9	mark	_	_
 8	ฉัน	1SG	PRON	_	_	9	nsubj	_	_
 9	เห็น	see	VERB	_	_	4	acl	_	_
 10	ว่า	that	SCONJ	_	_	12	mark	_	_
 11	พอ	enough	ADV	_	_	12	advmod	_	_
-12	มี	have	VERB	_	_	9	ccomp/xcomp?	_	_
+12	มี	have	VERB	_	_	9	ccomp	_	_
 13	แวว	promise	NOUN	_	_	12	obj	_	_
 14	จะ	FUT	AUX	_	_	15	aux	_	_
-15	ฉลาด	clever	VERB	_	_	13	xcomp	_	_
+15	ฉลาด	clever	VERB	_	_	13	acl	_	_
 16	หลักแหลม	sharp	VERB	_	_	15	compound	_	_
 17	ฉัน	1SG	PRON	_	_	19	nsubj	_	_
 18	ก็	then	ADV	_	_	19	advmod	_	_
@@ -520,7 +520,7 @@
 20	เขา	3SG	PRON	_	_	19	obj	_	_
 21	ด้วย	with	ADP	_	_	22	case	_	_
 22	การให้	giving	NOUN	_	_	19	obl	_	_
-23	ดู	look	VERB	_	_	22	xcomp	_	_
+23	ดู	look	VERB	_	_	22	acl	_	_
 24	รูปวาด	drawing	NOUN	_	_	23	obj	_	_
 25	รูป	CLF	NOUN	_	_	24	clf	_	_
 26	ที่หนึ่ง	number_one	ADJ	_	_	25	amod	_	_
@@ -529,7 +529,7 @@
 29	ยังคง	still	ADV	_	_	30	advmod	_	_
 30	เก็บ	keep	VERB	_	_	24	acl	_	_
 31	รักษา	save	VERB	_	_	30	compound:svc	_	_
-32	ไว้	put_away	VERB	_	_	31	root	_	_
+32	ไว้	put_away	VERB	_	_	31	compound:svc	_	_
 
 # n32
 # text = ฉันอยากทราบว่าเขาเป็นคนที่เข้าใจในสิ่งต่าง ๆ ได้ดีหรือไม่
@@ -541,8 +541,8 @@
 5	เขา	3SG	PRON	_	_	7	nsubj	_	_
 6	เป็น	COP	VERB	_	_	7	cop	_	_
 7	คน	person	NOUN	_	_	3	ccomp	_	_
-8	ที่	who	SCONJ	_	_	9	mark	_	_
-9	เข้าใจ	understand	VERB	_	_	7	xcomp	_	_
+8	ที่	who	SCONJ	_	_	9	nsubj	_	_
+9	เข้าใจ	understand	VERB	_	_	7	acl	_	_
 10	ใน	in	ADP	_	_	11	case?	_	_
 11	สิ่ง	things	NOUN	_	_	9	obj	_	_
 12	ต่าง ๆ	various	ADJ	_	_	11	amod	_	_
@@ -581,8 +581,8 @@
 7	ไม่	not	PART	_	_	8	advmod	_	_
 8	ยอม	allow	VERB	_	_	0	root	_	_
 9	พูด	speak	VERB	_	_	8	xcomp	_	_
-10	ถึง	about	VERB	_	_	11	case?	_	_
-11	งูเหลือม	boa	NOUN	_	_	9	obl?	_	_
+10	ถึง	about	VERB	_	_	11	case	_	_
+11	งูเหลือม	boa	NOUN	_	_	9	obl	_	_
 12	ป่าดงดิบ	rainforest	NOUN	_	_	11	conj	_	_
 13	หรือ	or	CCONJ	_	_	14	cc	_	_
 14	ดวงดาว	stars	NOUN	_	_	11	conj	_	_
@@ -602,7 +602,7 @@
 4	เขา	3SG	PRON	_	_	3	obj	_	_
 5	ไป	go	VERB	_	_	3	xcomp	_	_
 6	ตาม	follow	ADP	_	_	7	case	_	_
-7	วิถีทาง	way	NOUN	_	_	5	obj	_	_
+7	วิถีทาง	way	NOUN	_	_	5	obl	_	_
 8	ของ	of	ADP	_	_	9	case	_	_
 9	เขา	3SG	PRON	_	_	7	nmod	_	_
 
@@ -615,7 +615,7 @@
 4	กับ	with	ADP	_	_	5	case	_	_
 5	เขา	3SG	PRON	_	_	3	iobj	_	_
 6	เรื่อง	about	NOUN	_	_	7	case	_	_
-7	ไพ่บริดจ์	Bridge	PART	_	_	3	obj	_	_
+7	ไพ่บริดจ์	Bridge	PART	_	_	3	obl	_	_
 8	เรื่อง	about	NOUN	_	_	9	case	_	_
 9	กอล์ฟ	golf	NOUN	_	_	7	conj	_	_
 10	เรื่อง	about	NOUN	_	_	11	case	_	_
@@ -647,4 +647,102 @@
 18	เรื่องราว	matters	DET	_	_	15	iobj?	_	_
 19	คน	CLF	NOUN	_	_	13	clf	_	_
 20	หนึ่ง	one	NUM	_	_	19	det	_	_
+
+# n38
+# text = ดังนั้นฉันจึงดำรงชีวิตอย่างเดียวดาย ไร้คนที่จะสนทนากันเข้าอกเข้าใจอย่างแท้จริง จนกระทั่งเมื่อ ๖ ปีมานี้เครื่องบินของฉันเข้าไปเครื่องเสียอยู่กลางทะเลทรายสะฮารา
+# text_en = <TRANSLATE>
+1	ดังนั้น	_	SCONJ	_	_	_	_	_	_
+2	ฉัน	_	PRON	_	_	_	_	_	_
+3	จึง	_	AUX	_	_	_	_	_	_
+4	ดำรงชีวิต	_	VERB	_	_	_	_	_	_
+5	อย่าง	_	PART	_	_	_	_	_	_
+6	เดียวดาย	_	VERB	_	_	_	_	_	_
+7	ไร้	_	VERB	_	_	_	_	_	_
+8	คน	_	NOUN	_	_	_	_	_	_
+9	ที่จะ	_	SCONJ	_	_	_	_	_	_
+10	สนทนา	_	VERB	_	_	_	_	_	_
+11	กัน	_	ADV	_	_	_	_	_	_
+12	เข้า	_	ADP	_	_	_	_	_	_
+13	อก	_	NOUN	_	_	_	_	_	_
+14	เข้าใจ	_	VERB	_	_	_	_	_	_
+15	อย่าง	_	PART	_	_	_	_	_	_
+16	แท้จริง	_	ADJ	_	_	_	_	_	_
+17	จนกระทั่ง	_	SCONJ	_	_	_	_	_	_
+18	เมื่อ	_	SCONJ	_	_	_	_	_	_
+19	๖	_	NOUN	_	_	_	_	_	_
+20	ปี	_	NOUN	_	_	_	_	_	_
+21	มา	_	AUX	_	_	_	_	_	_
+22	นี้	_	DET	_	_	_	_	_	_
+23	เครื่องบิน	_	NOUN	_	_	_	_	_	_
+24	ของ	_	ADP	_	_	_	_	_	_
+25	ฉัน	_	PRON	_	_	_	_	_	_
+26	เข้าไป	_	VERB	_	_	_	_	_	_
+27	เครื่อง	_	NOUN	_	_	_	_	_	_
+28	เสีย	_	VERB	_	_	_	_	_	_
+29	อยู่	_	AUX	_	_	_	_	_	_
+30	กลาง	_	ADP	_	_	_	_	_	_
+31	ทะเลทราย	_	NOUN	_	_	_	_	_	_
+32	สะ	_	NOUN	_	_	_	_	_	_
+33	ฮา	_	NOUN	_	_	_	_	_	_
+34	รา	_	NOUN	_	_	_	_	_	_
+
+# n39
+# text = มีอะไรบางอย่างในเครื่องยนต์ขัดข้อง เนื่องจากฉันไม่มีช่างเครื่องมาด้วย ไม่มีแม้แต่ผู้โดยสาร ฉันจึงจำต้องซ่อมด้วยตนเองอยู่คนเดียวอย่างยากลำบาก
+# text_en = <TRANSLATE>
+1	มี	_	VERB	_	_	_	_	_	_
+2	อะไร	_	PRON	_	_	_	_	_	_
+3	บางอย่าง	_	ADJ	_	_	_	_	_	_
+4	ใน	_	ADP	_	_	_	_	_	_
+5	เครื่องยนต์	_	NOUN	_	_	_	_	_	_
+6	ขัดข้อง	_	NOUN	_	_	_	_	_	_
+7	เนื่องจาก	_	SCONJ	_	_	_	_	_	_
+8	ฉัน	_	PRON	_	_	_	_	_	_
+9	ไม่	_	PART	_	_	_	_	_	_
+10	มี	_	VERB	_	_	_	_	_	_
+11	ช่างเครื่อง	_	NOUN	_	_	_	_	_	_
+12	มา	_	AUX	_	_	_	_	_	_
+13	ด้วย	_	ADV	_	_	_	_	_	_
+14	ไม่	_	PART	_	_	_	_	_	_
+15	มี	_	VERB	_	_	_	_	_	_
+16	แม้แต่	_	SCONJ	_	_	_	_	_	_
+17	ผู้โดยสาร	_	NOUN	_	_	_	_	_	_
+18	ฉัน	_	PRON	_	_	_	_	_	_
+19	จึง	_	AUX	_	_	_	_	_	_
+20	จำต้อง	_	AUX	_	_	_	_	_	_
+21	ซ่อม	_	VERB	_	_	_	_	_	_
+22	ด้วย	_	ADP	_	_	_	_	_	_
+23	ตนเอง	_	PRON	_	_	_	_	_	_
+24	อยู่	_	AUX	_	_	_	_	_	_
+25	คนเดียว	_	ADV	_	_	_	_	_	_
+26	อย่าง	_	PART	_	_	_	_	_	_
+27	ยากลำบาก	_	ADJ	_	_	_	_	_	_
+
+# n40
+# text = นี่เป็นปัญหาที่ต้องเอาชีวิตของฉันเข้าเดิมพันทีเดียว
+# text_en = <TRANSLATE>
+1	นี่	_	PRON	_	_	_	_	_	_
+2	เป็นปัญหา	_	NOUN	_	_	_	_	_	_
+3	ที่	_	SCONJ	_	_	_	_	_	_
+4	ต้อง	_	AUX	_	_	_	_	_	_
+5	เอาชีวิต	_	VERB	_	_	_	_	_	_
+6	ของ	_	ADP	_	_	_	_	_	_
+7	ฉัน	_	PRON	_	_	_	_	_	_
+8	เข้า	_	VERB	_	_	_	_	_	_
+9	เดิมพัน	_	VERB	_	_	_	_	_	_
+10	ทีเดียว	_	ADV	_	_	_	_	_	_
+
+# n41
+# text = เพราะฉันมีน้ำไว้ดื่มอีกเพียง ๘ วันเท่านั้น 
+# text_en = <TRANSLATE>
+1	เพราะ	_	SCONJ	_	_	_	_	_	_
+2	ฉัน	_	PRON	_	_	_	_	_	_
+3	มี	_	VERB	_	_	_	_	_	_
+4	น้ำ	_	NOUN	_	_	_	_	_	_
+5	ไว้	_	AUX	_	_	_	_	_	_
+6	ดื่ม	_	ADV	_	_	_	_	_	_
+7	อีก	_	DET	_	_	_	_	_	_
+8	เพียง	_	DET	_	_	_	_	_	_
+9	๘	_	NUM	_	_	_	_	_	_
+10	วัน	_	NOUN	_	_	_	_	_	_
+11	เท่านั้น	_	DET	_	_	_	_	_	_
 
