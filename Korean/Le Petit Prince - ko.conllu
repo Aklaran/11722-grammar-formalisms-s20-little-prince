@@ -161,11 +161,11 @@
 # text = 내 그림은 모자를 그린 게 아니었다.
 # text_en = My drawing was not of a hat.
 1	내	내	PRON	np	_	2	nmod	_	1.SG.GEN
-2	그림은	그림+은	NOUN	nng+jx	_	6	dislocated	_	picture-TOP
+2	그림은	그림+은	NOUN	nng+jx	_	5	nsubj	_	picture-TOP
 3	모자를	모자+를	NOUN	nng+jko	_	4	obj	_	hat-ACC
 4	그린	그리+ㄴ	VERB	vv+etm	_	5	acl	_	draw-REL.PST
-5	게	거+이	NOUN	nnb+jks	_	6	nsubj	_	thing-NOM
-6	아니었다	아니+었+다	AUX	vcn+ep+ef	_	0	root	_	COP.NEG-PST-IND
+5	게	거+이	NOUN	nnb+jkc	_	0	root	_	thing-CMNT
+6	아니었다	아니+었+다	AUX	vcn+ep+ef	_	5	cop	_	COP.NEG-PST-IND
 7	.	.	PUNCT	sf	_	6	punct	_	.
 
 # sent_id = 1_13
@@ -295,7 +295,7 @@
 3	해주어야	하+아+주+어야	VERB	vv+ec+vx+ec	_	6	advcl	_	do-CONN-give-OBLIG
 4	하니	하+니	AUX	vx+ec	_	3	aux	_	do-COMP
 5	맥빠지는	맥+빠지+는	VERB	nng+vv+etm	_	6	acl	_	energy-drain-REL.PRS
-6	노릇이	노릇+이	NOUN	nng+jks	_	0	root	_	situation-NOM
+6	노릇이	노릇+이	NOUN	nng+jkc	_	0	root	_	situation-CMNT
 7	아닐	아니+ㄹ	AUX	vcn+etm	_	6	cop	_	COP.NEG-REL
 8	수	수	NOUN	nnb	_	6	aux	_	means
 9	없다	없+다	ADJ	va+ef	_	8	fixed	_	EXIST.NEG-IND
@@ -788,7 +788,7 @@
 # text_en = That is not my fault.
 1	그것은	그것+은	PRON	np+jx	_	3	nsubj	_	that-TOP
 2	내	내	PRON	np	_	3	nmod	_	1.SG.GEN
-3	잘못이	잘못+이	NOUN	nng+jks	_	0	root	_	fault-NOM
+3	잘못이	잘못+이	NOUN	nng+jkc	_	0	root	_	fault-CMNT
 4	아니다	아니+다	AUX	vcn+ef	_	3	cop	_	COP.NEG-IND
 5	.	.	PUNCT	sf	_	3	punct	_	.
 
@@ -1308,8 +1308,8 @@
 2	봐	보+아	VERB	vv+ef	_	7	discourse	_	see-IMP
 3	…	…	PUNCT	se	_	2	punct	_	…
 4	이건	이거+ㄴ	PRON	np+jx	_	7	nsubj	_	this-TOP
-5	양이	양+이	NOUN	nng+jks	_	6	nsubj	_	sheep-NOM
-6	아니라	아니+라	AUX	vcn+ec	_	7	advcl	_	COP.NEG-CONN
+5	양이	양+이	NOUN	nng+jkc	_	7	conj	_	sheep-CMNT
+6	아니라	아니+라	AUX	vcn+ec	_	5	cop	_	COP.NEG-CONJ
 7	염소잖아	염소+잖아	NOUN	nng+ef	_	0	root	_	goat-IND.FAM
 8	.	.	PUNCT	sf	_	7	punct	_	.
 
