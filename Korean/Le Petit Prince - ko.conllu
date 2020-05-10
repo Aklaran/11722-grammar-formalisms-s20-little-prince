@@ -26,10 +26,10 @@
 
 # sent_id = 1_2
 # text = 맹수를 집어삼키고 있는 보아 구렁이 그림이었다.
-# text_en = It was a drawing of boa constrictor swallowing a whole beast.
+# text_en = It was a drawing of boa constrictor devouring a whole beast.
 1	맹수를	맹수+를	NOUN	nng+jko	_	2	obj	_	beast-ACC
-2	집어삼키고	집어삼키+고	VERB	vv+ec	_	5	acl	_	swallow-PROG
-3	있는	있+는	AUX	vx+etm	_	2	aux	_	EXIST-REL.PRS
+2	집어삼키고	집어삼키+고	VERB	vv+ec	_	5	acl	_	devour-CONN
+3	있는	있+는	AUX	vx+etm	_	2	aux	_	PROG-REL.PRS
 4	보아	보아	NOUN	nng	_	5	compound	_	boa
 5	구렁이	구렁이	NOUN	nng	_	6	nmod	_	python
 6	그림이었다	그림+이+었+다	NOUN	nng+vcp+ep+ef	_	0	root	_	picture-COP-PST-IND
@@ -56,7 +56,7 @@
 
 # sent_id = 1_5
 # text = "보아 구렁이는 먹이를 씹지도 않고 통째로 집어삼킨다.
-# text_en = "Boa constrictors swallow their preys as whole even without chewing.
+# text_en = "Boa constrictors devour their preys as whole even without chewing.
 1	"	"	PUNCT	ss	_	8	punct	_	"
 2	보아	보아	NOUN	nng	_	3	compound	_	boa
 3	구렁이는	구렁이+는	NOUN	nng+jx	_	8	nsubj	_	python-TOP
@@ -64,7 +64,7 @@
 5	씹지도	씹+지+도	VERB	vv+ec+jx	_	8	conj	_	chew-CONN-EMP
 6	않고	않+고	AUX	vx+ec	_	5	aux	_	NEG-CONJ
 7	통째로	통째로	ADV	mag	_	8	advmod	_	as_whole
-8	집어삼킨다	집어삼키+ㄴ다	VERB	vv+ef	_	0	root	_	swallow-IND
+8	집어삼킨다	집어삼키+ㄴ다	VERB	vv+ef	_	0	root	_	devour-IND
 9	.	.	PUNCT	sf	_	8	punct	_	.
 
 # sent_id = 1_6
@@ -146,15 +146,15 @@
 # text = 그들은 "모자가 뭐가 무섭다는 거니?"하고 대답했다.
 # text_en = They answered: "what is so terrifying about a hat?"
 1	그들은	그들+은	PRON	np+jx	_	10	nsubj	_	3.PL-TOP
-2	"	"	PUNCT	ss	_	6	punct	_	"
-3	모자가	모자+가	NOUN	nng+jks	_	6	dislocated	_	hat-EMP
-4	뭐가	뭐+가	PRON	np+jks	_	6	nsubj	_	what-NOM
-5	무섭다는	무섭+다는	ADJ	va+etm	_	6	acl	_	scary-COMP
-6	거니	거+이+니	NOUN	nnb+vcp+ef	_	0	root	_	thing-COP-Q
-7	?	?	PUNCT	sf	_	6	punct	_	?
-8	"	"	PUNCT	ss	_	6	punct	_	"
-9	하고	하고	ADP	jkq	_	6	mark	_	QUOT
-10	대답했다	대답+하+았+다	VERB	nng+xsv+ep+ef	_	6	parataxis	_	answer-VBZ-PST-IND
+2	"	"	PUNCT	ss	_	5	punct	_	"
+3	모자가	모자+가	NOUN	nng+jks	_	5	dislocated	_	hat-EMP
+4	뭐가	뭐+가	PRON	np+jks	_	5	nsubj	_	what-NOM
+5	무섭다는	무섭+다는	ADJ	va+etm	_	0	root	_	scary-COMP
+6	거니	거+이+니	NOUN	nnb+vcp+ef	_	5	aux	_	thing-COP-Q
+7	?	?	PUNCT	sf	_	5	punct	_	?
+8	"	"	PUNCT	ss	_	5	punct	_	"
+9	하고	하고	ADP	jkq	_	5	mark	_	QUOT
+10	대답했다	대답+하+았+다	VERB	nng+xsv+ep+ef	_	5	parataxis	_	answer-VBZ-PST-IND
 11	.	.	PUNCT	sf	_	10	punct	_	.
 
 # sent_id = 1_12
@@ -173,8 +173,8 @@
 # text_en = It was a boa constrictor digesting an elephant.
 1	그것은	그것+은	PRON	np+jx	_	6	nsubj	_	that-TOP
 2	코끼리를	코끼리+를	NOUN	nng+jko	_	3	obj	_	elephant-ACC
-3	소화시키고	소화+시키+고	VERB	nng+xsv+ec	_	6	acl	_	digest-CAUS-PROG
-4	있는	있+는	AUX	vx+etm	_	3	aux	_	EXIST-REL.PRS
+3	소화시키고	소화+시키+고	VERB	nng+xsv+ec	_	6	acl	_	digest-CAUS-CONN
+4	있는	있+는	AUX	vx+etm	_	3	aux	_	PROG-REL.PRS
 5	보아	보+아	NOUN	nng	_	6	compound	_	boa
 6	구렁이였다	구렁이+이+었+다	NOUN	nng+vcp+ep+ef	_	0	root	_	python-COP-PST-IND
 7	.	.	PUNCT	sf	_	6	punct	_	.
@@ -436,8 +436,8 @@
 7	나는	나+는	PRON	np+jx	_	19	nsubj	_	1.SG-TOP
 8	늘	늘	ADV	mag	_	9	advmod	_	always
 9	간직해	간직+하+아	VERB	nng+xsv+ec	_	15	acl	_	keep-VBZ-CONN
-10	오고	오+고	AUX	vx+ec	_	9	aux	_	continue-PROG
-11	있던	있+던	AUX	vx+etm	_	9	aux	_	EXIST-REL.IPFV
+10	오고	오+고	AUX	vx+ec	_	9	aux	_	continue-CONN
+11	있던	있+던	AUX	vx+etm	_	9	aux	_	PROG-REL.IPFV
 12	예의	예+의	NOUN	nng+jkg	_	15	nmod	_	instance-GEN
 13	나의	나+의	PRON	np+jkg	_	14	nmod	_	1.SG-GEN
 14	그림	그림	NOUN	nng	_	15	compound	_	picture
@@ -749,8 +749,8 @@
 7	나를	나+를	PRON	np+jko	_	10	obj	_	1.SG-ACC
 8	심각한	심각+하+ㄴ	ADJ	xr+xsa+etm	_	9	amod	_	seriousness-VBZ-REL.PST
 9	얼굴로	얼굴+로	NOUN	nng+jkb	_	10	obl	_	face-INSTR
-10	바라보고	바라보+고	VERB	vv+ec	_	0	root	_	stare-PROG
-11	있는	있+는	VERB	vv+etm	_	10	aux	_	EXIST-REL.PST
+10	바라보고	바라보+고	VERB	vv+ec	_	0	root	_	stare-CONN
+11	있는	있+는	AUX	vx+etm	_	10	aux	_	PROG-REL.PST
 12	것이었다	것+이+었+다	NOUN	nnb+vcp+ep+ef	_	10	aux	_	thing-COP-PST-IND
 13	.	.	PUNCT	sf	_	10	punct	_	.
 
@@ -921,8 +921,8 @@
 3	…	…	PUNCT	se	_	2	reparandum	_	…
 4	여기서	여기+서	PRON	np+jkb	_	6	obl	_	here-LOC
 5	뭘	무엇+을	PRON	np+jko	_	6	obj	_	what-ACC
-6	하고	하+고	VERB	vv+ec	_	0	root	_	do-PROG
-7	있는거니	있+는+거+이+니	AUX	vx+etm+nnb+vcp+ef	_	6	aux	_	EXIST-REL.PRS-thing-COP-Q
+6	하고	하+고	VERB	vv+ec	_	0	root	_	do-CONN
+7	있는거니	있+는+거+이+니	AUX	vx+etm+nnb+vcp+ef	_	6	aux	_	PROG-REL.PRS-thing-COP-Q
 8	?	?	PUNCT	sf	_	6	punct	_	?
 9	"	"	PUNCT	ss	_	6	punct	_	"
 
@@ -984,8 +984,8 @@
 7	곳에서	곳+에서	NOUN	nng+jkb	_	10	obl	_	place-LOC
 8	죽음의	죽음+의	NOUN	nng+jkg	_	9	nummod	_	death-GEN
 9	위험을	위험+을	NOUN	nng+jko	_	10	obj	_	danger-ACC
-10	마주하고	마주하+고	VERB	vv+ec	_	12	acl	_	face-PROG
-11	있는	있+는	AUX	vx+etm	_	10	aux	_	EXIST-REL.PRS
+10	마주하고	마주하+고	VERB	vv+ec	_	12	acl	_	face-CONN
+11	있는	있+는	AUX	vx+etm	_	10	aux	_	PROG-REL.PRS
 12	중에	중+에	NOUN	nnb+jkb	_	15	obl	_	middle-LOC
 13	참	참	ADV	mag	_	14	advmod	_	very
 14	엉뚱한	엉뚱+하+ㄴ	ADJ	xr+xsa+etm	_	15	amod	_	random-VBZ-REL.PST
