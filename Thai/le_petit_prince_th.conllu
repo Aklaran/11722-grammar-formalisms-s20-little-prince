@@ -246,7 +246,7 @@
 12	ชนิด	style	NOUN	_	_	10	obl	_	_
 13	ที่	which	SCONJ	_	_	14	mark	_	_
 14	เห็น	see	VERB	_	_	12	acl	_	_
-15	ด้าน	viewpoint	NOUN	_	_	14	obj	_	_
+15	ด้าน	viewpoint	NOUN	_	_	14	obl	_	_
 16	นอก	outside	NOUN	_	_	15	amod	_	_
 17	หรือ	or	CCONJ	_	_	18	cc	_	_
 18	ด้าน	viewpoint	NOUN	_	_	15	conj	_	_
@@ -1241,176 +1241,176 @@
 # n74
 # text = แต่ แล้ว ฉัน ก็ นึก ขึ้น มา ได้ ว่า ฉัน เคย เรียน แต่ วิชาภูมิศาสตร์ ประวัติศาสตร์ คณิตศาสตร์ และ ไวยากรณ์ เท่านั้น ฉัน จึง กล่าว กับ เด็ก น้อย ( อย่าง อารมณ์ ไม่ค่อย ดี ) ว่า ฉัน วาด ไม่ เป็น หรอก นะ
 # text_en = But immediately I recalled that I had never studied anything but geography, history, mathematics, and grammar, and I thus explained to the small child (hardly in a good mood) that I could not draw at all.
-1	แต่	but	CCONJ	_	_	_	_	_	_
-2	แล้ว	already	AUX	_	_	_	_	_	_
-3	ฉัน	1SG	PRON	_	_	_	_	_	_
-4	ก็	then	ADV	_	_	_	_	_	_
-5	นึก	recall	VERB	_	_	_	_	_	_
-6	ขึ้น	up	AUX	_	_	_	_	_	_
-7	มา	come	AUX	_	_	_	_	_	_
-8	ได้	able_to	AUX	_	_	_	_	_	_
-9	ว่า	that	SCONJ	_	_	_	_	_	_
-10	ฉัน	1SG	PRON	_	_	_	_	_	_
-11	เคย	ever	AUX	_	_	_	_	_	_
-12	เรียน	study	VERB	_	_	_	_	_	_
-13	แต่	only	ADV	_	_	_	_	_	_
-14	วิชา	subject	NOUN	_	_	_	_	_	_
-15	ภูมิศาสตร์	geography	NOUN	_	_	_	_	_	_
-16	ประวัติศาสตร์	history	NOUN	_	_	_	_	_	_
-17	คณิตศาสตร์	mathematics	NOUN	_	_	_	_	_	_
-18	และ	and	CCONJ	_	_	_	_	_	_
-19	ไวยากรณ์	grammar	NOUN	_	_	_	_	_	_
-20	เท่านั้น	only	ADV	_	_	_	_	_	_
-21	ฉัน	1SG	PRON	_	_	_	_	_	_
-22	จึง	thus	ADV	_	_	_	_	_	_
-23	กล่าว	explain	VERB	_	_	_	_	_	_
-24	กับ	with	ADP	_	_	_	_	_	_
-25	เด็ก	child	NOUN	_	_	_	_	_	_
-26	น้อย	small	ADJ	_	_	_	_	_	_
-27	(	(	PUNCT	_	_	_	_	_	_
-28	อย่าง	way	PART	_	_	_	_	_	_
-29	อารมณ์	mood	NOUN	_	_	_	_	_	_
-30	ไม่ค่อย	barely	ADV	_	_	_	_	_	_
-31	ดี	good	ADJ	_	_	_	_	_	_
-32	)	)	PUNCT	_	_	_	_	_	_
-33	ว่า	that	SCONJ	_	_	_	_	_	_
-34	ฉัน	1SG	PRON	_	_	_	_	_	_
-35	วาด	draw	VERB	_	_	_	_	_	_
-36	ไม่	not	PART	_	_	_	_	_	_
-37	เป็น	able_to	AUX	_	_	_	_	_	_
-38	หรอก	EMPH	PART	_	_	_	_	_	_
-39	นะ	SOFT	PART	_	_	_	_	_	_
+1	แต่	but	CCONJ	_	_	5	cc	_	_
+2	แล้ว	already	AUX	_	_	5	advmod	_	_
+3	ฉัน	1SG	PRON	_	_	5	nsubj	_	_
+4	ก็	then	ADV	_	_	5	advmod	_	_
+5	นึก	recall	VERB	_	_	0	root	_	_
+6	ขึ้น	up	AUX	_	_	5	compound:svc	_	_
+7	มา	come	AUX	_	_	5	compound:svc	_	_
+8	ได้	able_to	AUX	_	_	5	aux	_	_
+9	ว่า	that	SCONJ	_	_	12	mark	_	_
+10	ฉัน	1SG	PRON	_	_	12	nsubj	_	_
+11	เคย	ever	AUX	_	_	12	aux	_	_
+12	เรียน	study	VERB	_	_	5	xcomp	_	_
+13	แต่	only	ADV	_	_	14	case	_	_
+14	วิชา	subject	NOUN	_	_	12	obj	_	_
+15	ภูมิศาสตร์	geography	NOUN	_	_	14	nmod	_	_
+16	ประวัติศาสตร์	history	NOUN	_	_	15	conj	_	_
+17	คณิตศาสตร์	mathematics	NOUN	_	_	15	conj	_	_
+18	และ	and	CCONJ	_	_	19	cc	_	_
+19	ไวยากรณ์	grammar	NOUN	_	_	15	conj	_	_
+20	เท่านั้น	only	ADV	_	_	12	advmod	_	_
+21	ฉัน	1SG	PRON	_	_	23	nsubj	_	_
+22	จึง	thus	ADV	_	_	23	advmod	_	_
+23	กล่าว	explain	VERB	_	_	5	conj?(2sents)	_	_
+24	กับ	with	ADP	_	_	25	case	_	_
+25	เด็ก	child	NOUN	_	_	23	obl	_	_
+26	น้อย	small	ADJ	_	_	25	amod	_	_
+27	(	(	PUNCT	_	_	31	punct	_	_
+28	อย่าง	way	PART	_	_	31	mark	_	_
+29	อารมณ์	mood	NOUN	_	_	31	nsubj	_	_
+30	ไม่ค่อย	barely	ADV	_	_	31	advmod	_	_
+31	ดี	good	ADJ	_	_	23	advcl	_	_
+32	)	)	PUNCT	_	_	31	punct	_	_
+33	ว่า	that	SCONJ	_	_	35	mark	_	_
+34	ฉัน	1SG	PRON	_	_	35	nsubj	_	_
+35	วาด	draw	VERB	_	_	23	ccomp	_	_
+36	ไม่	not	PART	_	_	37	advmod	_	_
+37	เป็น	able_to	AUX	_	_	35	aux	_	_
+38	หรอก	EMPH	PART	_	_	37	advmod	_	_
+39	นะ	SOFT	PART	_	_	35	discourse	_	_
 
 # n75
 # text = เขา ตอบ ฉัน ว่า
 # text_en = He answered me,
-1	เขา	3SG	PRON	_	_	_	_	_	_
-2	ตอบ	answer	VERB	_	_	_	_	_	_
-3	ฉัน	1SG	PRON	_	_	_	_	_	_
-4	ว่า	that	SCONJ	_	_	_	_	_	_
+1	เขา	3SG	PRON	_	_	2	nsubj	_	_
+2	ตอบ	answer	VERB	_	_	0	root	_	_
+3	ฉัน	1SG	PRON	_	_	2	iobj	_	_
+4	ว่า	that	SCONJ	_	_	2	mark?	_	_
 
 # n76
 # text = " ไม่ เป็น ไร หรอก
 # text_en = "That's no problem at all.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	ไม่	not	PART	_	_	_	_	_	_
-3	เป็น	COP	AUX	_	_	_	_	_	_
-4	ไร	anything	PRON	_	_	_	_	_	_
-5	หรอก	EMPH	PART	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	4	punct	_	_
+2	ไม่	not	PART	_	_	4	advmod	_	_
+3	เป็น	COP	AUX	_	_	4	cop	_	_
+4	ไร	anything	PRON	_	_	0	root	_	_
+5	หรอก	EMPH	PART	_	_	4	advmod	_	_
 
 # n77
 # text = วาด แกะ ให้ ฉัน ตัว ก็ แล้ว กัน "
 # text_en = Just draw me a sheep however you like."
-1	วาด	draw	VERB	_	_	_	_	_	_
-2	แกะ	sheep	NOUN	_	_	_	_	_	_
-3	ให้	BEN	AUX	_	_	_	_	_	_
-4	ฉัน	1SG	PRON	_	_	_	_	_	_
-5	ตัว	CLF	NOUN	_	_	_	_	_	_
-6	ก็	also	ADV	_	_	_	_	_	_
-7	แล้ว	then	AUX	_	_	_	_	_	_
-8	กัน	together	ADV	_	_	_	_	_	_
-9	"	"	PUNCT	_	_	_	_	_	_
+1	วาด	draw	VERB	_	_	0	root	_	_
+2	แกะ	sheep	NOUN	_	_	1	obj	_	_
+3	ให้	BEN	AUX	_	_	1	compound:svc	_	_
+4	ฉัน	1SG	PRON	_	_	1	iobj	_	_
+5	ตัว	CLF	NOUN	_	_	6	clf	_	_
+6	ก็	also	ADV	_	_	2	amod	_	_
+7	แล้ว	then	AUX	_	_	6	fixed	_	_
+8	กัน	together	ADV	_	_	6	fixed	_	_
+9	"	"	PUNCT	_	_	1	punct	_	_
 
 # n78
 # text = เนื่อง จาก ฉัน ไม่ เคย วาด แกะ เลย ฉัน จึง วาด ภาพ หนึ่ง ใน สอง ภาพ ที่ ฉัน วาด เป็น ให้ เขา
 # text_en = Since I had never drawn a sheep, I drew one of the two pictures that I knew how to draw for him.
-1	เนื่อง	due	ADJ	_	_	_	_	_	_
-2	จาก	from	ADP	_	_	_	_	_	_
-3	ฉัน	1SG	PRON	_	_	_	_	_	_
-4	ไม่	not	PART	_	_	_	_	_	_
-5	เคย	ever	AUX	_	_	_	_	_	_
-6	วาด	draw	VERB	_	_	_	_	_	_
-7	แกะ	sheep	NOUN	_	_	_	_	_	_
-8	เลย	at_all	AUX	_	_	_	_	_	_
-9	ฉัน	1SG	PRON	_	_	_	_	_	_
-10	จึง	thus	ADV	_	_	_	_	_	_
-11	วาด	draw	VERB	_	_	_	_	_	_
-12	ภาพ	picture	NOUN	_	_	_	_	_	_
-13	หนึ่ง	one	NUM	_	_	_	_	_	_
-14	ใน	in	ADP	_	_	_	_	_	_
-15	สอง	two	NUM	_	_	_	_	_	_
-16	ภาพ	picture	NOUN	_	_	_	_	_	_
-17	ที่	which	SCONJ	_	_	_	_	_	_
-18	ฉัน	1SG	PRON	_	_	_	_	_	_
-19	วาด	draw	VERB	_	_	_	_	_	_
-20	เป็น	able_to	AUX	_	_	_	_	_	_
-21	ให้	BEN	AUX	_	_	_	_	_	_
-22	เขา	3SG	PRON	_	_	_	_	_	_
+1	เนื่อง	due	ADJ	_	_	6	mark	_	_
+2	จาก	from	ADP	_	_	1	fixed	_	_
+3	ฉัน	1SG	PRON	_	_	6	nsubj	_	_
+4	ไม่	not	PART	_	_	5	advmod	_	_
+5	เคย	ever	AUX	_	_	6	aux	_	_
+6	วาด	draw	VERB	_	_	11	advcl	_	_
+7	แกะ	sheep	NOUN	_	_	6	obj	_	_
+8	เลย	at_all	AUX	_	_	6	advmod	_	_
+9	ฉัน	1SG	PRON	_	_	11	nsubj	_	_
+10	จึง	thus	ADV	_	_	11	advmod	_	_
+11	วาด	draw	VERB	_	_	0	root	_	_
+12	ภาพ	picture	NOUN	_	_	11	obj	_	_
+13	หนึ่ง	one	NUM	_	_	12	nummod	_	_
+14	ใน	in	ADP	_	_	16	case	_	_
+15	สอง	two	NUM	_	_	16	nummod	_	_
+16	ภาพ	picture	NOUN	_	_	12	nmod	_	_
+17	ที่	which	SCONJ	_	_	19	mark	_	_
+18	ฉัน	1SG	PRON	_	_	19	nsubj	_	_
+19	วาด	draw	VERB	_	_	16	acl	_	_
+20	เป็น	able_to	AUX	_	_	19	aux	_	_
+21	ให้	BEN	AUX	_	_	11	compound:svc	_	_
+22	เขา	3SG	PRON	_	_	11	iobj	_	_
 
 # n79
 # text = คือ ภาพ งูเหลือม ชนิด ที่ เห็น ด้าน นอก
 # text_en = It was the picture of a boa from the outside.
-1	คือ	COP	AUX	_	_	_	_	_	_
-2	ภาพ	picture	NOUN	_	_	_	_	_	_
-3	งูเหลือม	boa	NOUN	_	_	_	_	_	_
-4	ชนิด	CLF	NOUN	_	_	_	_	_	_
-5	ที่	which	SCONJ	_	_	_	_	_	_
-6	เห็น	see	VERB	_	_	_	_	_	_
-7	ด้าน	side	NOUN	_	_	_	_	_	_
-8	นอก	outside	ADJ	_	_	_	_	_	_
+1	คือ	COP	AUX	_	_	2	cop	_	_
+2	ภาพ	picture	NOUN	_	_	0	root	_	_
+3	งูเหลือม	boa	NOUN	_	_	2	nmod	_	_
+4	ชนิด	CLF	NOUN	_	_	6	clf	_	_
+5	ที่	which	SCONJ	_	_	6	mark	_	_
+6	เห็น	see	VERB	_	_	2	acl	_	_
+7	ด้าน	side	NOUN	_	_	6	obl	_	_
+8	นอก	outside	ADJ	_	_	7	amod	_	_
 
 # n80
 # text = และ ฉัน ก็ ตก ตะลึง เมื่อ ได้ ยิน เขา ตอบ ว่า
 # text_en = And I was stunned when I heard him answer,
-1	และ	and	CCONJ	_	_	_	_	_	_
-2	ฉัน	1SG	PRON	_	_	_	_	_	_
-3	ก็	then	ADV	_	_	_	_	_	_
-4	ตก	fall	VERB	_	_	_	_	_	_
-5	ตะลึง	stunned	ADJ	_	_	_	_	_	_
-6	เมื่อ	when	SCONJ	_	_	_	_	_	_
-7	ได้	PST	AUX	_	_	_	_	_	_
-8	ยิน	hear	VERB	_	_	_	_	_	_
-9	เขา	3SG	PRON	_	_	_	_	_	_
-10	ตอบ	answer	VERB	_	_	_	_	_	_
-11	ว่า	that	SCONJ	_	_	_	_	_	_
+1	และ	and	CCONJ	_	_	4	cc	_	_
+2	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
+3	ก็	then	ADV	_	_	4	advmod	_	_
+4	ตก	fall	VERB	_	_	0	root	_	_
+5	ตะลึง	stunned	ADJ	_	_	4	compound:svc	_	_
+6	เมื่อ	when	SCONJ	_	_	8	mark	_	_
+7	ได้	PST	AUX	_	_	8	aux	_	_
+8	ยิน	hear	VERB	_	_	4	advcl	_	_
+9	เขา	3SG	PRON	_	_	10	nsubj	_	_
+10	ตอบ	answer	VERB	_	_	8	ccomp	_	_
+11	ว่า	that	SCONJ	_	_	10	mark?	_	_
 
 # n81
 # text = " ไม่ เอา
 # text_en = "I don't want that!
-1	"	"	PUNCT	_	_	_	_	_	_
-2	ไม่	not	PART	_	_	_	_	_	_
-3	เอา	want	VERB	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	3	punct	_	_
+2	ไม่	not	PART	_	_	3	advmod	_	_
+3	เอา	want	VERB	_	_	0	root	_	_
 
 # n82
 # text = ไม่ เอา
 # text_en = I don't want that!
-1	ไม่	not	PART	_	_	_	_	_	_
-2	เอา	want	VERB	_	_	_	_	_	_
+1	ไม่	not	PART	_	_	2	advmod	_	_
+2	เอา	want	VERB	_	_	0	root	_	_
 
 # n83
 # text = ฉัน ไม่ อยาก ได้ ช้าง ใน งูเหลือม
 # text_en = I don't want to get an elephant inside of a boa.
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	ไม่	not	PART	_	_	_	_	_	_
-3	อยาก	want	AUX	_	_	_	_	_	_
-4	ได้	get	AUX	_	_	_	_	_	_
-5	ช้าง	elephant	NOUN	_	_	_	_	_	_
-6	ใน	inside	ADP	_	_	_	_	_	_
-7	งูเหลือม	boa	NOUN	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+2	ไม่	not	PART	_	_	3	advmod	_	_
+3	อยาก	want	AUX	_	_	0	root	_	_
+4	ได้	get	AUX	_	_	3	xcomp	_	_
+5	ช้าง	elephant	NOUN	_	_	4	obj	_	_
+6	ใน	inside	ADP	_	_	7	case	_	_
+7	งูเหลือม	boa	NOUN	_	_	5	nmod	_	_
 
 # n84
 # text = งูเหลือม น่ากลัว ออก และ ช้าง ก็ ตัว ใหญ่ เกะกะ เกิน ไป
 # text_en = Boas are too frightening and elephants are too troublesomely large.
-1	งูเหลือม	boa	NOUN	_	_	_	_	_	_
+1	งูเหลือม	boa	NOUN	_	_	2	nsubj	_	_
 2	น่ากลัว	frightening	VERB	_	_	_	_	_	_
-3	ออก	exit	AUX	_	_	_	_	_	_
-4	และ	and	CCONJ	_	_	_	_	_	_
-5	ช้าง	elephant	NOUN	_	_	_	_	_	_
-6	ก็	also	ADV	_	_	_	_	_	_
-7	ตัว	body	NOUN	_	_	_	_	_	_
-8	ใหญ่	big	ADJ	_	_	_	_	_	_
-9	เกะกะ	troublesome	ADJ	_	_	_	_	_	_
-10	เกิน	exceeding	ADV	_	_	_	_	_	_
-11	ไป	go	AUX	_	_	_	_	_	_
+3	ออก	exit	AUX	_	_	2	compound:svc	_	_
+4	และ	and	CCONJ	_	_	7	cc	_	_
+5	ช้าง	elephant	NOUN	_	_	7	nsubj	_	_
+6	ก็	also	ADV	_	_	7	advmod	_	_
+7	ตัว	body	NOUN	_	_	2	conj	_	_
+8	ใหญ่	big	ADJ	_	_	7	compound	_	_
+9	เกะกะ	troublesome	ADJ	_	_	7	compound:svc	_	_
+10	เกิน	exceeding	ADV	_	_	7	advmod	_	_
+11	ไป	go	AUX	_	_	10	compound	_	_
 
 # n85
 # text = บ้าน ฉัน เล็ก นิด เดียว
 # text_en = My house is very tiny.
-1	บ้าน	house	NOUN	_	_	_	_	_	_
-2	ฉัน	1SG	PRON	_	_	_	_	_	_
-3	เล็ก	small	ADJ	_	_	_	_	_	_
-4	นิด	tiny	ADJ	_	_	_	_	_	_
-5	เดียว	alone	ADV	_	_	_	_	_	_
+1	บ้าน	house	NOUN	_	_	3	nsubj	_	_
+2	ฉัน	1SG	PRON	_	_	1	nmod	_	_
+3	เล็ก	small	ADJ	_	_	0	root	_	_
+4	นิด	tiny	ADJ	_	_	3	compound:svc	_	_
+5	เดียว	alone	ADV	_	_	4	compound	_	_
 
 # n86
 # text = SENTENCE THAT THAI DOESNT HAVE
@@ -1424,360 +1424,360 @@
 # n87
 # text = วาด แกะ ให้ ฉัน ตัว หนึ่ง เถอะ "
 # text_en = Draw me a sheep!"
-1	วาด	draw	VERB	_	_	_	_	_	_
-2	แกะ	sheep	NOUN	_	_	_	_	_	_
-3	ให้	BEN	AUX	_	_	_	_	_	_
-4	ฉัน	1SG	PRON	_	_	_	_	_	_
-5	ตัว	CLF	NOUN	_	_	_	_	_	_
-6	หนึ่ง	one	NUM	_	_	_	_	_	_
-7	เถอะ	IMP	PART	_	_	_	_	_	_
-8	"	"	PUNCT	_	_	_	_	_	_
+1	วาด	draw	VERB	_	_	0	root	_	_
+2	แกะ	sheep	NOUN	_	_	1	obj	_	_
+3	ให้	BEN	AUX	_	_	1	compound:svc	_	_
+4	ฉัน	1SG	PRON	_	_	1	iobj	_	_
+5	ตัว	CLF	NOUN	_	_	6	clf	_	_
+6	หนึ่ง	one	NUM	_	_	2	det	_	_
+7	เถอะ	IMP	PART	_	_	1	discourse	_	_
+8	"	"	PUNCT	_	_	1	punct	_	_
 
 # n88
 # text = ดังนั้น ฉัน จึง วาด แกะ ให้
 # text_en = So I drew him a sheep.
-1	ดังนั้น	so	SCONJ	_	_	_	_	_	_
-2	ฉัน	1SG	PRON	_	_	_	_	_	_
-3	จึง	thus	ADV	_	_	_	_	_	_
-4	วาด	draw	VERB	_	_	_	_	_	_
-5	แกะ	sheep	NOUN	_	_	_	_	_	_
-6	ให้	BEN	AUX	_	_	_	_	_	_
+1	ดังนั้น	so	SCONJ	_	_	4	mark	_	_
+2	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
+3	จึง	thus	ADV	_	_	4	advmod	_	_
+4	วาด	draw	VERB	_	_	0	root	_	_
+5	แกะ	sheep	NOUN	_	_	4	obj	_	_
+6	ให้	BEN	AUX	_	_	4	compound:svc	_	_
 
 # n89
 # text = เขา มอง ดู อย่าง สนใจ และ วิจารณ์ ว่า
 # text_en = He looked interesedly and critiqued,
-1	เขา	3SG	PRON	_	_	_	_	_	_
-2	มอง	look	VERB	_	_	_	_	_	_
-3	ดู	see	VERB	_	_	_	_	_	_
-4	อย่าง	way	PART	_	_	_	_	_	_
-5	สนใจ	interested	ADJ	_	_	_	_	_	_
-6	และ	and	CCONJ	_	_	_	_	_	_
-7	วิจารณ์	criticize	VERB	_	_	_	_	_	_
-8	ว่า	that	SCONJ	_	_	_	_	_	_
+1	เขา	3SG	PRON	_	_	2	nsubj	_	_
+2	มอง	look	VERB	_	_	0	root	_	_
+3	ดู	see	VERB	_	_	2	compound:svc	_	_
+4	อย่าง	way	PART	_	_	5	mark	_	_
+5	สนใจ	interested	ADJ	_	_	2	advcl	_	_
+6	และ	and	CCONJ	_	_	7	cc	_	_
+7	วิจารณ์	criticize	VERB	_	_	2	conj	_	_
+8	ว่า	that	SCONJ	_	_	7	mark?	_	_
 
 # n90
 # text = " ไม่ใช่
 # text_en = "No.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	ไม่	not	PART	_	_	_	_	_	_
-3	ใช่	yes	AUX	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	3	punct	_	_
+2	ไม่	not	PART	_	_	3	advmod	_	_
+3	ใช่	yes	AUX	_	_	0	root	_	_
 
 # n91
 # text = แกะ ตัว นี้ ไม่ สบาย มาก
 # text_en = This sheep is not well.
-1	แกะ	sheep	NOUN	_	_	_	_	_	_
-2	ตัว	CLF	NOUN	_	_	_	_	_	_
-3	นี้	this	DET	_	_	_	_	_	_
-4	ไม่	not	PART	_	_	_	_	_	_
-5	สบาย	healthy	ADJ	_	_	_	_	_	_
-6	มาก	very	ADV	_	_	_	_	_	_
+1	แกะ	sheep	NOUN	_	_	5	nsubj	_	_
+2	ตัว	CLF	NOUN	_	_	3	clf	_	_
+3	นี้	this	DET	_	_	1	det	_	_
+4	ไม่	not	PART	_	_	5	advmod	_	_
+5	สบาย	healthy	ADJ	_	_	0	root	_	_
+6	มาก	very	ADV	_	_	5	advmod	_	_
 
 # n92
 # text = วาด ใหม่ อีก ตัว ซิ "
 # text_en = Draw another one."
 1	วาด	draw	NOUN	_	_	_	_	_	_
-2	ใหม่	again	ADV	_	_	_	_	_	_
-3	อีก	another	ADJ	_	_	_	_	_	_
-4	ตัว	CLF	NOUN	_	_	_	_	_	_
-5	ซิ	IMP	PART	_	_	_	_	_	_
-6	"	"	PUNCT	_	_	_	_	_	_
+2	ใหม่	again	ADV	_	_	1	advmod	_	_
+3	อีก	another	ADJ	_	_	4	amod	_	_
+4	ตัว	CLF	NOUN	_	_	1	obj	_	_
+5	ซิ	IMP	PART	_	_	1	discourse	_	_
+6	"	"	PUNCT	_	_	1	punct	_	_
 
 # n93
 # text = ฉัน วาด ใหม่
 # text_en = I drew another.
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	วาด	draw	VERB	_	_	_	_	_	_
-3	ใหม่	again	ADV	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	วาด	draw	VERB	_	_	0	root	_	_
+3	ใหม่	again	ADV	_	_	2	advmod	_	_
 
 # n94
 # text = เพื่อน ของ ฉัน หัวเราะ เบา ๆ
 # text_en = My friend laughed quietly.
-1	เพื่อน	friend	NOUN	_	_	_	_	_	_
-2	ของ	of	ADP	_	_	_	_	_	_
-3	ฉัน	1SG	PRON	_	_	_	_	_	_
-4	หัวเราะ	laugh	NOUN	_	_	_	_	_	_
-5	เบา	quiet	ADJ	_	_	_	_	_	_
-6	ๆ	ADV	SYM	_	_	_	_	_	_
+1	เพื่อน	friend	NOUN	_	_	4	nsubj	_	_
+2	ของ	of	ADP	_	_	3	case	_	_
+3	ฉัน	1SG	PRON	_	_	1	nmod	_	_
+4	หัวเราะ	laugh	NOUN	_	_	0	root	_	_
+5	เบา	quiet	ADJ	_	_	4	advmod	_	_
+6	ๆ	ADV	SYM	_	_	5	advmod?	_	_
 
 # n95
 # text = พูด อย่าง อ่อน น้อม ว่า
 # text_en = (NOT IN FRENCH) He said politely,
-1	พูด	speak	VERB	_	_	_	_	_	_
-2	อย่าง	way	PART	_	_	_	_	_	_
-3	อ่อน	soft	ADJ	_	_	_	_	_	_
-4	น้อม	bow	VERB	_	_	_	_	_	_
-5	ว่า	that	SCONJ	_	_	_	_	_	_
+1	พูด	speak	VERB	_	_	0	root	_	_
+2	อย่าง	way	PART	_	_	3	mark	_	_
+3	อ่อน	soft	ADJ	_	_	1	advcl	_	_
+4	น้อม	bow	VERB	_	_	3	compound	_	_
+5	ว่า	that	SCONJ	_	_	1	mark?	_	_
 
 # n96
 # text = " เธอ คง จะ เห็น นะ ว่า มัน ไม่ใช่ แกะ แต่ เป็น แพะ
 # text_en = "You should be able to see that this is not a sheep, but a ram.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	เธอ	2SG	NOUN	_	_	_	_	_	_
-3	คง	should	AUX	_	_	_	_	_	_
-4	จะ	FUT	AUX	_	_	_	_	_	_
-5	เห็น	see	VERB	_	_	_	_	_	_
-6	นะ	SOFT	PART	_	_	_	_	_	_
-7	ว่า	that	SCONJ	_	_	_	_	_	_
-8	มัน	it	PRON	_	_	_	_	_	_
-9	ไม่	not	PART	_	_	_	_	_	_
-10	ใช่	yes	ADV	_	_	_	_	_	_
-11	แกะ	sheep	NOUN	_	_	_	_	_	_
-12	แต่	but	CCONJ	_	_	_	_	_	_
-13	เป็น	COP	AUX	_	_	_	_	_	_
-14	แพะ	ram	NOUN	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	5	punct	_	_
+2	เธอ	2SG	NOUN	_	_	5	nsubj	_	_
+3	คง	should	AUX	_	_	5	aux	_	_
+4	จะ	FUT	AUX	_	_	5	aux	_	_
+5	เห็น	see	VERB	_	_	0	root	_	_
+6	นะ	SOFT	PART	_	_	5	discourse	_	_
+7	ว่า	that	SCONJ	_	_	11	mark	_	_
+8	มัน	it	PRON	_	_	11	nsubj	_	_
+9	ไม่	not	PART	_	_	10	advmod	_	_
+10	ใช่	yes	ADV	_	_	11	cop?	_	_
+11	แกะ	sheep	NOUN	_	_	5	ccomp	_	_
+12	แต่	but	CCONJ	_	_	14	cc	_	_
+13	เป็น	COP	AUX	_	_	14	cop	_	_
+14	แพะ	ram	NOUN	_	_	11	conj	_	_
 
 # n97
 # text = เพราะ ว่า มัน มี เขา "
 # text_en = Because it has horns."
-1	เพราะ	because	SCONJ	_	_	_	_	_	_
-2	ว่า	that	SCONJ	_	_	_	_	_	_
-3	มัน	it	PRON	_	_	_	_	_	_
-4	มี	have	VERB	_	_	_	_	_	_
-5	เขา	horn	NOUN	_	_	_	_	_	_
-6	"	"	PUNCT	_	_	_	_	_	_
+1	เพราะ	because	SCONJ	_	_	4	mark	_	_
+2	ว่า	that	SCONJ	_	_	1	fixed	_	_
+3	มัน	it	PRON	_	_	4	nsubj	_	_
+4	มี	have	VERB	_	_	0	root	_	_
+5	เขา	horn	NOUN	_	_	4	obj	_	_
+6	"	"	PUNCT	_	_	4	punct	_	_
 
 # n98
 # text = ฉัน วาด ใหม่ อีก
 # text_en = Again, I drew another.
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	วาด	draw	VERB	_	_	_	_	_	_
-3	ใหม่	again	ADV	_	_	_	_	_	_
-4	อีก	another	ADJ	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	วาด	draw	VERB	_	_	0	root	_	_
+3	ใหม่	again	ADV	_	_	2	advmod	_	_
+4	อีก	another	ADJ	_	_	2	obj	_	_
 
 # n99
 # text = แต่ เขา ก็ ปฏิเสธ อีก เช่น กัน
 # text_en = But again he similarly refused.
-1	แต่	but	CCONJ	_	_	_	_	_	_
-2	เขา	3SG	PRON	_	_	_	_	_	_
-3	ก็	then	ADV	_	_	_	_	_	_
-4	ปฏิเสธ	refuse	VERB	_	_	_	_	_	_
-5	อีก	another	ADJ	_	_	_	_	_	_
-6	เช่น	similar	ADJ	_	_	_	_	_	_
-7	กัน	together	ADV	_	_	_	_	_	_
+1	แต่	but	CCONJ	_	_	4	cc	_	_
+2	เขา	3SG	PRON	_	_	4	nsubj	_	_
+3	ก็	then	ADV	_	_	4	advmod	_	_
+4	ปฏิเสธ	refuse	VERB	_	_	0	root	_	_
+5	อีก	another	ADJ	_	_	4	advmod	_	_
+6	เช่น	similar	ADJ	_	_	4	advmod	_	_
+7	กัน	together	ADV	_	_	6	fixed	_	_
 
 # n100
 # text = " ตัว นี้ มัน แก่ เกิน ไป
 # text_en = "This one is too old.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	ตัว	CLF	NOUN	_	_	_	_	_	_
-3	นี้	this	DET	_	_	_	_	_	_
-4	มัน	it	PRON	_	_	_	_	_	_
-5	แก่	old	ADP	_	_	_	_	_	_
-6	เกิน	exceeding	ADV	_	_	_	_	_	_
-7	ไป	go	AUX	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	5	punct	_	_
+2	ตัว	CLF	NOUN	_	_	5	nsubj	_	_
+3	นี้	this	DET	_	_	2	det	_	_
+4	มัน	it	PRON	_	_	2	appos	_	_
+5	แก่	old	ADP	_	_	0	root	_	_
+6	เกิน	exceeding	ADV	_	_	5	advmod	_	_
+7	ไป	go	AUX	_	_	6	fixed	_	_
 
 # n101
 # text = ฉัน ต้องการ แกะ ที่ จะ ยัง มี ชีวิต อยู่ ต่อ ไป อีก นาน "
 # text_en = I need a sheep that still has a lot of life left."
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	ต้องการ	need	VERB	_	_	_	_	_	_
-3	แกะ	sheep	NOUN	_	_	_	_	_	_
-4	ที่	which	SCONJ	_	_	_	_	_	_
-5	จะ	FUT	AUX	_	_	_	_	_	_
-6	ยัง	still	ADV	_	_	_	_	_	_
-7	มี	have	VERB	_	_	_	_	_	_
-8	ชีวิต	life	NOUN	_	_	_	_	_	_
-9	อยู่	PROG	AUX	_	_	_	_	_	_
-10	ต่อ	continue	ADP	_	_	_	_	_	_
-11	ไป	go	AUX	_	_	_	_	_	_
-12	อีก	another	ADJ	_	_	_	_	_	_
-13	นาน	long_time	ADV	_	_	_	_	_	_
-14	"	"	PUNCT	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	ต้องการ	need	VERB	_	_	0	root	_	_
+3	แกะ	sheep	NOUN	_	_	2	obj	_	_
+4	ที่	which	SCONJ	_	_	7	mark	_	_
+5	จะ	FUT	AUX	_	_	7	aux	_	_
+6	ยัง	still	ADV	_	_	7	advmod	_	_
+7	มี	have	VERB	_	_	3	acl	_	_
+8	ชีวิต	life	NOUN	_	_	7	obj	_	_
+9	อยู่	PROG	AUX	_	_	7	aux	_	_
+10	ต่อ	continue	ADP	_	_	7	advmod	_	_
+11	ไป	go	AUX	_	_	10	fixed	_	_
+12	อีก	another	ADJ	_	_	13	advmod	_	_
+13	นาน	long_time	ADV	_	_	7	advmod	_	_
+14	"	"	PUNCT	_	_	7	punct	_	_
 
 # n102
 # text = เมื่อ เป็น เช่น นั้น ฉัน ก็ หมด ความอดทน ประกอบ กับ ต้อง รีบ ซ่อม เครื่อง ยนต์ ฉัน จึง เขี่ย ๆ ภาพ นี้
 # text_en = That, combined with the fact that I had to hurry to repair my engine, made me lose my patience and I scribbled down this picture.
-1	เมื่อ	when	SCONJ	_	_	_	_	_	_
-2	เป็น	COP	AUX	_	_	_	_	_	_
-3	เช่น	like	ADV	_	_	_	_	_	_
-4	นั้น	that	DET	_	_	_	_	_	_
-5	ฉัน	1SG	PRON	_	_	_	_	_	_
-6	ก็	then	ADV	_	_	_	_	_	_
-7	หมด	finish	VERB	_	_	_	_	_	_
-8	ความอดทน	patience	NOUN	_	_	_	_	_	_
-9	ประกอบ	combine	VERB	_	_	_	_	_	_
-10	กับ	with	ADP	_	_	_	_	_	_
-11	ต้อง	have_to	AUX	_	_	_	_	_	_
-12	รีบ	hurry	VERB	_	_	_	_	_	_
-13	ซ่อม	repair	VERB	_	_	_	_	_	_
-14	เครื่อง	machine	NOUN	_	_	_	_	_	_
-15	ยนต์	motor	NOUN	_	_	_	_	_	_
-16	ฉัน	1SG	PRON	_	_	_	_	_	_
-17	จึง	thus	ADV	_	_	_	_	_	_
-18	เขี่ย	scratch	VERB	_	_	_	_	_	_
-19	ๆ	EMPH	SYM	_	_	_	_	_	_
-20	ภาพ	picture	NOUN	_	_	_	_	_	_
-21	นี้	this	DET	_	_	_	_	_	_
+1	เมื่อ	when	SCONJ	_	_	3	mark	_	_
+2	เป็น	COP	AUX	_	_	3	cop	_	_
+3	เช่น	like	ADV	_	_	7	advcl	_	_
+4	นั้น	that	DET	_	_	3	fixed	_	_
+5	ฉัน	1SG	PRON	_	_	7	nsubj	_	_
+6	ก็	then	ADV	_	_	7	advmod	_	_
+7	หมด	finish	VERB	_	_	18	advcl?	_	_
+8	ความอดทน	patience	NOUN	_	_	7	obj	_	_
+9	ประกอบ	combine	VERB	_	_	12	cc	_	_
+10	กับ	with	ADP	_	_	9	fixed	_	_
+11	ต้อง	have_to	AUX	_	_	12	aux	_	_
+12	รีบ	hurry	VERB	_	_	7	conj	_	_
+13	ซ่อม	repair	VERB	_	_	12	compound:svc	_	_
+14	เครื่อง	machine	NOUN	_	_	12	obj	_	_
+15	ยนต์	motor	NOUN	_	_	14	compound	_	_
+16	ฉัน	1SG	PRON	_	_	18	nsubj	_	_
+17	จึง	thus	ADV	_	_	18	advmod	_	_
+18	เขี่ย	scratch	VERB	_	_	0	root	_	_
+19	ๆ	EMPH	SYM	_	_	18	advmod	_	_
+20	ภาพ	picture	NOUN	_	_	18	obj	_	_
+21	นี้	this	DET	_	_	20	det	_	_
 
 # n103
 # text = ฉัน ยื่น ให้ เขา และ ว่า
 # text_en = I gave it to him and said,
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	ยื่น	hand_over	VERB	_	_	_	_	_	_
-3	ให้	BEN	AUX	_	_	_	_	_	_
-4	เขา	3SG	PRON	_	_	_	_	_	_
-5	และ	and	CCONJ	_	_	_	_	_	_
-6	ว่า	say	VERB	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	ยื่น	hand_over	VERB	_	_	0	root	_	_
+3	ให้	BEN	AUX	_	_	2	compound:svc	_	_
+4	เขา	3SG	AUX	_	_	2	iobj	_	_
+5	และ	and	CCONJ	_	_	6	cc	_	_
+6	ว่า	say	VERB	_	_	2	conj	_	_
 
 # n104
 # text = " เอ้า นี่ คือ กรง
 # text_en = "Here! This is a cage.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	เอ้า	here	INTJ	_	_	_	_	_	_
-3	นี่	this	PRON	_	_	_	_	_	_
-4	คือ	COP	AUX	_	_	_	_	_	_
-5	กรง	cage	NOUN	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	5	punct	_	_
+2	เอ้า	here	INTJ	_	_	5	discourse	_	_
+3	นี่	this	PRON	_	_	5	nsubj	_	_
+4	คือ	COP	AUX	_	_	5	cop	_	_
+5	กรง	cage	NOUN	_	_	0	root	_	_
 
 # n105
 # text = แกะ ที่ เธอ ต้องการ อยู่ ใน กรง นี้ "
 # text_en = The sheep you need is in this cage."
-1	แกะ	sheep	NOUN	_	_	_	_	_	_
-2	ที่	which	SCONJ	_	_	_	_	_	_
-3	เธอ	2SG	PRON	_	_	_	_	_	_
-4	ต้องการ	need	VERB	_	_	_	_	_	_
-5	อยู่	located_at	VERB	_	_	_	_	_	_
-6	ใน	inside	ADP	_	_	_	_	_	_
-7	กรง	case	NOUN	_	_	_	_	_	_
-8	นี้	this	DET	_	_	_	_	_	_
-9	"	"	PUNCT	_	_	_	_	_	_
+1	แกะ	sheep	NOUN	_	_	5	nsubj	_	_
+2	ที่	which	SCONJ	_	_	4	mark	_	_
+3	เธอ	2SG	PRON	_	_	4	nsubj	_	_
+4	ต้องการ	need	VERB	_	_	1	acl	_	_
+5	อยู่	located_at	VERB	_	_	0	root	_	_
+6	ใน	inside	ADP	_	_	7	case	_	_
+7	กรง	case	NOUN	_	_	5	obl	_	_
+8	นี้	this	DET	_	_	7	det	_	_
+9	"	"	PUNCT	_	_	5	punct	_	_
 
 # n106
 # text = แต่ ฉัน ประหลาดใจ มาก ที่ เห็น ใบหน้า ของ เขา สดใส ขึ้น ทันที
 # text_en = But I was astonished to see his face immediately light up.
-1	แต่	but	CCONJ	_	_	_	_	_	_
-2	ฉัน	1SG	PRON	_	_	_	_	_	_
-3	ประหลาดใจ	astonished	ADJ	_	_	_	_	_	_
-4	มาก	very	ADV	_	_	_	_	_	_
-5	ที่	that	SCONJ	_	_	_	_	_	_
-6	เห็น	see	VERB	_	_	_	_	_	_
-7	ใบหน้า	face	NOUN	_	_	_	_	_	_
-8	ของ	of	ADP	_	_	_	_	_	_
-9	เขา	3SG	PRON	_	_	_	_	_	_
-10	สดใส	brighten	VERB	_	_	_	_	_	_
-11	ขึ้น	up	AUX	_	_	_	_	_	_
-12	ทันที	immediately	ADV	_	_	_	_	_	_
+1	แต่	but	CCONJ	_	_	3	cc	_	_
+2	ฉัน	1SG	PRON	_	_	3	nsubj	_	_
+3	ประหลาดใจ	astonished	ADJ	_	_	0	root	_	_
+4	มาก	very	ADV	_	_	3	advmod	_	_
+5	ที่	that	SCONJ	_	_	6	mark	_	_
+6	เห็น	see	VERB	_	_	3	xcomp	_	_
+7	ใบหน้า	face	NOUN	_	_	10	nsubj	_	_
+8	ของ	of	ADP	_	_	9	case	_	_
+9	เขา	3SG	PRON	_	_	7	nmod	_	_
+10	สดใส	brighten	VERB	_	_	6	ccomp	_	_
+11	ขึ้น	up	AUX	_	_	10	compound:svc	_	_
+12	ทันที	immediately	ADV	_	_	10	advmod	_	_
 
 # n107
 # text = " เหมาะ ทีเดียว นี่ แหละ ที่ ฉัน อยาก ได้
 # text_en = "Exactly - this is what I wanted!
-1	"	"	PUNCT	_	_	_	_	_	_
-2	เหมาะ	correct	ADJ	_	_	_	_	_	_
-3	ทีเดียว	quite	ADV	_	_	_	_	_	_
-4	นี่	this	PRON	_	_	_	_	_	_
-5	แหละ	EMPH	PART	_	_	_	_	_	_
-6	ที่	that	SCONJ	_	_	_	_	_	_
-7	ฉัน	1SG	PRON	_	_	_	_	_	_
-8	อยาก	want	VERB	_	_	_	_	_	_
-9	ได้	get	VERB	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	2	punct	_	_
+2	เหมาะ	correct	ADJ	_	_	0	root	_	_
+3	ทีเดียว	quite	ADV	_	_	2	advmod	_	_
+4	นี่	this	PRON	_	_	6	nsubj	_	_
+5	แหละ	EMPH	PART	_	_	6	cop	_	_
+6	ที่	that_which	SCONJ	_	_	2	parataxis	_	_
+7	ฉัน	1SG	PRON	_	_	8	nsubj	_	_
+8	อยาก	want	VERB	_	_	6	acl	_	_
+9	ได้	get	VERB	_	_	8	xcomp	_	_
 
 # n108
 # text = เธอ คิด ว่า แกะ ตัว นี้ กิน หญ้า จุ ไหม "
 # text_en = Do you think this sheep eats much grass?"
-1	เธอ	2SG	PRON	_	_	_	_	_	_
-2	คิด	think	VERB	_	_	_	_	_	_
-3	ว่า	that	SCONJ	_	_	_	_	_	_
-4	แกะ	sheep	NOUN	_	_	_	_	_	_
-5	ตัว	CLF	NOUN	_	_	_	_	_	_
-6	นี้	this	DET	_	_	_	_	_	_
-7	กิน	eat	VERB	_	_	_	_	_	_
-8	หญ้า	grass	NOUN	_	_	_	_	_	_
-9	จุ	much	ADV	_	_	_	_	_	_
-10	ไหม	Q	PART	_	_	_	_	_	_
-11	"	"	PUNCT	_	_	_	_	_	_
+1	เธอ	2SG	PRON	_	_	2	nsubj	_	_
+2	คิด	think	VERB	_	_	0	root	_	_
+3	ว่า	that	SCONJ	_	_	7	mark	_	_
+4	แกะ	sheep	NOUN	_	_	7	nsubj	_	_
+5	ตัว	CLF	NOUN	_	_	6	clf	_	_
+6	นี้	this	DET	_	_	4	det	_	_
+7	กิน	eat	VERB	_	_	2	ccomp	_	_
+8	หญ้า	grass	NOUN	_	_	7	obj	_	_
+9	จุ	much	ADV	_	_	7	advmod	_	_
+10	ไหม	Q	PART	_	_	2	discourse	_	_
+11	"	"	PUNCT	_	_	2	punct	_	_
 
 # n109
 # text = " ทำไม หละ "
 # text_en = "Why?"
-1	"	"	PUNCT	_	_	_	_	_	_
-2	ทำไม	why	ADV	_	_	_	_	_	_
-3	หละ	EMPH	PART	_	_	_	_	_	_
-4	"	"	PUNCT	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	2	punct	_	_
+2	ทำไม	why	ADV	_	_	0	root	_	_
+3	หละ	EMPH	PART	_	_	2	discourse	_	_
+4	"	"	PUNCT	_	_	2	punct	_	_
 
 # n110
 # text = " เพราะ ว่า บ้าน ฉัน มัน แคบ นะ ซี"
 # text_en = "Because, you see, my house is very narrow."
-1	"	"	PUNCT	_	_	_	_	_	_
-2	เพราะ	because	SCONJ	_	_	_	_	_	_
-3	ว่า	that	SCONJ	_	_	_	_	_	_
-4	บ้าน	house	NOUN	_	_	_	_	_	_
-5	ฉัน	1SG	PRON	_	_	_	_	_	_
-6	มัน	it	PRON	_	_	_	_	_	_
-7	แคบ	narrow	ADJ	_	_	_	_	_	_
-8	นะ	SOFT	PART	_	_	_	_	_	_
-9	ซี	IMP	PART	_	_	_	_	_	_
-10	"	"	PUNCT	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	7	punct	_	_
+2	เพราะ	because	SCONJ	_	_	7	mark	_	_
+3	ว่า	that	SCONJ	_	_	2	fixed	_	_
+4	บ้าน	house	NOUN	_	_	7	nsubj	_	_
+5	ฉัน	1SG	PRON	_	_	4	nmod	_	_
+6	มัน	it	PRON	_	_	4	appos	_	_
+7	แคบ	narrow	ADJ	_	_	0	root	_	_
+8	นะ	SOFT	PART	_	_	7	discourse	_	_
+9	ซี	IMP	PART	_	_	7	discourse	_	_
+10	"	"	PUNCT	_	_	7	punct	_	_
 
 # n111
 # text = " คง พอ หรอก
 # text_en = "It will probably be enough, of course.
-1	"	"	PUNCT	_	_	_	_	_	_
-2	คง	probably	AUX	_	_	_	_	_	_
-3	พอ	enough	ADJ	_	_	_	_	_	_
-4	หรอก	EMPH	PART	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	3	punct	_	_
+2	คง	probably	AUX	_	_	3	aux	_	_
+3	พอ	enough	ADJ	_	_	0	root	_	_
+4	หรอก	EMPH	PART	_	_	3	advmod	_	_
 
 # n112
 # text = ฉัน ให้ แกะ เธอ ตัว เล็ก นิด เดียว "
 # text_en = I gave you a very tiny sheep."
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	ให้	give	VERB	_	_	_	_	_	_
-3	แกะ	sheep	NOUN	_	_	_	_	_	_
-4	เธอ	2SG	PRON	_	_	_	_	_	_
-5	ตัว	CLF	NOUN	_	_	_	_	_	_
-6	เล็ก	small	ADJ	_	_	_	_	_	_
-7	นิด	tiny	ADJ	_	_	_	_	_	_
-8	เดียว	alone	ADV	_	_	_	_	_	_
-9	"	_	PUNCT	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	2	nsubj	_	_
+2	ให้	give	VERB	_	_	0	root	_	_
+3	แกะ	sheep	NOUN	_	_	2	obj	_	_
+4	เธอ	2SG	PRON	_	_	2	iobj	_	_
+5	ตัว	CLF	NOUN	_	_	6	clf	_	_
+6	เล็ก	small	ADJ	_	_	3	acl	_	_
+7	นิด	tiny	ADJ	_	_	6	compound:svc	_	_
+8	เดียว	alone	ADV	_	_	7	compound	_	_
+9	"	_	PUNCT	_	_	2	punct	_	_
 
 # n113
 # text = เขา ยื่น ศรีษะ มา ใกล้ รูปวาด
 # text_en = He brought his head close to the drawing.
-1	เขา	3SG	PRON	_	_	_	_	_	_
-2	ยื่น	extend	VERB	_	_	_	_	_	_
-3	ศรีษะ	head	NOUN	_	_	_	_	_	_
-4	มา	come	AUX	_	_	_	_	_	_
-5	ใกล้	close	ADP	_	_	_	_	_	_
-6	รูปวาด	drawing	NOUN	_	_	_	_	_	_
+1	เขา	3SG	PRON	_	_	2	nsubj	_	_
+2	ยื่น	extend	VERB	_	_	0	root	_	_
+3	ศรีษะ	head	NOUN	_	_	2	obj	_	_
+4	มา	come	AUX	_	_	2	compound:svc	_	_
+5	ใกล้	close	ADP	_	_	6	case	_	_
+6	รูปวาด	drawing	NOUN	_	_	2	obl	_	_
 
 # n114
 # text = " คง ไม่ เล็ก เกิน ไป นะ …
 # text_en = "But not too small, yeah...
-1	"	"	PUNCT	_	_	_	_	_	_
-2	คง	probably	AUX	_	_	_	_	_	_
-3	ไม่	not	PART	_	_	_	_	_	_
-4	เล็ก	small	ADJ	_	_	_	_	_	_
-5	เกิน	exceeding	ADV	_	_	_	_	_	_
-6	ไป	go	AUX	_	_	_	_	_	_
-7	นะ	SOFT	PART	_	_	_	_	_	_
-8	…	...	PUNCT	_	_	_	_	_	_
+1	"	"	PUNCT	_	_	4	punct	_	_
+2	คง	probably	AUX	_	_	4	aux	_	_
+3	ไม่	not	PART	_	_	4	advmod	_	_
+4	เล็ก	small	ADJ	_	_	0	root	_	_
+5	เกิน	exceeding	ADV	_	_	4	advmod	_	_
+6	ไป	go	AUX	_	_	5	fixed	_	_
+7	นะ	SOFT	PART	_	_	4	discourse	_	_
+8	…	...	PUNCT	_	_	4	punct	_	_
 
 # n115
 # text = โอ …
 # text_en = Oh...
-1	โอ	oh	INTJ	_	_	_	_	_	_
-2	…	...	PUNCT	_	_	_	_	_	_
+1	โอ	oh	INTJ	_	_	0	root	_	_
+2	…	...	PUNCT	_	_	1	punct	_	_
 
 # n116
 # text = มัน กำลัง หลับ ด้วย "
 # text_en = It's gone to sleep.
-1	มัน	it	PRON	_	_	_	_	_	_
-2	กำลัง	PROG	AUX	_	_	_	_	_	_
-3	หลับ	sleep	VERB	_	_	_	_	_	_
-4	ด้วย	too	ADV	_	_	_	_	_	_
-5	"	"	PUNCT	_	_	_	_	_	_
+1	มัน	it	PRON	_	_	3	nsubj	_	_
+2	กำลัง	PROG	AUX	_	_	3	aux	_	_
+3	หลับ	sleep	VERB	_	_	0	root	_	_
+4	ด้วย	too	ADV	_	_	3	advmod	_	_
+5	"	"	PUNCT	_	_	3	punct	_	_
 
 # n117
 # text = ฉัน ก็ ได้ ทำ ความรู้จัก กับ เจ้า ชาย น้อย ด้วย ประการ ฉะนี้
 # text_en = And that was how I met the Little Prince.
-1	ฉัน	1SG	PRON	_	_	_	_	_	_
-2	ก็	then	ADV	_	_	_	_	_	_
-3	ได้	PST	AUX	_	_	_	_	_	_
-4	ทำ	make	VERB	_	_	_	_	_	_
-5	ความรู้จัก	acquaintance	NOUN	_	_	_	_	_	_
-6	กับ	with	ADP	_	_	_	_	_	_
-7	เจ้า	prince	NOUN	_	_	_	_	_	_
-8	ชาย	boy	NOUN	_	_	_	_	_	_
-9	น้อย	small	ADJ	_	_	_	_	_	_
-10	ด้วย	with	ADP	_	_	_	_	_	_
-11	ประการ	type	NOUN	_	_	_	_	_	_
-12	ฉะนี้	thusly	ADV	_	_	_	_	_	_
+1	ฉัน	1SG	PRON	_	_	4	nsubj	_	_
+2	ก็	then	ADV	_	_	4	advmod	_	_
+3	ได้	PST	AUX	_	_	4	aux	_	_
+4	ทำ	make	VERB	_	_	0	root	_	_
+5	ความรู้จัก	acquaintance	NOUN	_	_	4	obj	_	_
+6	กับ	with	ADP	_	_	7	case	_	_
+7	เจ้า	prince	NOUN	_	_	4	iobj	_	_
+8	ชาย	boy	NOUN	_	_	7	flat	_	_
+9	น้อย	small	ADJ	_	_	7	flat	_	_
+10	ด้วย	with	ADP	_	_	11	case	_	_
+11	ประการ	type	NOUN	_	_	4	obl	_	_
+12	ฉะนี้	thusly	ADV	_	_	11	amod	_	_
 
