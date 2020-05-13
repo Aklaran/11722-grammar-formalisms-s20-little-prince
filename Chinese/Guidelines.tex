@@ -1,0 +1,611 @@
+\documentclass[UTF8,oneside]{book}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+\usepackage{imakeidx}
+\usepackage{tikz-dependency}
+\makeindex
+
+\usepackage{float}
+
+\floatstyle{plain}
+\newfloat{tree}{thp}{tree}
+\floatname{tree}{Tree}
+
+%\usepackage[hang,flushmargin]{footmisc}
+%\usepackage[empty]{fullpage}
+%\pagestyle{plain}
+
+\setlength{\topmargin}{-15pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{460pt}
+\setlength{\voffset}{-1.5cm}
+\setlength{\textheight}{23cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\def\spc{\vspace{5ex}}
+
+\def\noun{\textsc{noun}}
+\def\particle{\textsc{part}}
+\def\case{\textsc{case}}
+\def\clf{\textsc{clf}}
+\def\adp{\textsc{adp}}
+\def\aux{\textsc{aux}}
+\def\ccomp{\textsc{ccomp}}
+\def\xcomp{\textsc{xcomp}}
+\def\discourse{\textsc{discourse}}
+\def\pron{\textsc{pron}}
+\def\det{\textsc{det}}
+\def\adj{\textsc{adj}}
+
+\begin{document}
+%\begin{center}
+\title{\textbf{Guidelines for Working with Chinese UD Treebanks}}
+\author{Language Technologies Institute, Carnegie Mellon University}
+\date{\today}
+%\vspace{3pt}
+%\large{Sean Zhang}\\
+%xiaoronz@andrew.cmu.edu
+%\end{center}
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+We hope to provide some guidelines for Chinese UD treebanking, and, for the difficult cases, describe our reasoning for our recommendations. Our guideline includes word segmentation, part-of-speech tagging, and syntactic relations. We choose to focus on the closed class words. We will refer to sentences in our parallel dataset on \textit{The Little Prince}, which can be found \href{https://github.com/Aklaran/11722-grammar-formalisms-s20-little-prince/}{here}. 
+
+\chapter{Segmentation}
+Penn Chinese Treebank has detailed guidelines on how to perform word segmentation in Chinese. 
+See \href{https://repository.upenn.edu/cgi/viewcontent.cgi?article=1038&context=ircs_reports}{The Segmentation Guidelines for the Penn Chinese
+Treebank (3.0)} \cite{segmentation}. 
+Although Penn Chinese Treebank has a different set of POS tags, the same segmentation scheme can still be used for UD. While applying these guidelines, we made the following adjustments to make them suitable for UD.
+\begin{itemize}
+\item Compound verbs: in general, a lot of verb compounds are treated as one word or ``a word with internal structure'' in the guidelines. For example, 找到, 写出, 写了出来, etc. In UD, there are syntactic relations (\textsc{compound:dir}, \textsc{compound:vo}, and \textsc{compound:vv}) designed to deal with compound verbs as separate words. Therefore, we decided to segment these compound verb phrases into separate words. 
+\end{itemize}
+
+In addition, these are some of the difficult cases.
+
+\begin{itemize}
+\item Cardinal numbers, like 第一, are one word. 
+\item 们(men2) is attached to the noun. So 大人们 is one word.
+\item Reflexive pronouns, like 他们自己, are one word. 
+\item Reduplicated verbs are one word. For example, 测试测试, 看了看.
+\end{itemize}
+
+
+\chapter{Part-of-Speech Tagging}
+
+Here we give a brief overview of the words in each part-of-speech category. Again, we only focus on the closed classes. 
+
+
+\section{PRON and DET and NUM}
+Some words can function as both \pron\ and \det. This includes:
+\begin{itemize}
+\item 这 (this), 这些 (these), 那 (that), and 那些 (those)
+\item 任何 (any) and 有些 (some)
+\item 什么 (what),  多少 (how many)
+\end{itemize}
+
+Other words in \pron\ include:
+\begin{itemize}
+\item Personal pronouns: 我 (I), 他们 (they), 你自己 (yourself)
+\item Locational pronouns: 这里 (here), 那里 (there)
+\item Interrogative pronouns: 谁 (who), 哪里 (where)
+\end{itemize}
+
+Other words in \det\ include:
+\begin{itemize}
+\item Quantifying determiners: 每 (every), 各 (each), 全(all) , etc.
+\item Interrogative determiners: 哪 (which), 哪样 (which kind)
+\end{itemize}
+
+\section{NUM}
+
+The class \textsc{num} contains all forms of cardinal numbers. On the other hand, ordinal numbers are all tagged \adj. 
+
+\section{ADP}
+
+The adpositions belong to the following three categories. A noun can have both a preposition and a postposition. 
+
+\subsection{Preposition}
+
+The common prepositions are 在 (at), 对 (towards), 和 (with), etc.
+
+\subsection{Postposition}
+
+The postpositions are words such as 上 (above), 下 (below), 中 (middle), 前 (in front), etc.
+
+\subsection{Valence markers}
+
+This class includes 把(ba3) and 被(bei4). Note that 被 can also be \aux\ in some cases.
+
+\section{AUX}
+
+According to UD documentation, the auxiliaries fall in the following three categories. 
+
+\subsection{Model auxiliaries}
+
+Some these words are: 能 (can), 会 (will), 应该(should), 有(you3) (as perfective), 没有(mei2you3) (as negative perfective). The last two can also appear as verbs.
+
+\subsection{Aspect markers}
+
+The aspect markers are 了(le5), 着(zhe5), and 过(guo4).
+
+\subsection{Copulae}
+
+The word 是(shi4) is in this category, as well as other less common copulae like 为(wei2). 
+
+\section{PART}
+
+\subsection{The three de5's}
+
+\begin{itemize}
+\item \index{de5 的}
+的(de5) always has tag \particle, regardless of how it is used. 
+\item 地(de5), used as an adverbializer, is also in \particle.
+\item Same with 得(de5), which is used in the construction of complement phrases. 
+\end{itemize}
+
+\subsection{Sentence-final Particles}
+
+Some words in this category are 的(de5), 吗(ma1), and 吧(ba5).
+
+\subsection{Other Particles}
+
+According to UD documentation, words like 等等(deng2deng3) and 所(suo3) are also tagged as \particle.
+
+\section{CCONJ and SCONJ}
+
+\begin{itemize}
+\item Coordinating conjunctions are words such as 和 (and), 并且 (in addition), 或 (or), 或者 (or), 但 (but), 但是 (but/however). 
+
+Note that words such as 和 can also function as adpositions.
+
+\item Subordinating conjunctions are words such as 如果 (if), 虽然 (although), and 来 (in order to). 
+\end{itemize}
+
+
+\chapter{Syntactic Relations}
+
+\section{Classifiers}
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+一  \& 条  \& 蟒蛇 \\
+NUM \& CLF \& NOUN \\
+one \& \textsc{clf} \& boa \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{2}{clf}
+\depedge{2}{1}{nummod}
+\end{dependency}
+\caption{classifier, from \texttt{sent\_id=1\_2}}
+\end{tree}
+
+The number can be replaced by a determiner, and the structure remains the same. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+那  \& 副  \& 画 \\
+DET \& CLF \& NOUN \\
+that \& \textsc{clf} \& painting \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{2}{clf}
+\depedge{2}{1}{det}
+\end{dependency}
+\caption{classifier with determiner, from \texttt{sent\_id=1\_3}}
+\end{tree}
+
+\newpage
+\section{的(de5)} \index{de5 的}
+的 has the following four different uses.
+
+\subsection{Noun + 的 + Noun}
+Here 的 is treated as the case marker for the first noun. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+画  \& 的  \& 摹本 \\
+NOUN \& PART \& NOUN \\
+painting \& DE \& copy \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{1}{nmod}
+\depedge{1}{2}{case}
+\end{dependency}
+\caption{noun + 的 + noun, from \texttt{sent\_id=1\_3}}
+\end{tree}
+
+\subsection{Adjective + 的 + Noun}
+Here the noun is the head, and 的 depends on the adjective with label \textsc{mark}. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+真实  \& 的  \& 故事 \\
+ADJ \& PART \& NOUN \\
+real \& DE \& story \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{1}{amod}
+\depedge{1}{2}{mark}
+\end{dependency}
+\caption{adjective + 的 + noun, from \texttt{sent\_id=1\_1}}
+\end{tree}
+
+\subsection{Adjective Clause + 的 + Noun}
+The structure here is almost the same as in the previous case.
+
+\newpage
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+描写  \& 原始  \& 森林 \& 的 \& 书 \\
+VERB \& NOUN \& NOUN \& PART \& NOUN \\
+depict \& primitive \& forest \& DE \& book \\
+\end{deptext}
+\deproot{5}{root}
+\depedge{5}{1}{acl}
+\depedge{1}{4}{mark}
+\depedge{1}{3}{obj}
+\depedge{3}{2}{nmod}
+\end{dependency}
+\caption{acl + 的 + noun, from \texttt{sent\_id=1\_1}}
+\end{tree}
+
+When used as a subject:
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+画  \& 的  \& 是 \& ... \\
+VERB \& PART \& AUX \& ... \\
+depict \& DE \& is \& ... \\
+\end{deptext}
+\deproot{4}{root}
+\depedge{4}{3}{cop}
+\depedge{4}{1}{csubj}
+\depedge{1}{2}{mark}
+\end{dependency}
+\caption{acl + 的 as subject, from \texttt{sent\_id=1\_2}}
+\end{tree}
+
+\subsection{的 at the end of the sentence}
+
+At the end of the sentence, 的 has label \discourse. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+它  \& 是  \& 这样 \& 的 \\
+PRON \& AUX \& PRON \& PART \\
+it \& is \& like this \& DE \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{2}{cop}
+\depedge{3}{1}{nsubj}
+\depedge{3}{4}{discourse}
+\end{dependency}
+\caption{end of the sentence 的, from \texttt{sent\_id=1\_2}}
+\end{tree}
+
+\newpage
+\section{地(de5)}
+
+地(de5) is used to convert an adjective into an adverb. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+仔细  \& 地  \& 观察 \\
+ADJ \& PART \& VERB \\
+careful \& DE \& observe \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{1}{advmod}
+\depedge{1}{2}{mark}
+\end{dependency}
+\caption{adjective + 地, from \texttt{sent\_id=1\_1}}
+\end{tree}
+
+\newpage
+\section{得(de5)}
+
+得(de5) is used in two special construction called ``descriptive complements'' and ``complements of extent''. They are treated using the same label \textsc{compound:ext}.
+
+In the first one, an adjective placed after a verb or an adjective to add a description to the verb or adjective. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+想  \& 得 \& 很 \& 多 \\
+VERB \& PART \& ADV \& ADJ \\
+think \& DE \& very \& much \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:ext}
+\depedge{1}{4}{xcomp}
+\depedge{4}{3}{advmod}
+\end{dependency}
+\caption{verb + 得, from \texttt{sent\_id=1\_6}}
+\end{tree}
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+孤独  \& 得 \& 多 \\
+ADJ \& PART \& ADJ \\
+lonely \& DE \& much \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:ext}
+\depedge{1}{3}{xcomp}
+\end{dependency}
+\caption{adjective + 得, from \texttt{sent\_id=2\_7}}
+\end{tree}
+
+In the second case, a clause occurs after an adjective to describe the extent of the adjective. One of \xcomp\ or \ccomp\ should be used. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+孤独  \& 得 \& 想  \& 哭 \\
+ADJ \& PART \& AUX \& VERB \\
+lonely \& DE \& want to \& cry \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:ext}
+\depedge{1}{4}{xcomp}
+\depedge{4}{3}{aux}
+\end{dependency}
+\caption{adjective + 得 + extent, modified from \texttt{sent\_id=2\_7}}
+\end{tree}
+
+We note that the PUD treebank does something different. We choose to use this strategy in the UD documentation. 
+
+\newpage
+\section{Adpositions: 在(zai4), 对(dui4), 中(zhong1), 上(shang4) etc.}
+
+A noun can take a preposition or a postposition, or both. In all cases, the adposition has dependency relation \textsc{case}. An example is:
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+在  \& ... \& 书 \& 中 \\
+ADP \& ... \& NOUN \& ADP \\
+at \& ... \& book \& inside \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{1}{case}
+\depedge{3}{2}{}
+\depedge{3}{4}{case}
+\end{dependency}
+\caption{adpositions, from \texttt{sent\_id=1\_1}}
+\end{tree}
+
+We note that currently in the GSD treebank, postpositions are labeled with \textsc{acl}, which is mostly likely a mistake during the automatic conversion. 
+
+\newpage
+\section{Aspect markers: 了(le5)， 着(zhe5)， 过(guo4)}
+
+These words are given the part-of-speech tag of \aux, and the dependency relation is also \aux. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+看到 \& 了  \& ... \& 插画 \\
+VERB \& AUX \&  ... \& NOUN \\
+see \& LE \& ... \& illustration \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{aux}
+\depedge{1}{4}{obj}
+\depedge{4}{3}{}
+\end{dependency}
+\caption{aspect marker, from \texttt{sent\_id=1\_1}}
+\end{tree}
+
+We note that currently in the GSD treebank, aspect markers are labeled with \textsc{case}, which is mostly likely a mistake during the automatic conversion. 
+
+\newpage
+\section{Modal verbs: 能(neng2)， 会(hui4)， 没有(mei2you3), etc.}
+
+These words are treated as \aux\ in the UD, and the dependency relation is also \aux.  
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+不 \& 能  \& 再 \& 动弹 \\
+ADV \& AUX \&  ADV \& VERB \\
+not \& can \& again \& move \\
+\end{deptext}
+\deproot{4}{root}
+\depedge{2}{1}{advmod}
+\depedge{4}{2}{aux}
+\depedge{4}{3}{advmod}
+\end{dependency}
+\caption{model verb, from \texttt{sent\_id=1\_4}}
+\end{tree}
+
+Note that by UD documentation, 不 is allowed to be the dependent of an \aux.
+
+\newpage
+\section{把(ba3)}
+
+把 puts the object of a verb in front of the verb. UD has a special label for this construction. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+把 \& ... \&  猎获物  \& ... \& 吞下 \\
+ADP \& ... \& NOUN \&  ... \& VERB \\
+BA \& ... \& prey \& ... \& swallow \\
+\end{deptext}
+\deproot{5}{root}
+\depedge{5}{3}{obl:patient}
+\depedge{3}{1}{case}
+\depedge{3}{2}{}
+\depedge{5}{4}{}
+\end{dependency}
+\caption{把, from \texttt{sent\_id=1\_4}}
+\end{tree}
+
+\newpage
+\section{被(bei4)}
+
+被 is a passive construction. It has a ``long'' version and a ``short'' version. In the long version, the agent is present, and it is very similar to the 把 case. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+猎获物 \& 被 \& 它们 \& 吞下 \\
+NOUN \& ADP \& PRON \& VERB \\
+prey \& BEI \& them \& swallow \\
+\end{deptext}
+\deproot{4}{root}
+\depedge{4}{3}{obl:agent}
+\depedge{3}{2}{case}
+\depedge{4}{1}{nsubj:pass}
+\end{dependency}
+\caption{long version of 被, from \texttt{sent\_id=1\_4}, converted into passive}
+\end{tree}
+
+In the short version, the agent is absent, and 被 is consider an \aux\ of the verb. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+猎获物 \& 被 \& 吞下 \\
+NOUN \& AUX \& VERB \\
+prey \& BEI \& swallow \\
+\end{deptext}
+\deproot{3}{root}
+\depedge{3}{2}{aux}
+\depedge{3}{1}{nsubj:pass}
+\end{dependency}
+\caption{short version of 被, from \texttt{sent\_id=1\_4}, converted into passive}
+\end{tree}
+
+\newpage
+\section{Compound verbs}
+
+In UD, \textsc{compound} is used for compound nouns. For compound verbs, the subtypes \textsc{compound:dir}, \textsc{compound:vo}, and \textsc{compound:vv} are used. In all cases, this label connects two words that can be considered as one verb. 
+
+\subsection{Verb + direction}
+
+\textsc{compound:dir} connects a verb to a direction. For example, 画出 = draw + out = finish drawing. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+画 \& 出 \& 了 \& ... \& 图画 \\
+VERB \& VERB \& AUX \& ... \& NOUN \\
+draw \& out \& LE \& ... \& picture \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:dir}
+\depedge{1}{3}{aux}
+\depedge{1}{5}{obj}
+\depedge{5}{4}{}
+\end{dependency}
+\caption{\textsc{compound:dir}, from \texttt{sent\_id=1\_6}}
+\end{tree}
+
+\subsection{Verb + object}
+
+From UD documentation, \textsc{compound:vo} is for ``verb-object compounds where the combination is semantically one unit but syntactically separate''. For example, 说话 = say + words = say.
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+迷 \& 了 \& 路 \\
+VERB \& AUX \& NOUN\\
+lose \& LE \& way \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{3}{compound:vo}
+\depedge{1}{2}{aux}
+\end{dependency}
+\caption{\textsc{compound:vo}, from \texttt{sent\_id=2\_23}}
+\label{tree:compound:vo}
+\end{tree}
+
+\subsection{Verb + verb}
+
+\textsc{compound:vv} is used when (1) the second verb (or occasionally adjective) describes the result of the first verb, or (2) when the second verb is 着(zhao2), 到(dao4), 见(jian4), 完(wan2), or 过(guo4). Note that these are different from the auxiliary 着(zhe5) and 过(guo4). 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+飞 \& 到 \& 过 \\
+VERB \& VERB \& AUX \\
+fly \& reach \& GUO \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:vv}
+\depedge{1}{3}{aux}
+\end{dependency}
+\caption{\textsc{compound:vv}, from \texttt{sent\_id=1\_21}}
+\end{tree}
+
+\subsection{Other properties of compound verbs}
+
+In all cases, the subjects, objects, etc.\ are dependents of the first verb. 
+
+In \textsc{compound:dir} and \textsc{compound:vo}, the auxiliaries can sometimes go between the two parts (as in tree \ref{tree:compound:vo}). In \textsc{compound:vv}, only 不 can go between the two parts. 
+
+Multiple compounds can happen at the same time. 
+
+\begin{tree}[h]
+\centering
+\begin{dependency}[theme=simple]
+\begin{deptext}[column sep=.5cm, row sep=.5ex]
+说 \& 出 \& 话 \& 来  \\
+VERB \& VERB \& NOUN \& VERB  \\
+say \& out \& words \& to here \\
+\end{deptext}
+\deproot{1}{root}
+\depedge{1}{2}{compound:dir}
+\depedge{1}{3}{compound:vo}
+\depedge{1}{4}{compound:dir}
+\end{dependency}
+\caption{multiple compounds, from \texttt{sent\_id=2\_25}}
+\end{tree}
+
+\begin{thebibliography}{9}
+\bibitem{segmentation} 
+Xia, Fei, \emph{The Segmentation Guidelines for the Penn Chinese Treebank (3.0)} (2000). IRCS Technical Reports Series. 37.
+\url{http://repository.upenn.edu/ircs_reports/37}.
+\end{thebibliography}
+
+\printindex
+
+\end{document}
