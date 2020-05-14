@@ -1,7 +1,7 @@
 # sent_id = 1_1, 1_2
 # text = 当我还只有六岁的时候，在一本描写原始森林的名叫《真实的故事》的书中，看到了一副精彩的插画，画的是一条蟒蛇正在吞食一只大野兽。
-# text_segmented = 当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看到 了 一 副 精彩 的 插画 ， 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
-# comment = 当...时候 is treated as an acl of 时候(time). Since the phrase is a noun, it is an obl of the main clause, and 当 is treated as an adposition. For the last part, we parse it as "what is drawn is [a boa eats a giant beast]". To avoid "eats" having 2 subjects, we treat the second "is" as a verb. 
+# text_segmented = 当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看 到 了 一 副 精彩 的 插画 ， 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
+# comment = 当...时候 is treated as an acl of 时候(time). Since the phrase is a noun, it is an obl of the main clause, and 当 is treated as an adposition. For the last part, we parse it as "what is drawn is [a boa eats a giant beast]". To avoid "eats" having 2 subjects, we treat the second "is" as a verb. 是 --> 吞食 with label parataxis. 
 1	当	当	ADP	_	_	9	case	_	when
 2	我	我	PRON	_	_	5	nsubj	_	I
 3	还	还	ADV	_	_	5	advmod	_	yet
@@ -46,7 +46,7 @@
 42	条	条	NOUN	_	_	43	clf	_	CLF
 43	蟒蛇	蟒蛇	NOUN	_	_	45	nsubj	_	boa
 44	正在	正在	ADV	_	_	45	advmod	_	PROG
-45	吞食	吞食	VERB	_	_	40	obj	_	swallow
+45	吞食	吞食	VERB	_	_	40	parataxis	_	swallow
 46	一	一	NUM	_	_	47	nummod	_	one
 47	只	只	NOUN	_	_	49	clf	_	CLF
 48	大	大	ADJ	_	_	49	amod	_	big
@@ -70,13 +70,13 @@
 # sent_id = 1_4, 1_5
 # text = 这本书中写道：“这些蟒蛇把它们的猎获物不加咀嚼地囫囵吞下，尔后就不能再动弹了；它们就在长长的六个月的睡眠中消化这些食物。”
 # text_segmented = 这 本 书 中 写 道 ： `` 这些 蟒蛇 把 它们 的 猎获物 不 加 咀嚼 地 囫囵 吞下 ， 尔后 就 不 能 再 动弹 了 ； 它们 就 在 长长 的 六 个 月 的 睡眠 中 消化 这些 食物 。 '' 
-# comment = 不加咀嚼 is segmented as three words, since it's not exactly an idiom. 不 negates the auxiliary and not the main verb, as per UD documentation. 
+# comment = 不加咀嚼 is segmented as three words, since it's not exactly an idiom. 不 negates the auxiliary and not the main verb, as per UD documentation. 道 --> 吞下 with label parataxis since this is a direct quote. 
 1	这	这	DET	_	_	2	det	_	this
 2	本	本	NOUN	_	_	3	clf	_	clf
 3	书	书	NOUN	_	_	5	obl	_	book
 4	中	中	ADP	_	_	3	case	_	inside
 5	写	写	VERB	_	_	0	root	_	write
-6	道	道	VERB	_	_	5	compound:vv	_	comp
+6	道	道	VERB	_	_	5	xcomp	_	saying
 7	：	：	PUNCT	_	_	6	punct	_	:
 8	``	``	PUNCT	_	_	20	punct	_	"
 9	这些	这些	DET	_	_	10	det	_	these
@@ -84,7 +84,7 @@
 11	把	把	ADP	_	_	14	case	_	BA
 12	它们	它们	PRON	_	_	14	nmod	_	they
 13	的	的	PART	_	_	12	case:dec	_	DE
-14	猎获物	猎获物	NOUN	_	_	20	obj	_	prey
+14	猎获物	猎获物	NOUN	_	_	20	obl:patient	_	prey
 15	不	不	ADV	_	_	16	advmod	_	no
 16	加	加	VERB	_	_	20	advcl	_	add
 17	咀嚼	咀嚼	NOUN	_	_	16	obj	_	chew
@@ -120,7 +120,7 @@
 # sent_id = 1_6
 # text = 当时，我对丛林中的奇遇想得很多，于是，我也用彩色铅笔画出了我的第一副图画。
 # text_segmented = 当时 ， 我 对 丛林 中 的 奇遇 想 得 很 多 ， 于是 ， 我 也 用 彩色 铅笔 画 出 了 我 的 第一 副 图画 。
-# comment = 用 is treated as a verb. 于是 is treated as an adverb, not an SCONJ. 
+# comment = 想得很多 is "descriptive complement". 用 is treated as a verb. 于是 is treated as an adverb, not an SCONJ. 
 1	当时	当时	ADV	_	_	9	advmod	_	at_that_time
 2	，	，	PUNCT	_	_	9	punct	_	,
 3	我	我	PRON	_	_	9	nsubj	_	I
@@ -146,7 +146,7 @@
 23	了	了	PART	_	_	21	aux	_	LE
 24	我	我	PRON	_	_	28	nmod	_	I
 25	的	的	PART	_	_	24	case:dec	_	DE
-26	第一	第一	NUM	_	_	27	nummod	_	first
+26	第一	第一	ADJ	_	_	27	amod	_	first
 27	副	副	NOUN	_	_	28	clf	_	CLF
 28	图画	图画	NOUN	_	_	21	obj	_	painting
 29	。	。	PUNCT	_	_	21	punct	_	.
@@ -156,7 +156,7 @@
 # text_segmented = 我 的 第一 号 作品 。
 1	我	我	PRON	_	_	5	nmod	_	I
 2	的	的	PART	_	_	1	case	_	DE
-3	第一	第一	NUM	_	_	4	nummod	_	first
+3	第一	第一	ADJ	_	_	4	amod	_	first
 4	号	号	NOUN	_	_	5	clf	_	CLF
 5	作品	作品	NOUN	_	_	0	root	_	work
 6	。	。	PUNCT	_	_	5	punct	_	.
@@ -180,7 +180,7 @@
 4	的	的	PART	_	_	3	case	_	DE
 5	这	这	DET	_	_	6	det	_	this
 6	副	副	NOUN	_	_	7	clf	_	CLF
-7	杰作	杰作	NOUN	_	_	8	obj	_	masterpiece
+7	杰作	杰作	NOUN	_	_	8	obl:patient	_	masterpiece
 8	拿	拿	VERB	_	_	0	root	_	take
 9	给	给	ADP	_	_	10	case	_	to
 10	大人	大人	NOUN	_	_	8	obl	_	adults
@@ -201,6 +201,7 @@
 # sent_id = 1_10
 # text = 他们回答我说：“一顶帽子有什么可怕的？”
 # text_segmented = 他们 回答 我 说 ： “ 一 顶 帽子 有 什么 可怕 的 ？ ”
+# comment = 什么可怕 is treated as a ccomp for 有.
 1	他们	他们	PRON	_	_	2	nsubj	_	they
 2	回答	回答	VERB	_	_	0	root	_	answer
 3	我	我	PRON	_	_	2	obj	_	me
@@ -211,8 +212,8 @@
 8	顶	顶	NOUN	_	_	9	clf	_	CLF
 9	帽子	帽子	NOUN	_	_	10	nsubj	_	hat
 10	有	有	VERB	_	_	4	parataxis	_	has
-11	什么	什么	DET	_	_	10	obj	_	what
-12	可怕	可怕	ADJ	_	_	11	amod	_	scary
+11	什么	什么	PRON	_	_	12	nsubj	_	what
+12	可怕	可怕	ADJ	_	_	10	ccomp	_	scary
 13	的	的	PART	_	_	10	discourse	_	DE
 14	？	？	PUNCT	_	_	10	punct	_	?
 15	”	”	PUNCT	_	_	10	punct	_	"
@@ -252,7 +253,7 @@
 6	肚子	肚子	NOUN	_	_	9	nmod	_	stomach
 7	里	里	ADP	_	_	6	case	_	inside
 8	的	的	PART	_	_	6	case	_	DE
-9	情况	情况	NOUN	_	_	10	obj	_	situation
+9	情况	情况	NOUN	_	_	10	obl:patient	_	situation
 10	画	画	VERB	_	_	0	root	_	draw
 11	了	了	AUX	_	_	10	aux	_	LE
 12	出来	出来	VERB	_	_	10	compound:dir	_	out
@@ -280,7 +281,7 @@
 # text_segmented = 我 的 第二 号 作品 是 这样 的 ：
 1	我	我	PRON	_	_	5	nmod	_	I
 2	的	的	PART	_	_	1	case	_	DE
-3	第二	第二	NUM	_	_	4	nummod	_	second
+3	第二	第二	ADJ	_	_	4	amod	_	second
 4	号	号	NOUN	_	_	5	clf	_	CLF
 5	作品	作品	NOUN	_	_	7	nsubj	_	work
 6	是	是	AUX	_	_	7	cop	_	is
@@ -295,7 +296,7 @@
 1	大人们	大人们	NOUN	_	_	2	nsubj	_	adults
 2	劝	劝	VERB	_	_	0	root	_	advise
 3	我	我	PRON	_	_	2	obj	_	me
-4	把	把	PART	_	_	20	case	_	BA
+4	把	把	ADP	_	_	20	case	_	BA
 5	这些	这些	DET	_	_	20	det	_	these
 6	画	画	VERB	_	_	20	acl	_	draw
 7	着	着	AUX	_	_	6	aux	_	ZHE
@@ -303,7 +304,7 @@
 9	着	着	AUX	_	_	8	aux	_	ZHE
 10	肚皮	肚皮	NOUN	_	_	8	obj	_	belly
 11	的	的	PART	_	_	8	mark	_	DE
-12	，	，	PUNCT	_	_	8	punct	_	,
+12	，	，	PUNCT	_	_	14	punct	_	,
 13	或	或	CONJ	_	_	14	cc	_	or
 14	闭	闭	VERB	_	_	8	conj	_	close
 15	上	上	VERB	_	_	14	compound:dir	_	up
@@ -311,23 +312,23 @@
 17	的	的	PART	_	_	14	mark	_	DE
 18	蟒蛇	蟒蛇	NOUN	_	_	6	obj	_	boa
 19	的	的	PART	_	_	6	mark	_	DE
-20	图画	图画	NOUN	_	_	21	obj	_	painting
+20	图画	图画	NOUN	_	_	21	obl:patient	_	painting
 21	放	放	VERB	_	_	3	xcomp	_	put
 22	在	在	VERB	_	_	23	case	_	at
 23	一边	一边	NOUN	_	_	21	obl	_	side
 24	，	，	PUNCT	_	_	21	punct	_	,
 25	还是	还是	ADV	_	_	28	advmod	_	rather
-26	把	把	PART	_	_	27	case	_	BA
-27	兴趣	兴趣	NOUN	_	_	28	obj	_	interest
+26	把	把	ADP	_	_	27	case	_	BA
+27	兴趣	兴趣	NOUN	_	_	28	obl:patient	_	interest
 28	放	放	VERB	_	_	21	parataxis	_	put
 29	在	在	VERB	_	_	30	case	_	at
 30	地理	地理	NOUN	_	_	28	obl	_	geography
-31	、	、	PUNCT	_	_	30	punct	_	,
+31	、	、	PUNCT	_	_	32	punct	_	,
 32	历史	历史	NOUN	_	_	30	conj	_	history
-33	、	、	PUNCT	_	_	32	punct	_	,
-34	算术	算术	NOUN	_	_	32	conj	_	arithmetic
-35	、	、	PUNCT	_	_	34	punct	_	,
-36	语法	语法	NOUN	_	_	34	conj	_	grammar
+33	、	、	PUNCT	_	_	34	punct	_	,
+34	算术	算术	NOUN	_	_	30	conj	_	arithmetic
+35	、	、	PUNCT	_	_	36	punct	_	,
+36	语法	语法	NOUN	_	_	30	conj	_	grammar
 37	上	上	ADP	_	_	30	case	_	on
 38	。	。	PUNCT	_	_	30	punct	_	.
 
@@ -360,13 +361,13 @@
 # sent_id = 1_18
 # text = 我的第一号、第二号作品的不成功，使我泄了气。
 # text_segmented = 我 的 第一 号 、 第二 号 作品 的 不成功 ， 使 我 泄 了 气 。
-# comment = 泄了气 is a compound verb, where the second part is the object. 
+# comment = 泄了气 is a compound verb, where the second part is the object. 不成功 is the subject, despite the comma between it and the verb. 
 1	我	我	PRON	_	_	8	nmod	_	I
 2	的	的	PART	_	_	1	case	_	DE
-3	第一	第一	NUM	_	_	4	nummod	_	first
+3	第一	第一	ADJ	_	_	4	amod	_	first
 4	号	号	NOUN	_	_	8	clf	_	CLF
 5	、	、	PUNCT	_	_	4	punct	_	,
-6	第二	第二	NUM	_	_	7	nummod	_	second
+6	第二	第二	ADJ	_	_	7	amod	_	second
 7	号	号	NOUN	_	_	4	conj	_	CLF
 8	作品	作品	NOUN	_	_	10	nmod	_	work
 9	的	的	PART	_	_	8	case	_	DE
@@ -382,13 +383,13 @@
 # sent_id = 1_19p
 # text = 这些大人们，靠他们自己什么也弄不懂，还得老是不断地给他们作解释。
 # text_segmented = 这些 大人 们 ， 靠 他们 自己 什么 也 弄 不 懂 ， 还得 老是 不断 地 给 他们 作 解释 。
-# comment = 弄不懂 is a verb compound. We treat 给 as a preposition instead of a verb. 
+# comment = 弄不懂 is a verb compound. 什么 is the object that is moved to the front, so the label is dislocated. We treat 给 as a preposition instead of a verb. 
 1	这些	这些	DET	_	_	2	det	_	these
 2	大人们	大人们	NOUN	_	_	8	nsubj	_	adults
 3	，	，	PUNCT	_	_	2	punct	_	,
 4	靠	靠	ADP	_	_	5	case	_	depend_on
 5	他们自己	他们自己	PRON	_	_	8	obl	_	themselves
-6	什么	什么	PRON	_	_	8	obj	_	what
+6	什么	什么	PRON	_	_	8	dislocated	_	what
 7	也	也	ADV	_	_	8	advmod	_	also
 8	弄	弄	VERB	_	_	0	root	_	{}
 9	不	不	ADV	_	_	8	advmod	_	not
@@ -417,7 +418,7 @@
 # sent_id = 1_20,1_21
 # text = 后来，我只好选择了另外一个职业，我学会了开飞机，世界各地差不多都飞到过。
 # text_segmented = 后来 ， 我 只好 选择 了 另外 一 个 职业 ， 我 学会 了 开 飞机 ， 世界 各地 差不多 都 飞 到 过 。
-# comment = 飞到 is a compound verb. 过 is an aspect marker. 世界各地 is the object, which has been moved to the front because of 都.
+# comment = 飞到 is a compound verb. 过 is an aspect marker. 世界各地 is the object, which has been moved to the front because of 都. Hence, it is labeled dislocated. 
 1	后来	后来	ADV	_	_	5	advmod	_	afterwards
 2	，	，	PUNCT	_	_	1	punct	_	,
 3	我	我	PRON	_	_	5	nsubj	_	I
@@ -436,7 +437,7 @@
 16	飞机	飞机	NOUN	_	_	15	obj	_	plane
 17	，	，	PUNCT	_	_	13	punct	_	,
 18	世界	世界	NOUN	_	_	19	compound	_	world
-19	各地	各地	NOUN	_	_	22	obj	_	every_place
+19	各地	各地	NOUN	_	_	22	dislocated	_	every_place
 20	差不多	差不多	ADV	_	_	21	advmod	_	almost
 21	都	都	ADV	_	_	22	advmod	_	all
 22	飞	飞	VERB	_	_	13	parataxis	_	fly
@@ -506,7 +507,7 @@
 11	许多	许多	ADJ	_	_	14	amod	_	many
 12	严肃	严肃	ADJ	_	_	14	amod	_	serious
 13	的	的	PART	_	_	12	mark	_	DE
-14	人	人	NOUN	_	_	15	advcl	_	people
+14	人	人	NOUN	_	_	15	obl	_	people
 15	有	有	VERB	_	_	0	root	_	have
 16	过	过	AUX	_	_	15	aux	_	GUO
 17	很	很	ADV	_	_	18	advmod	_	very
@@ -582,7 +583,7 @@
 20	的	的	PART	_	_	18	mark	_	DE
 21	我	我	PRON	_	_	25	nmod	_	I
 22	那	那	CONJ	_	_	25	det	_	that
-23	第一	第一	NUM	_	_	24	nummod	_	first
+23	第一	第一	ADJ	_	_	24	amod	_	first
 24	号	号	NOUN	_	_	25	clf	_	CLF
 25	作品	作品	NOUN	_	_	16	obj	_	work
 26	来	来	SCONJ	_	_	27	mark	_	to
@@ -628,7 +629,7 @@
 # sent_id = 1_32
 # text = 我就不和他谈巨蟒呀，原始森林呀，或者星星之类的事。
 # text_segmented = 我 就 不 和 他 谈 巨蟒 呀 ， 原始 森林 呀 ， 或者 星星 之类 的 事 。
-# comment = I did not find examples of marking comma as cc in the PUD treebank. The UD documentation also did not mention it. We treat 之类 as an adposition. 
+# comment = It seems that commas are always punct. We treat 之类 as an adposition. 
 1	我	我	PRON	_	_	6	nsubj	_	I
 2	就	就	ADV	_	_	6	advmod	_	just
 3	不	不	ADV	_	_	6	advmod	_	not
@@ -637,15 +638,15 @@
 6	谈	谈	VERB	_	_	0	root	_	talk_about
 7	巨蟒	巨蟒	NOUN	_	_	18	nmod	_	boa
 8	呀	呀	PART	_	_	7	discourse	_	PART
-9	，	，	PUNCT	_	_	7	punct	_	,
+9	，	，	PUNCT	_	_	11	punct	_	,
 10	原始	原始	NOUN	_	_	11	nmod	_	primitive
 11	森林	森林	NOUN	_	_	7	conj	_	forest
 12	呀	呀	PART	_	_	11	discourse	_	PART
-13	，	，	PUNCT	_	_	11	punct	_	,
+13	，	，	PUNCT	_	_	15	punct	_	,
 14	或者	或者	CONJ	_	_	15	cc	_	or
 15	星星	星星	NOUN	_	_	7	conj	_	stars
 16	之类	之类	ADP	_	_	15	case	_	like_that
-17	的	的	PART	_	_	7	mark	_	DE
+17	的	的	PART	_	_	7	case	_	DE
 18	事	事	NOUN	_	_	6	obj	_	thing
 19	。	。	PUNCT	_	_	6	punct	_	.
 
@@ -665,13 +666,13 @@
 11	些	些	DET	_	_	12	det	_	some
 12	桥牌	桥牌	NOUN	_	_	10	obj	_	bridge
 13	呀	呀	PART	_	_	12	discourse	_	PART
-14	，	，	PUNCT	_	_	12	punct	_	,
+14	，	，	PUNCT	_	_	15	punct	_	,
 15	高尔夫球	高尔夫球	NOUN	_	_	12	conj	_	golf
 16	呀	呀	PART	_	_	15	discourse	_	PART
-17	，	，	PUNCT	_	_	15	punct	_	,
+17	，	，	PUNCT	_	_	18	punct	_	,
 18	政治	政治	NOUN	_	_	12	conj	_	politics
 19	呀	呀	PART	_	_	18	discourse	_	PART
-20	，	，	PUNCT	_	_	18	punct	_	,
+20	，	，	PUNCT	_	_	21	punct	_	,
 21	领带	领带	NOUN	_	_	12	conj	_	necktie
 22	呀	呀	PART	_	_	21	discourse	_	PART
 23	这些	这些	PRON	_	_	21	appos	_	these
@@ -680,7 +681,7 @@
 # sent_id = 1_35
 # text = 于是大人们就十分高兴能认识我这样一个通情达理的人。
 # text_segmented = 于是 大人 们 就 十分 高兴 能 认识 我 这样 一 个 通情达理 的 人 。
-# comment = We treat 我这样 (like me) as a compound of two pronouns. 
+# comment = We treat 于是 as an adverb here with label advmod. We treat 我这样 (like me) as a compound of two pronouns. 
 1	于是	于是	ADV	_	_	5	advmod	_	so
 2	大人们	大人们	NOUN	_	_	5	nsubj	_	adults
 3	就	就	ADV	_	_	5	advmod	_	just
@@ -700,7 +701,7 @@
 # sent_id = 2_1
 # text = 我就这样孤独地生活着，没有一个能真正谈得来的人，一直到六年前在撒哈拉沙漠上发生了那次故障。
 # text_segmented = 我 就 这样 孤独 地 生活 着 ， 没有 一 个 能 真正 谈 得 来 的 人 ， 一直 到 六 年 前 在 撒哈拉 沙漠 上 发生 了 那 次 故障 。
-# comment = 谈得来 1 word
+# comment = 谈得来 is "descriptive complement". 发生(happen) is a tricky case. It can take a subject (Something happened to me), or an object (?) (at ..., happened something). Here we treat 故障 as an object, which is consistent with the PUD treebank. 
 1	我	我	PRON	_	_	6	nsubj	_	I
 2	就	就	ADV	_	_	6	advmod	_	just
 3	这样	这样	ADV	_	_	6	advmod	_	like_this
@@ -715,19 +716,19 @@
 12	能	能	AUX	_	_	14	aux	_	can
 13	真正	真正	ADV	_	_	14	advmod	_	really
 14	谈	谈	VERB	_	_	18	acl	_	talk
-15	得	得	PART	_	_	16	mark	_	DE
-16	来	来	ADJ	_	_	14	advmod	_	well
+15	得	得	PART	_	_	14	compound:ext	_	DE
+16	来	来	ADJ	_	_	14	xcomp	_	well
 17	的	的	PART	_	_	14	mark	_	DE
 18	人	人	NOUN	_	_	9	obj	_	person
 19	，	，	PUNCT	_	_	9	punct	_	,
 20	一直	一直	ADV	_	_	21	advmod	_	until
 21	到	到	ADP	_	_	23	case	_	at
 22	六	六	NUM	_	_	23	nummod	_	six
-23	年	年	NOUN	_	_	29	advcl	_	years
+23	年	年	NOUN	_	_	29	obl	_	years
 24	前	前	ADP	_	_	23	case	_	ago
 25	在	在	ADP	_	_	27	case	_	at
 26	撒哈拉	撒哈拉	NOUN	_	_	27	compound	_	Sahara
-27	沙漠	沙漠	NOUN	_	_	29	advcl	_	desert
+27	沙漠	沙漠	NOUN	_	_	29	obl	_	desert
 28	上	上	ADP	_	_	27	case	_	on
 29	发生	发生	VERB	_	_	9	parataxis	_	happen
 30	了	了	AUX	_	_	29	aux	_	LE
@@ -739,14 +740,15 @@
 # sent_id = 2_2
 # text = 我的发动机里有个东西损坏了。
 # text_segmented = 我 的 发动机 里 有 个 东西 损坏 了 。
+# comment = We parse the sentence as: has [something broke LE]. 有 has no subject here, which also happens in the PUD treebank.
 1	我	我	PRON	_	_	3	nmod	_	I
 2	的	的	PART	_	_	1	case	_	DE
-3	发动机	发动机	NOUN	_	_	5	csubj	_	motor
+3	发动机	发动机	NOUN	_	_	5	obl	_	motor
 4	里	里	ADP	_	_	3	case	_	inside
 5	有	有	VERB	_	_	0	root	_	have
 6	个	个	NOUN	_	_	7	clf	_	CLF
-7	东西	东西	NOUN	_	_	5	obj	_	thing
-8	损坏	损坏	VERB	_	_	7	xcomp	_	damaged
+7	东西	东西	NOUN	_	_	8	nsubj	_	thing
+8	损坏	损坏	VERB	_	_	5	ccomp	_	damaged
 9	了	了	AUX	_	_	8	aux	_	LE
 10	。	。	PUNCT	_	_	5	punct	_	.
 
@@ -771,19 +773,20 @@
 16	独自	独自	ADV	_	_	17	advmod	_	alone
 17	完成	完成	VERB	_	_	15	xcomp	_	finish
 18	这	这	DET	_	_	19	det	_	this
-19	个	个	NOUN	_	_	22	clf	_	CLF
-20	困难	困难	ADJ	_	_	22	acl	_	difficult
+19	个	个	NOUN	_	_	23	clf	_	CLF
+20	困难	困难	ADJ	_	_	23	amod	_	difficult
 21	的	的	PART	_	_	20	mark	_	DE
-22	维修	维修	NOUN	_	_	23	nmod	_	repair
+22	维修	维修	NOUN	_	_	23	compound	_	repair
 23	工作	工作	NOUN	_	_	17	obj	_	operation
 24	。	。	PUNCT	_	_	15	punct	_	.
 
 # sent_id = 2_4
 # text = 这对我来说是个生与死的问题。
 # text_segmented = 这 对 我 来说 是 个 生 与 死 的 问题 。
-1	这	这	DET	_	_	11	nsubj	_	this
+# comment = We segment 来说 as one word, and it is ADP. 
+1	这	这	PRON	_	_	11	nsubj	_	this
 2	对	对	ADP	_	_	3	case	_	for
-3	我	我	PRON	_	_	11	advcl	_	me
+3	我	我	PRON	_	_	11	obl	_	me
 4	来说	来说	ADP	_	_	3	case	_	{}
 5	是	是	AUX	_	_	11	cop	_	is
 6	个	个	NOUN	_	_	11	clf	_	a
@@ -797,8 +800,9 @@
 # sent_id = 2_5
 # text = 我随身带的水只够饮用一星期。
 # text_segmented = 我 随身 带 的 水 只 够 饮用 一 星期 。
+# comment = 随身 is an adverb of 带. 
 1	我	我	PRON	_	_	3	nsubj	_	I
-2	随身	随身	ADV	_	_	3	advmod	_	with_me
+2	随身	随身	ADV	_	_	3	advmod	_	with_oneself
 3	带	带	VERB	_	_	5	acl	_	carry
 4	的	的	PART	_	_	3	mark	_	DE
 5	水	水	NOUN	_	_	7	nsubj	_	water
@@ -806,61 +810,62 @@
 7	够	够	VERB	_	_	0	root	_	is_enough
 8	饮用	饮用	VERB	_	_	7	xcomp	_	drink
 9	一	一	NUM	_	_	10	nummod	_	one
-10	星期	星期	NOUN	_	_	8	advcl	_	week
+10	星期	星期	NOUN	_	_	8	obl	_	week
 11	。	。	PUNCT	_	_	7	punct	_	.
 
 # sent_id = 2_6
 # text = 第一天晚上我就睡在这远离人间烟火的大沙漠上。
 # text_segmented = 第一 天 晚上 我 就 睡 在 这 远离 人间 烟火 的 大 沙漠 上 。
-1	第一	第一	NUM	_	_	3	nummod	_	first
-2	天	天	NOUN	_	_	4	nmod	_	day
-3	晚上	晚上	NOUN	_	_	7	advcl	_	night
-4	我	我	PRON	_	_	7	nsubj	_	I
-5	就	就	ADV	_	_	7	advmod	_	just
+1	第一	第一	ADJ	_	_	2	amod	_	first
+2	天	天	NOUN	_	_	3	nmod	_	day
+3	晚上	晚上	NOUN	_	_	6	obl	_	night
+4	我	我	PRON	_	_	6	nsubj	_	I
+5	就	就	ADV	_	_	6	advmod	_	just
 6	睡	睡	VERB	_	_	0	root	_	sleep
-7	在	在	ADP	_	_	15	case	_	at
-8	这	这	DET	_	_	15	det	_	this
-9	远离	远离	VERB	_	_	15	acl	_	far_from
-10	人间	人间	NOUN	_	_	12	compound	_	human
-11	烟火	烟火	NOUN	_	_	10	obj	_	fire
-12	的	的	PART	_	_	10	mark	_	DE
-13	大	大	ADJ	_	_	15	amod	_	big
-14	沙漠	沙漠	NOUN	_	_	7	advcl	_	desert
-15	上	上	ADP	_	_	15	case	_	on
-16	。	。	PUNCT	_	_	7	punct	_	.
+7	在	在	ADP	_	_	14	case	_	at
+8	这	这	DET	_	_	14	det	_	this
+9	远离	远离	VERB	_	_	14	acl	_	far_from
+10	人间	人间	NOUN	_	_	11	compound	_	human
+11	烟火	烟火	NOUN	_	_	9	obj	_	fire
+12	的	的	PART	_	_	9	mark	_	DE
+13	大	大	ADJ	_	_	14	amod	_	big
+14	沙漠	沙漠	NOUN	_	_	6	obl	_	desert
+15	上	上	ADP	_	_	14	case	_	on
+16	。	。	PUNCT	_	_	6	punct	_	.
 
 # sent_id = 2_7
 # text = 我比大海中伏在小木排上的遇难者还要孤独得多。
 # text_segmented = 我 比 大海 中 伏 在 小 木排 上 的 遇难者 还 要 孤独 得 多 。
-# comment = 要?
+# comment = 要 is treated as the copula. 孤独得多 is another "descriptive complement". 
 1	我	我	PRON	_	_	14	nsubj	_	I
 2	比	比	ADP	_	_	11	case	_	compared_to
-3	大海	大海	NOUN	_	_	11	acl	_	ocean
+3	大海	大海	NOUN	_	_	5	obl	_	ocean
 4	中	中	ADP	_	_	3	case	_	inside
 5	伏	伏	VERB	_	_	11	acl	_	lying
 6	在	在	ADP	_	_	8	case	_	at
 7	小	小	ADJ	_	_	8	amod	_	small
-8	木排	木排	NOUN	_	_	5	advcl	_	raft
+8	木排	木排	NOUN	_	_	5	obl	_	raft
 9	上	上	ADP	_	_	8	case	_	on
 10	的	的	PART	_	_	5	mark	_	DE
 11	遇难者	遇难者	NOUN	_	_	14	obl	_	castaway
 12	还	还	ADV	_	_	14	advmod	_	even
 13	要	要	AUX	_	_	14	aux	_	am
 14	孤独	孤独	ADJ	_	_	0	root	_	lonely
-15	得	得	PART	_	_	16	case	_	by
-16	多	多	ADJ	_	_	14	advmod	_	much
+15	得	得	PART	_	_	14	compound:ext	_	by
+16	多	多	ADJ	_	_	14	xcomp	_	much
 17	。	。	PUNCT	_	_	14	punct	_	.
 
 # sent_id = 2_8
 # text = 而在第二天拂晓，当一个奇怪的小声音叫醒我的时候，你们可以想见我当时是多么吃惊。
 # text_segmented = 而 在 第二 天 拂晓 ， 当 一 个 奇怪 的 小 声音 叫醒 我 的 时候 ， 你们 可以 想见 我 当时 是 多么 吃惊 。
-1	而	而	CONJ	_	_	5	cc	_	but
+# comment = 当 is an adp of 时候.
+1	而	而	CONJ	_	_	21	cc	_	but
 2	在	在	ADP	_	_	5	case	_	at
-3	第二	第二	NUM	_	_	4	nummod	_	second
+3	第二	第二	ADJ	_	_	4	amod	_	second
 4	天	天	NOUN	_	_	5	nmod	_	day
 5	拂晓	拂晓	NOUN	_	_	21	obl	_	morning
 6	，	，	PUNCT	_	_	5	punct	_	,
-7	当	当	ADP	_	_	17	mark	_	when
+7	当	当	ADP	_	_	17	case	_	when
 8	一	一	NUM	_	_	9	nummod	_	one
 9	个	个	NOUN	_	_	13	clf	_	CLF
 10	奇怪	奇怪	ADJ	_	_	13	amod	_	strange
@@ -870,7 +875,7 @@
 14	叫醒	叫醒	VERB	_	_	17	acl	_	wake_up
 15	我	我	NOUN	_	_	14	obj	_	me
 16	的	的	PART	_	_	14	mark	_	DE
-17	时候	时候	NOUN	_	_	21	advcl	_	time
+17	时候	时候	NOUN	_	_	21	obl	_	time
 18	，	，	PUNCT	_	_	17	punct	_	,
 19	你们	你们	PRON	_	_	21	nsubj	_	you
 20	可以	可以	AUX	_	_	21	aux	_	can
@@ -885,7 +890,6 @@
 # sent_id = 2_9
 # text = 这小小的声音说道：
 # text_segmented = 这 小小 的 声音 说道 ：
-# comment = 说道
 1	这	这	DET	_	_	4	det	_	this
 2	小小	小小	ADJ	_	_	4	amod	_	small
 3	的	的	PART	_	_	2	mark	_	DE
@@ -906,7 +910,7 @@
 8	只	只	NOUN	_	_	9	clf	_	CLF
 9	羊	羊	NOUN	_	_	6	obj	_	sheep
 10	，	，	PUNCT	_	_	6	punct	_	,
-11	好吗	好吗	INTJ	_	_	6	discourse	_	okay
+11	好吗	好吗	PART	_	_	6	discourse	_	okay
 12	？	？	PUNCT	_	_	6	punct	_	?
 13	”	”	PUNCT	_	_	6	punct	_	"
 
@@ -934,17 +938,19 @@
 # sent_id = 2_13
 # text = 我象是受到惊雷轰击一般，一下子就站立起来。
 # text_segmented = 我 象是 受到 惊雷 轰击 一般 ， 一下子 就 站立起来 。
+# commment = 站立起来 is compound of direction. 
 1	我	我	NOUN	_	_	3	nsubj	_	I
-2	象是	象是	ADV	_	_	3	mark	_	like
+2	象是	象是	ADV	_	_	3	advmod	_	like
 3	受到	受到	VERB	_	_	10	advcl	_	received
 4	惊雷	惊雷	NOUN	_	_	5	nmod	_	thunder
 5	轰击	轰击	NOUN	_	_	3	obj	_	hit
-6	一般	一般	ADV	_	_	3	mark	_	{}
+6	一般	一般	ADV	_	_	3	advmod	_	{}
 7	，	，	PUNCT	_	_	3	punct	_	,
 8	一下子	一下子	ADV	_	_	10	advmod	_	immediately
 9	就	就	ADV	_	_	10	advmod	_	just
-10	站立起来	站立起来	VERB	_	_	0	root	_	stand_up
-11	。	。	PUNCT	_	_	10	punct	_	.
+10	站立	站立	VERB	_	_	0	root	_	stand
+11	起来	起来	VERB	_	_	10	compound:dir	_	stand
+12	。	。	PUNCT	_	_	10	punct	_	.
 
 # sent_id = 2_14,2_15
 # text = 我使劲地揉了揉眼睛，仔细地看了看。
@@ -963,6 +969,7 @@
 # sent_id = 2_16
 # text = 我看见一个十分奇怪的小家伙严肃地朝我凝眸望着。
 # text_segmented = 我 看见 一 个 十分 奇怪 的 小 家伙 严肃 地 朝 我 凝眸 望 着 。
+# comment = 凝眸望 is a compound verb. 
 1	我	我	PRON	_	_	2	nsubj	_	I
 2	看见	看见	VERB	_	_	0	root	_	see
 3	一	一	NUM	_	_	4	nummod	_	one
@@ -971,40 +978,42 @@
 6	奇怪	奇怪	ADJ	_	_	9	amod	_	strange
 7	的	的	PART	_	_	6	mark	_	DE
 8	小	小	ADJ	_	_	9	amod	_	small
-9	家伙	家伙	NOUN	_	_	15	nsubj	_	person
-10	严肃	严肃	ADJ	_	_	15	advmod	_	serious
+9	家伙	家伙	NOUN	_	_	14	nsubj	_	person
+10	严肃	严肃	ADJ	_	_	14	advmod	_	serious
 11	地	地	PART	_	_	10	mark	_	DE
 12	朝	朝	ADP	_	_	13	case	_	towards
-13	我	我	PRON	_	_	15	obl	_	me
-14	凝眸	凝眸	VERB	_	_	15	advcl	_	stare
-15	望	望	VERB	_	_	2	obj	_	look
-16	着	着	AUX	_	_	15	aux	_	ZHE
-17	。	。	PUNCT	_	_	15	punct	_	.
+13	我	我	PRON	_	_	14	obl	_	me
+14	凝眸	凝眸	VERB	_	_	2	ccomp	_	stare
+15	望	望	VERB	_	_	14	compound:vv	_	look
+16	着	着	AUX	_	_	14	aux	_	ZHE
+17	。	。	PUNCT	_	_	14	punct	_	.
 
 # sent_id = 2_17
 # text = 这是后来我给他画出来的最好的一副画像。
 # text_segmented = 这 是 后来 我 给 他 画出来 的 最 好 的 一 副 画像 。
-1	这	这	PRON	_	_	14	nsubj	_	this
-2	是	是	AUX	_	_	14	cop	_	is
+# comment = 画出来 is compound of direction. 
+1	这	这	PRON	_	_	15	nsubj	_	this
+2	是	是	AUX	_	_	15	cop	_	is
 3	后来	后来	ADV	_	_	7	advmod	_	afterwards
 4	我	我	PRON	_	_	7	nsubj	_	I
 5	给	给	ADP	_	_	6	case	_	for
 6	他	他	PRON	_	_	7	obl	_	him
-7	画出来	画出来	VERB	_	_	14	acl	_	draw_out
-8	的	的	PART	_	_	7	mark	_	DE
-9	最	最	ADV	_	_	10	advmod	_	most
-10	好	好	ADJ	_	_	14	amod	_	good
-11	的	的	PART	_	_	10	mark	_	DE
-12	一	一	NUM	_	_	13	nummod	_	one
-13	副	副	NOUN	_	_	14	clf	_	CLF
-14	画像	画像	NOUN	_	_	0	root	_	painting
-15	。	。	PUNCT	_	_	14	punct	_	.
+7	画	画	VERB	_	_	15	acl	_	draw_out
+8	出来	出来	VERB	_	_	7	compound:dir	_	out
+9	的	的	PART	_	_	7	mark	_	DE
+10	最	最	ADV	_	_	11	advmod	_	most
+11	好	好	ADJ	_	_	15	amod	_	good
+12	的	的	PART	_	_	11	mark	_	DE
+13	一	一	NUM	_	_	14	nummod	_	one
+14	副	副	NOUN	_	_	15	clf	_	CLF
+15	画像	画像	NOUN	_	_	0	root	_	painting
+16	。	。	PUNCT	_	_	15	punct	_	.
 
 # sent_id = 2_18
 # text = 可是，我的画当然要比他本人的模样逊色得多。
 # text_segmented = 可是 ， 我 的 画 当然 要 比 他 本人 的 模样 逊色 得 多 。
-# comment = 可是 = adv?
-1	可是	可是	ADV	_	_	13	advmod	_	but
+# comment = 可是 is treated as cconj. 逊色得多 is "descriptive complement".
+1	可是	可是	CONJ	_	_	13	cc	_	but
 2	，	，	PUNCT	_	_	1	punct	_	,
 3	我	我	PRON	_	_	5	nmod	_	I
 4	的	的	PART	_	_	3	case	_	DE
@@ -1017,15 +1026,16 @@
 11	的	的	PART	_	_	10	case	_	DE
 12	模样	模样	NOUN	_	_	13	obl	_	appearance
 13	逊色	逊色	ADJ	_	_	0	root	_	bad
-14	得	得	PART	_	_	15	mark	_	de
-15	多	多	ADV	_	_	13	advmod	_	much
+14	得	得	PART	_	_	13	compound:ext	_	DE
+15	多	多	ADV	_	_	13	xcomp	_	much
 16	。	。	PUNCT	_	_	13	punct	_	.
 
 # sent_id = 2_19
 # text = 这不是我的过错。
 # text_segmented = 这 不 是 我 的 过错 。
+# comment = 不 is attached to 是.
 1	这	这	PRON	_	_	6	nsubj	_	this
-2	不	不	ADV	_	_	6	advmod	_	not
+2	不	不	ADV	_	_	3	advmod	_	not
 3	是	是	AUX	_	_	6	cop	_	is
 4	我	我	PRON	_	_	6	nmod	_	I
 5	的	的	PART	_	_	4	case	_	DE
@@ -1037,41 +1047,40 @@
 # text_segmented = 六 岁 时 ， 大人 们 使 我 对 我 的 画家 生涯 失去 了 勇气 ， 除了 画 过 开 着 肚皮 和 闭 着 肚皮 的 蟒蛇 ， 后来 再 没有 学 过 画 。
 1	六	六	NUM	_	_	2	nummod	_	six
 2	岁	岁	NOUN	_	_	3	nmod	_	year_old
-3	时	时	NOUN	_	_	7	obl	_	time
+3	时	时	NOUN	_	_	6	obl	_	time
 4	，	，	PUNCT	_	_	3	punct	_	,
-5	大人	大人	NOUN	_	_	6	compound	_	adult
-6	们	们	NOUN	_	_	7	nsubj	_	PL
-7	使	使	VERB	_	_	0	root	_	make
-8	我	我	NOUN	_	_	14	nsubj	_	me
-9	对	对	ADP	_	_	13	case	_	regarding
-10	我	我	PRON	_	_	13	nmod	_	I
-11	的	的	PART	_	_	10	case	_	DE
-12	画家	画家	NOUN	_	_	13	nmod	_	painter
-13	生涯	生涯	NOUN	_	_	14	obl	_	career
-14	失去	失去	VERB	_	_	7	ccomp	_	lose
-15	了	了	AUX	_	_	14	aux	_	LE
-16	勇气	勇气	NOUN	_	_	14	obj	_	courage
-17	，	，	PUNCT	_	_	14	punct	_	,
-18	除了	除了	SCONJ	_	_	19	mark	_	except
-19	画	画	VERB	_	_	34	advmod	_	draw
-20	过	过	AUX	_	_	19	aux	_	GUO
-21	开	开	VERB	_	_	29	acl	_	open
-22	着	着	AUX	_	_	21	aux	_	ZHE
-23	肚皮	肚皮	NOUN	_	_	21	obj	_	belly
-24	和	和	CONJ	_	_	25	cc	_	and
-25	闭	闭	VERB	_	_	21	conj	_	close
-26	着	着	AUX	_	_	25	aux	_	ZHE
-27	肚皮	肚皮	NOUN	_	_	25	obj	_	belly
-28	的	的	PART	_	_	21	mark	_	DE
-29	蟒蛇	蟒蛇	NOUN	_	_	19	obj	_	boa
-30	，	，	PUNCT	_	_	29	punct	_	,
-31	后来	后来	ADV	_	_	34	advmod	_	afterwards
-32	再	再	ADV	_	_	34	advmod	_	again
-33	没有	没有	AUX	_	_	34	aux	_	not
-34	学	学	VERB	_	_	7	parataxis	_	learn
-35	过	过	AUX	_	_	34	aux	_	GUO
-36	画	画	NOUN	_	_	34	obj	_	painting
-37	。	。	PUNCT	_	_	34	punct	_	.
+5	大人们	大人们	NOUN	_	_	6	nsubj	_	adults
+6	使	使	VERB	_	_	0	root	_	make
+7	我	我	NOUN	_	_	13	nsubj	_	me
+8	对	对	ADP	_	_	12	case	_	regarding
+9	我	我	PRON	_	_	12	nmod	_	I
+10	的	的	PART	_	_	9	case	_	DE
+11	画家	画家	NOUN	_	_	12	compound	_	painter
+12	生涯	生涯	NOUN	_	_	13	obl	_	career
+13	失去	失去	VERB	_	_	6	ccomp	_	lose
+14	了	了	AUX	_	_	13	aux	_	LE
+15	勇气	勇气	NOUN	_	_	13	obj	_	courage
+16	，	，	PUNCT	_	_	13	punct	_	,
+17	除了	除了	SCONJ	_	_	18	mark	_	except
+18	画	画	VERB	_	_	33	advmod	_	draw
+19	过	过	AUX	_	_	18	aux	_	GUO
+20	开	开	VERB	_	_	28	acl	_	open
+21	着	着	AUX	_	_	20	aux	_	ZHE
+22	肚皮	肚皮	NOUN	_	_	20	obj	_	belly
+23	和	和	CONJ	_	_	24	cc	_	and
+24	闭	闭	VERB	_	_	20	conj	_	close
+25	着	着	AUX	_	_	24	aux	_	ZHE
+26	肚皮	肚皮	NOUN	_	_	24	obj	_	belly
+27	的	的	PART	_	_	20	mark	_	DE
+28	蟒蛇	蟒蛇	NOUN	_	_	18	obj	_	boa
+29	，	，	PUNCT	_	_	28	punct	_	,
+30	后来	后来	ADV	_	_	33	advmod	_	afterwards
+31	再	再	ADV	_	_	33	advmod	_	again
+32	没有	没有	AUX	_	_	33	aux	_	not
+33	学	学	VERB	_	_	6	parataxis	_	learn
+34	过	过	AUX	_	_	33	aux	_	GUO
+35	画	画	NOUN	_	_	33	obj	_	painting
+36	。	。	PUNCT	_	_	33	punct	_	.
 
 # sent_id = 2_21
 # text = 我惊奇地睁大着眼睛看着这突然出现的小家伙。
@@ -1095,6 +1104,7 @@
 # sent_id = 2_22
 # text = 你们不要忘记，我当时处在远离人烟千里之外的地方。
 # text_segmented = 你们 不要 忘记 ， 我 当时 处 在 远离 人烟 千 里 之外 的 地方 。
+# comment = We treat 千里之外 as three words. 
 1	你们	你们	PRON	_	_	3	nsubj	_	you
 2	不要	不要	ADV	_	_	3	advmod	_	don't
 3	忘记	忘记	VERB	_	_	0	root	_	forget
@@ -1109,20 +1119,20 @@
 12	里	里	NOUN	_	_	13	nmod	_	mile
 13	之外	之外	NOUN	_	_	9	obl	_	outside
 14	的	的	PART	_	_	9	mark	_	DE
-15	地方	地方	NOUN	_	_	7	obj	_	place
+15	地方	地方	NOUN	_	_	7	obl	_	place
 16	。	。	PUNCT	_	_	15	punct	_	.
 
 # sent_id = 2_23
 # text = 而这个小家伙给我的印象是，他既不象迷了路的样子，也没有半点疲乏、饥渴、惧怕的神情。
 # text_segmented = 而 这 个 小 家伙 给 我 的 印象 是 ， 他 既 不 象 迷了路 的 样子 ， 也 没有 半点 疲乏 、 饥渴 、 惧怕 的 神情 。
-# comment = treating 是 as a verb
+# comment = We treat 是 as a verb, and 是 --> 象 with relation parataxis. 迷了路 is a compound of verb and object. 
 1	而	而	CONJ	_	_	10	cc	_	but
 2	这	这	DET	_	_	3	det	_	this
 3	个	个	NOUN	_	_	5	clf	_	CLF
 4	小	小	ADJ	_	_	5	amod	_	small
 5	家伙	家伙	NOUN	_	_	6	nsubj	_	person
 6	给	给	VERB	_	_	9	acl	_	give
-7	我	我	PRON	_	_	6	obj	_	me
+7	我	我	PRON	_	_	6	iobj	_	me
 8	的	的	PART	_	_	6	mark	_	DE
 9	印象	印象	NOUN	_	_	10	nsubj	_	impresion
 10	是	是	VERB	_	_	0	root	_	is
@@ -1130,22 +1140,24 @@
 12	他	他	PRON	_	_	15	nsubj	_	he
 13	既	既	CONJ	_	_	15	cc	_	neither
 14	不	不	ADV	_	_	15	advmod	_	not
-15	象	象	VERB	_	_	10	obj	_	seem_like
-16	迷了路	迷了路	VERB	_	_	18	acl	_	lost
-17	的	的	PART	_	_	16	mark	_	DE
-18	样子	样子	NOUN	_	_	15	obj	_	manner
-19	，	，	PUNCT	_	_	15	punct	_	,
-20	也	也	CONJ	_	_	21	cc	_	also
-21	没有	没有	VERB	_	_	15	conj	_	not_have
-22	半点	半点	ADJ	_	_	29	acl	_	any_bit
-23	疲乏	疲乏	NOUN	_	_	29	nmod	_	fatigue
-24	、	、	NOUN	_	_	23	punct	_	,
-25	饥渴	饥渴	NOUN	_	_	23	conj	_	hunger_and_thirst
-26	、	、	PUNCT	_	_	25	punct	_	,
-27	惧怕	惧怕	NOUN	_	_	23	conj	_	fear
-28	的	的	PART	_	_	23	case	_	DE
-29	神情	神情	NOUN	_	_	21	obj	_	facial_expression
-30	。	。	PUNCT	_	_	21	punct	_	.
+15	象	象	VERB	_	_	10	parataxis	_	seem_like
+16	迷	迷	VERB	_	_	20	acl	_	lost
+17	了	了	AUX	_	_	16	aux	_	LE
+18	路	路	VERB	_	_	16	compound:vo	_	way
+19	的	的	PART	_	_	16	mark	_	DE
+20	样子	样子	NOUN	_	_	15	obj	_	manner
+21	，	，	PUNCT	_	_	15	punct	_	,
+22	也	也	CONJ	_	_	23	cc	_	also
+23	没有	没有	VERB	_	_	15	conj	_	not_have
+24	半点	半点	ADJ	_	_	31	amod	_	any_bit
+25	疲乏	疲乏	NOUN	_	_	31	nmod	_	fatigue
+26	、	、	NOUN	_	_	27	punct	_	,
+27	饥渴	饥渴	NOUN	_	_	25	conj	_	hunger_and_thirst
+28	、	、	PUNCT	_	_	29	punct	_	,
+29	惧怕	惧怕	NOUN	_	_	25	conj	_	fear
+30	的	的	PART	_	_	25	case	_	DE
+31	神情	神情	NOUN	_	_	23	obj	_	facial_expression
+32	。	。	PUNCT	_	_	23	punct	_	.
 
 # sent_id = 2_24
 # text = 他丝毫不象是一个迷失在旷无人烟的大沙漠中的孩子。
@@ -1170,24 +1182,26 @@
 # sent_id = 2_25
 # text = 当我在惊讶之中终于又能说出话来的时候，对他说道：
 # text_segmented = 当 我 在 惊讶 之 中 终于 又 能 说出话来 的 时候 ， 对 他 说道 ：
-# comment = 说出话来 one word
-1	当	当	ADP	_	_	12	case	_	when
-2	我	我	PRON	_	_	10	nsubj	_	I
-3	在	在	ADP	_	_	6	case	_	at
-4	惊讶	惊讶	NOUN	_	_	6	nmod	_	surprise
-5	之	之	PART	_	_	4	case	_	DE
-6	中	中	NOUN	_	_	10	obl	_	inside
-7	终于	终于	ADV	_	_	10	advmod	_	finally
-8	又	又	ADV	_	_	10	advmod	_	again
-9	能	能	AUX	_	_	10	aux	_	can
-10	说出话来	说出话来	VERB	_	_	12	acl	_	speak_words
-11	的	的	PART	_	_	10	mark	_	DE
-12	时候	时候	NOUN	_	_	16	obl	_	time
-13	，	，	PUNCT	_	_	12	punct	_	,
-14	对	对	ADP	_	_	15	case	_	to
-15	他	他	PRON	_	_	16	iobj	_	him
-16	说道	说道	VERB	_	_	0	root	_	said
-17	：	：	PUNCT	_	_	16	punct	_	:
+# comment = Here we treat 之中 as one ADP. 说出话来 is a compound verb consisting of verb + direction + object + direction. 
+1	当	当	ADP	_	_	14	case	_	when
+2	我	我	PRON	_	_	9	nsubj	_	I
+3	在	在	ADP	_	_	4	case	_	at
+4	惊讶	惊讶	NOUN	_	_	9	obl	_	surprise
+5	之中	之中	ADP	_	_	4	case	_	inside
+6	终于	终于	ADV	_	_	9	advmod	_	finally
+7	又	又	ADV	_	_	9	advmod	_	again
+8	能	能	AUX	_	_	9	aux	_	can
+9	说	说	VERB	_	_	14	acl	_	speak
+10	出	出	VERB	_	_	9	compound:dir	_	out
+11	话	话	NOUN	_	_	9	compound:vo	_	words
+12	来	来	VERB	_	_	9	compound:dir	_	to_here
+13	的	的	PART	_	_	9	mark	_	DE
+14	时候	时候	NOUN	_	_	18	obl	_	time
+15	，	，	PUNCT	_	_	14	punct	_	,
+16	对	对	ADP	_	_	18	case	_	to
+17	他	他	PRON	_	_	18	iobj	_	him
+18	说道	说道	VERB	_	_	0	root	_	said
+19	：	：	PUNCT	_	_	18	punct	_	:
 
 # sent_id = 2_26
 # text = “唉，你在这儿干什么？”
@@ -1206,7 +1220,8 @@
 # sent_id = 2_27
 # text = 可是他却不慌不忙地好象有一件重要的事一般，对我重复地说道：
 # text_segmented = 可是 他 却 不慌不忙 地 好象 有 一 件 重要 的 事 一般 ， 对 我 重复 地 说道 ：
-1	可是	可是	ADV	_	_	19	advmod	_	but
+# comment = 可是 is conj. 
+1	可是	可是	CONJ	_	_	19	cc	_	but
 2	他	他	PRON	_	_	19	nsubj	_	he
 3	却	却	ADV	_	_	19	advmod	_	yet
 4	不慌不忙	不慌不忙	ADJ	_	_	19	advmod	_	not_hurried
@@ -1230,8 +1245,9 @@
 # sent_id = 2_28
 # text = “请……给我画一只羊……”
 # text_segmented = “ 请 …… 给 我 画 一 只 羊 …… ”
+# comment = 请 has label discourse here, although we're not entirely sure. 
 1	“	“	PUNCT	_	_	6	punct	_	"
-2	请	请	ADV	_	_	6	advmod	_	please
+2	请	请	ADV	_	_	6	discourse	_	please
 3	……	……	PUNCT	_	_	6	punct	_	...
 4	给	给	ADP	_	_	5	case	_	for
 5	我	我	PRON	_	_	6	obl	_	me
@@ -1252,7 +1268,7 @@
 5	的	的	PART	_	_	4	mark	_	DE
 6	东西	东西	NOUN	_	_	9	nsubj	_	thing
 7	把	把	ADP	_	_	8	case	_	BA
-8	你	你	PRON	_	_	9	obj	_	you
+8	你	你	PRON	_	_	9	obl:patient	_	you
 9	镇住	镇住	VERB	_	_	11	acl	_	overpower
 10	的	的	PART	_	_	9	mark	_	DE
 11	时候	时候	NOUN	_	_	16	obl	_	time
@@ -1320,15 +1336,15 @@
 9	学	学	VERB	_	_	5	ccomp	_	learn
 10	过	过	AUX	_	_	9	aux	_	GUO
 11	地理	地理	NOUN	_	_	9	obj	_	geography
-12	、	、	PUNCT	_	_	11	punct	_	,
+12	、	、	PUNCT	_	_	13	punct	_	,
 13	历史	历史	NOUN	_	_	11	conj	_	history
-14	、	、	PUNCT	_	_	13	punct	_	,
+14	、	、	PUNCT	_	_	15	punct	_	,
 15	算术	算术	NOUN	_	_	11	conj	_	arithmetic
 16	和	和	CONJ	_	_	17	cc	_	and
 17	语法	语法	NOUN	_	_	11	conj	_	grammar
 18	，	，	PUNCT	_	_	9	punct	_	,
 19	就	就	ADV	_	_	27	advmod	_	just
-20	有点	有点	ADV	_	_	22	advmod	_	a_bit
+20	有点	有点	ADV	_	_	21	advmod	_	a_bit
 21	不大	不大	ADV	_	_	22	advmod	_	not_quite
 22	高兴	高兴	ADJ	_	_	27	advmod	_	happy
 23	地	地	PART	_	_	22	mark	_	DE
@@ -1337,7 +1353,7 @@
 26	家伙	家伙	NOUN	_	_	27	obl	_	person
 27	说	说	VERB	_	_	5	parataxis	_	say
 28	我	我	PRON	_	_	31	nsubj	_	I
-29	不	不	ADV	_	_	31	advmod	_	not
+29	不	不	ADV	_	_	30	advmod	_	not
 30	会	会	AUX	_	_	31	aux	_	can
 31	画画	画画	VERB	_	_	27	ccomp	_	draw
 32	。	。	PUNCT	_	_	31	punct	_	.
@@ -1364,7 +1380,7 @@
 8	一	一	NUM	_	_	9	nummod	_	one
 9	只	只	NOUN	_	_	10	clf	_	CLF
 10	羊	羊	NOUN	_	_	7	obj	_	sheep
-11	吧	吧	INTJ	_	_	7	discourse	_	{}
+11	吧	吧	PART	_	_	7	discourse	_	{}
 12	！	！	PUNCT	_	_	7	punct	_	!
 13	”	”	PUNCT	_	_	7	punct	_	"
 
@@ -1420,8 +1436,8 @@
 3	要	要	VERB	_	_	0	root	_	want
 4	蟒蛇	蟒蛇	NOUN	_	_	3	obj	_	boa
 5	，	，	PUNCT	_	_	3	punct	_	,
-6	它	它	PRON	_	_	10	dislocated	_	it
-7	肚子	肚子	NOUN	_	_	10	nsubj	_	stomach
+6	它	它	PRON	_	_	10	nsubj	_	it
+7	肚子	肚子	NOUN	_	_	10	obl	_	stomach
 8	里	里	ADP	_	_	7	case	_	inside
 9	还	还	ADV	_	_	10	advmod	_	still
 10	有	有	VERB	_	_	3	parataxis	_	have
@@ -1434,6 +1450,7 @@
 # sent_id = 2_36
 # text = 我听了他的话，简直目瞪口呆。
 # text_segmented = 我 听 了 他 的 话 ， 简直 目瞪口呆 。
+# comment = 目瞪口呆 is an idiom and hence one word. 
 1	我	我	PRON	_	_	2	nsubj	_	I
 2	听	听	VERB	_	_	0	root	_	hear
 3	了	了	AUX	_	_	2	aux	_	LE
@@ -1448,14 +1465,15 @@
 # sent_id = 2_40
 # text = 他接着说：“巨蟒这东西太危险，大象又太占地方。
 # text_segmented = 他 接着 说 ： “ 巨蟒 这 东西 太 危险 ， 大象 又 太 占 地方 。
+# comment = By UD documentation, 巨蟒这东西 is dislocated + nsubj, instead of nsubj + appos. 
 1	他	他	PRON	_	_	3	nsubj	_	he
 2	接着	接着	ADV	_	_	3	advmod	_	continue
 3	说	说	VERB	_	_	0	root	_	say
 4	：	：	PUNCT	_	_	3	punct	_	:
 5	“	“	PUNCT	_	_	10	punct	_	"
-6	巨蟒	巨蟒	NOUN	_	_	10	nsubj	_	boa
+6	巨蟒	巨蟒	NOUN	_	_	10	dislocated	_	boa
 7	这	这	DET	_	_	8	det	_	this
-8	东西	东西	NOUN	_	_	6	appos	_	thing
+8	东西	东西	NOUN	_	_	10	nsubj	_	thing
 9	太	太	ADV	_	_	10	advmod	_	too
 10	危险	危险	ADJ	_	_	3	parataxis	_	dangerous
 11	，	，	PUNCT	_	_	10	punct	_	,
@@ -1492,7 +1510,7 @@
 4	一	一	NUM	_	_	5	nummod	_	one
 5	只	只	NOUN	_	_	6	clf	_	CLF
 6	羊	羊	NOUN	_	_	3	obj	_	sheep
-7	吧	吧	INTJ	_	_	3	discourse	_	{}
+7	吧	吧	PART	_	_	3	discourse	_	{}
 8	。	。	PUNCT	_	_	3	punct	_	.
 9	”	”	PUNCT	_	_	3	punct	_	"
 
@@ -1524,6 +1542,7 @@
 # sent_id = 2_46,2_47
 # text = “我不要，这只羊已经病得很重了。
 # text_segmented = “ 我 不 要 ， 这 只 羊 已经 病 得 很 重 了 。
+# comment = 病得很重 is descriptive complement. 
 1	“	“	PUNCT	_	_	4	punct	_	"
 2	我	我	PRON	_	_	4	nsubj	_	I
 3	不	不	ADV	_	_	4	advmod	_	not
@@ -1534,9 +1553,9 @@
 8	羊	羊	NOUN	_	_	10	nsubj	_	sheep
 9	已经	已经	ADV	_	_	10	advmod	_	already
 10	病	病	VERB	_	_	4	parataxis	_	sick
-11	得	得	PART	_	_	13	mark	_	DE
+11	得	得	PART	_	_	10	compound:ext	_	DE
 12	很	很	ADV	_	_	13	advmod	_	very
-13	重	重	ADJ	_	_	10	advmod	_	heavy
+13	重	重	ADJ	_	_	10	xcomp	_	heavy
 14	了	了	AUX	_	_	10	aux	_	LE
 15	。	。	PUNCT	_	_	10	punct	_	.
 
@@ -1554,11 +1573,14 @@
 
 # sent_id = 2_49
 # text = 我又画了起来。
-# text_segmented = 我 又 画了起来 。
+# text_segmented = 我 又 画 了 起来 。
+# comment = 画了起来 is verb + direction. 
 1	我	我	PRON	_	_	3	nsubj	_	I
 2	又	又	ADV	_	_	3	advmod	_	again
-3	画了起来	画了起来	VERB	_	_	0	root	_	start_drawing
-4	。	。	PUNCT	_	_	3	punct	_	.
+3	画	画	VERB	_	_	0	root	_	draw
+4	了	了	AUX	_	_	3	aux	_	LE
+5	起来	起来	VERB	_	_	3	compound:dir	_	up
+6	。	。	PUNCT	_	_	3	punct	_	.
 
 # sent_id = 2_50
 # text = 我的这位朋友天真可爱地笑了，并且客气地拒绝道：
@@ -1576,8 +1598,9 @@
 11	并且	并且	CONJ	_	_	14	cc	_	and
 12	客气	客气	ADJ	_	_	14	advmod	_	polite
 13	地	地	PART	_	_	12	mark	_	DE
-14	拒绝道	拒绝道	VERB	_	_	8	conj	_	refuse
-15	：	：	PUNCT	_	_	14	punct	_	:
+14	拒绝	拒绝	VERB	_	_	8	conj	_	refuse
+15	道	道	VERB	_	_	14	xcomp	_	saying
+16	：	：	PUNCT	_	_	14	punct	_	:
 
 # sent_id = 2_51,2_52
 # text = “你看，你画的不是小羊，是头公羊，还有犄角呢。”
@@ -1599,7 +1622,7 @@
 15	还	还	ADV	_	_	16	advmod	_	also
 16	有	有	VERB	_	_	13	parataxis	_	have
 17	犄角	犄角	NOUN	_	_	16	obj	_	horn
-18	呢	呢	INTJ	_	_	16	discourse	_	{}
+18	呢	呢	PART	_	_	16	discourse	_	{}
 19	。	。	PUNCT	_	_	16	punct	_	.
 20	”	”	PUNCT	_	_	16	punct	_	"
 
@@ -1619,9 +1642,10 @@
 # sent_id = 2_54
 # text = 这副画同前几副一样又被拒绝了。
 # text_segmented = 这 副 画 同 前 几 副 一样 又 被 拒绝 了 。
+# comment = Because of 被, the subject has label nsubj:pass. 
 1	这	这	DET	_	_	3	det	_	this
 2	副	副	NOUN	_	_	3	clf	_	CLF
-3	画	画	NOUN	_	_	11	nsubj	_	painting
+3	画	画	NOUN	_	_	11	nsubj:pass	_	painting
 4	同	同	ADP	_	_	7	case	_	as
 5	前	前	ADJ	_	_	7	amod	_	previous
 6	几	几	DET	_	_	7	det	_	several
@@ -1648,14 +1672,15 @@
 # sent_id = 2_56
 # text = 我想要一只能活得长的羊。”
 # text_segmented = 我 想要 一 只 能 活 得 长 的 羊 。 ”
+# comment = 活得长 is descriptive complement.
 1	我	我	PRON	_	_	2	nsubj	_	I
 2	想要	想要	VERB	_	_	0	root	_	want
 3	一	一	NUM	_	_	4	nummod	_	one
 4	只	只	NOUN	_	_	10	clf	_	CLF
 5	能	能	AUX	_	_	6	aux	_	can
 6	活	活	VERB	_	_	10	acl	_	live
-7	得	得	PART	_	_	8	mark	_	DE
-8	长	长	ADJ	_	_	6	advmod	_	long
+7	得	得	PART	_	_	6	compound	_	DE
+8	长	长	ADJ	_	_	6	xcomp	_	long
 9	的	的	PART	_	_	6	mark	_	DE
 10	羊	羊	NOUN	_	_	2	obj	_	sheep
 11	。	。	PUNCT	_	_	2	punct	_	.
@@ -1676,7 +1701,7 @@
 2	我	我	PRON	_	_	3	nsubj	_	I
 3	急于	急于	VERB	_	_	11	advcl	_	am_impatient
 4	要	要	AUX	_	_	5	aux	_	need
-5	检修	检修	VERB	_	_	3	obj	_	repair
+5	检修	检修	VERB	_	_	3	xcomp	_	repair
 6	发动机	发动机	NOUN	_	_	5	obj	_	motor
 7	，	，	PUNCT	_	_	3	punct	_	,
 8	于是	于是	ADV	_	_	11	advmod	_	therefore
@@ -1726,19 +1751,19 @@
 4	惊奇	惊奇	ADJ	_	_	6	advmod	_	surprised
 5	地	地	PART	_	_	4	mark	_	DE
 6	看到	看到	VERB	_	_	0	root	_	see
-7	我	我	PRON	_	_	13	nmod	_	I
+7	我	我	PRON	_	_	12	nmod	_	I
 8	的	的	PART	_	_	7	case	_	DE
 9	这	这	DET	_	_	10	det	_	this
 10	位	位	NOUN	_	_	12	clf	_	CLF
 11	小	小	ADJ	_	_	12	amod	_	small
 12	评判员	评判员	NOUN	_	_	13	nsubj	_	judge
-13	喜笑颜开	喜笑颜开	VERB	_	_	6	obj	_	smile_happily
+13	喜笑颜开	喜笑颜开	VERB	_	_	6	ccomp	_	smile_happily
 14	。	。	PUNCT	_	_	13	punct	_	.
 
 # sent_id = 2_62
 # text = 他说：“这正是我想要的，……
 # text_segmented = 他 说 ： “ 这 正 是 我 想要 的 ， ……
-# comment = 是 treated as verb
+# comment = 是 is treated as verb.
 1	他	他	PRON	_	_	2	nsubj	_	he
 2	说	说	VERB	_	_	0	root	_	say
 3	：	：	PUNCT	_	_	2	punct	_	:
@@ -1755,12 +1780,13 @@
 # sent_id = 2_63
 # text = 你说这只羊需要很多草吗？”
 # text_segmented = 你 说 这 只 羊 需要 很多 草 吗 ？ ”
+# comment = 说 --> 需要 has label ccomp since there is no punctuation between them. 
 1	你	你	PRON	_	_	2	nsubj	_	you
 2	说	说	VERB	_	_	0	root	_	say
 3	这	这	DET	_	_	4	det	_	this
 4	只	只	NOUN	_	_	5	clf	_	CLF
 5	羊	羊	NOUN	_	_	6	nsubj	_	sheep
-6	需要	需要	VERB	_	_	2	parataxis	_	need
+6	需要	需要	VERB	_	_	2	ccomp	_	need
 7	很多	很多	ADJ	_	_	8	amod	_	a_lot_of
 8	草	草	NOUN	_	_	6	obj	_	grass
 9	吗	吗	PART	_	_	6	discourse	_	QUES
@@ -1781,10 +1807,11 @@
 # sent_id = 2_65
 # text = “因为我那里地方非常小……”
 # text_segmented = “ 因为 我 那里 地方 非常 小 …… ”
+# comment = UD documentation says 我 --> 那里 with label appos. 
 1	“	“	PUNCT	_	_	7	punct	_	"
 2	因为	因为	ADV	_	_	7	advmod	_	because
-3	我	我	PRON	_	_	4	nmod	_	I
-4	那里	那里	PRON	_	_	7	obl	_	there
+3	我	我	PRON	_	_	7	obl	_	I
+4	那里	那里	PRON	_	_	3	appos	_	there
 5	地方	地方	NOUN	_	_	7	nsubj	_	place
 6	非常	非常	ADV	_	_	7	advmod	_	very
 7	小	小	ADJ	_	_	0	root	_	small
@@ -1821,9 +1848,10 @@
 # sent_id = 2_68
 # text = 他把脑袋靠近这张画。
 # text_segmented = 他 把 脑袋 靠近 这 张 画 。
+# comment = Not entirely sure if 脑袋 is the object. 
 1	他	他	PRON	_	_	4	nsubj	_	he
 2	把	把	ADP	_	_	3	case	_	BA
-3	脑袋	脑袋	NOUN	_	_	4	obj	_	head
+3	脑袋	脑袋	NOUN	_	_	4	obl:patient	_	head
 4	靠近	靠近	VERB	_	_	0	root	_	appraoch
 5	这	这	DET	_	_	6	det	_	this
 6	张	张	NOUN	_	_	7	clf	_	CLF
@@ -1837,7 +1865,7 @@
 2	并不	并不	ADV	_	_	8	advmod	_	not
 3	象	象	VERB	_	_	8	advcl	_	similar_to
 4	你	你	PRON	_	_	5	nsubj	_	you
-5	说	说	VERB	_	_	3	obj	_	say
+5	说	说	VERB	_	_	3	ccomp	_	say
 6	的	的	PART	_	_	5	mark	_	DE
 7	那么	那么	ADV	_	_	8	advmod	_	that
 8	小	小	ADJ	_	_	0	root	_	small

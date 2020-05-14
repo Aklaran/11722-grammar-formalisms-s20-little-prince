@@ -69,7 +69,7 @@ Although Penn Chinese Treebank has a different set of POS tags, the same segment
 In addition, these are some of the difficult cases.
 
 \begin{itemize}
-\item Cardinal numbers, like 第一, are one word. 
+\item Ordinal numbers, like 第一, are one word. 
 \item 们(men2) is attached to the noun. So 大人们 is one word.
 \item Reflexive pronouns, like 他们自己, are one word. 
 \item Reduplicated verbs are one word. For example, 测试测试, 看了看.
@@ -84,7 +84,10 @@ Here we give a brief overview of the words in each part-of-speech category. Agai
 \section{PRON and DET and NUM}
 Some words can function as both \pron\ and \det. This includes:
 \begin{itemize}
-\item 这 (this), 这些 (these), 那 (that), and 那些 (those)
+\item 
+\index{zhe4 这}
+\index{na4 那}
+这 (this), 这些 (these), 那 (that), and 那些 (those)
 \item 任何 (any) and 有些 (some)
 \item 什么 (what),  多少 (how many)
 \end{itemize}
@@ -111,14 +114,20 @@ The class \textsc{num} contains all forms of cardinal numbers. On the other hand
 The adpositions belong to the following three categories. A noun can have both a preposition and a postposition. 
 
 \subsection{Preposition}
+\index{zai4 在}
+\index{he2 和}
 
 The common prepositions are 在 (at), 对 (towards), 和 (with), etc.
 
 \subsection{Postposition}
+\index{zhong1 中}
+\index{shang4 上}
 
 The postpositions are words such as 上 (above), 下 (below), 中 (middle), 前 (in front), etc.
 
 \subsection{Valence markers}
+\index{ba3 把}
+\index{bei4 被}
 
 This class includes 把(ba3) and 被(bei4). Note that 被 can also be \aux\ in some cases.
 
@@ -127,14 +136,22 @@ This class includes 把(ba3) and 被(bei4). Note that 被 can also be \aux\ in s
 According to UD documentation, the auxiliaries fall in the following three categories. 
 
 \subsection{Model auxiliaries}
+\index{neng2 能}
+\index{hui4 会}
+\index{you3 有}
+\index{mei2you3 没有}
 
 Some these words are: 能 (can), 会 (will), 应该(should), 有(you3) (as perfective), 没有(mei2you3) (as negative perfective). The last two can also appear as verbs.
 
 \subsection{Aspect markers}
+\index{le5 了}
+\index{zhe5 着}
+\index{guo4 过}
 
 The aspect markers are 了(le5), 着(zhe5), and 过(guo4).
 
 \subsection{Copulae}
+\index{shi4 是}
 
 The word 是(shi4) is in this category, as well as other less common copulae like 为(wei2). 
 
@@ -145,26 +162,34 @@ The word 是(shi4) is in this category, as well as other less common copulae lik
 \begin{itemize}
 \item \index{de5 的}
 的(de5) always has tag \particle, regardless of how it is used. 
-\item 地(de5), used as an adverbializer, is also in \particle.
-\item Same with 得(de5), which is used in the construction of complement phrases. 
+\item \index{de5 地}
+地(de5), used as an adverbializer, is also in \particle.
+\item \index{de5 得}
+Same with 得(de5), which is used in the construction of complement phrases. 
 \end{itemize}
 
 \subsection{Sentence-final Particles}
+\index{de5 的}
+\index{ma1 吗}
+\index{ba5 吧}
 
 Some words in this category are 的(de5), 吗(ma1), and 吧(ba5).
 
 \subsection{Other Particles}
+\index{suo3 所}
 
 According to UD documentation, words like 等等(deng2deng3) and 所(suo3) are also tagged as \particle.
 
 \section{CCONJ and SCONJ}
 
 \begin{itemize}
-\item Coordinating conjunctions are words such as 和 (and), 并且 (in addition), 或 (or), 或者 (or), 但 (but), 但是 (but/however). 
+\item \index{he2 和}
+Coordinating conjunctions are words such as 和 (and), 并且 (in addition), 或 (or), 或者 (or), 但 (but), 但是 (but/however). 
 
 Note that words such as 和 can also function as adpositions.
 
-\item Subordinating conjunctions are words such as 如果 (if), 虽然 (although), and 来 (in order to). 
+\item \index{lai2 来}
+Subordinating conjunctions are words such as 如果 (if), 虽然 (although), and 来 (in order to). 
 \end{itemize}
 
 
@@ -189,6 +214,9 @@ one \& \textsc{clf} \& boa \\
 
 The number can be replaced by a determiner, and the structure remains the same. 
 
+\index{zhe4 这}
+\index{na4 那}
+
 \begin{tree}[h]
 \centering
 \begin{dependency}[theme=simple]
@@ -205,7 +233,9 @@ that \& \textsc{clf} \& painting \\
 \end{tree}
 
 \newpage
-\section{的(de5)} \index{de5 的}
+\section{的(de5)} 
+\index{de5 的}
+
 的 has the following four different uses.
 
 \subsection{Noun + 的 + Noun}
@@ -306,6 +336,7 @@ it \& is \& like this \& DE \\
 
 \newpage
 \section{地(de5)}
+\index{de5 地}
 
 地(de5) is used to convert an adjective into an adverb. 
 
@@ -326,6 +357,7 @@ careful \& DE \& observe \\
 
 \newpage
 \section{得(de5)}
+\index{de5 得}
 
 得(de5) is used in two special construction called ``descriptive complements'' and ``complements of extent''. They are treated using the same label \textsc{compound:ext}.
 
@@ -384,6 +416,10 @@ We note that the PUD treebank does something different. We choose to use this st
 
 \newpage
 \section{Adpositions: 在(zai4), 对(dui4), 中(zhong1), 上(shang4) etc.}
+\index{zai4 在}
+\index{he2 和}
+\index{zhong1 中}
+\index{shang4 上}
 
 A noun can take a preposition or a postposition, or both. In all cases, the adposition has dependency relation \textsc{case}. An example is:
 
@@ -407,6 +443,9 @@ We note that currently in the GSD treebank, postpositions are labeled with \text
 
 \newpage
 \section{Aspect markers: 了(le5)， 着(zhe5)， 过(guo4)}
+\index{le5 了}
+\index{zhe5 着}
+\index{guo4 过}
 
 These words are given the part-of-speech tag of \aux, and the dependency relation is also \aux. 
 
@@ -430,6 +469,10 @@ We note that currently in the GSD treebank, aspect markers are labeled with \tex
 
 \newpage
 \section{Modal verbs: 能(neng2)， 会(hui4)， 没有(mei2you3), etc.}
+\index{neng2 能}
+\index{hui4 会}
+\index{you3 有}
+\index{mei2you3 没有}
 
 These words are treated as \aux\ in the UD, and the dependency relation is also \aux.  
 
@@ -453,6 +496,7 @@ Note that by UD documentation, 不 is allowed to be the dependent of an \aux.
 
 \newpage
 \section{把(ba3)}
+\index{ba3 把}
 
 把 puts the object of a verb in front of the verb. UD has a special label for this construction. 
 
@@ -475,6 +519,7 @@ BA \& ... \& prey \& ... \& swallow \\
 
 \newpage
 \section{被(bei4)}
+\index{bei4 被}
 
 被 is a passive construction. It has a ``long'' version and a ``short'' version. In the long version, the agent is present, and it is very similar to the 把 case. 
 
@@ -517,6 +562,7 @@ prey \& BEI \& swallow \\
 In UD, \textsc{compound} is used for compound nouns. For compound verbs, the subtypes \textsc{compound:dir}, \textsc{compound:vo}, and \textsc{compound:vv} are used. In all cases, this label connects two words that can be considered as one verb. 
 
 \subsection{Verb + direction}
+\index{chu1 出}
 
 \textsc{compound:dir} connects a verb to a direction. For example, 画出 = draw + out = finish drawing. 
 
@@ -558,6 +604,8 @@ lose \& LE \& way \\
 \end{tree}
 
 \subsection{Verb + verb}
+\index{dao4 到}
+\index{guo4 过}
 
 \textsc{compound:vv} is used when (1) the second verb (or occasionally adjective) describes the result of the first verb, or (2) when the second verb is 着(zhao2), 到(dao4), 见(jian4), 完(wan2), or 过(guo4). Note that these are different from the auxiliary 着(zhe5) and 过(guo4). 
 
